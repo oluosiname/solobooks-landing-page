@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solobooks - Accounting for Freelancers</title>
+    <style>
+      :root {
+        --primary-color: #3482f6;
+        --primary-50: #eff6ff;
+        --primary-100: #dbebfe;
+        --primary-500: #3482f6;
+        --primary-700: #1d52d8;
+        --tertiary-100: #dcd6f7;
+        --green-500: #20b799;
+        --grey-100: #f1f2f4;
+        --grey-900: #181b20;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: var(--grey-900);
+      }
+
+      header {
+        background-color: var(--primary-color);
+        padding: 20px;
+        text-align: center;
+        color: #fff;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      header p {
+        font-size: 1.2rem;
+      }
+
+      .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 20px;
+        background-color: var(--primary-50);
+      }
+
+      .hero img {
+        width: 50%;
+        border-radius: 10px;
+      }
+
+      .hero-content {
+        max-width: 50%;
+      }
+
+      .hero-content h2 {
+        font-size: 2rem;
+        color: var(--primary-color);
+      }
+
+      .hero-content p {
+        font-size: 1.1rem;
+        margin: 20px 0;
+      }
+
+      .cta-button {
+        background-color: var(--primary-color);
+        color: #fff;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.1rem;
+      }
+
+      .cta-button:hover {
+        background-color: var(--primary-700);
+      }
+
+      section.features {
+        padding: 40px 20px;
+        background-color: #fff;
+        text-align: center;
+      }
+
+      .features h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+        color: var(--primary-color);
+      }
+
+      .features .feature-grid {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .feature {
+        background-color: var(--primary-100);
+        padding: 20px;
+        border-radius: 10px;
+        width: 30%;
+        text-align: center;
+      }
+
+      .feature h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+      }
+
+      .feature p {
+        font-size: 1rem;
+      }
+
+      section.testimonials {
+        padding: 40px 20px;
+        background-color: var(--primary-50);
+        text-align: center;
+      }
+
+      .testimonials h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+        color: var(--primary-color);
+      }
+
+      .testimonial {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+      }
+
+      footer {
+        background-color: var(--primary-color);
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      footer p {
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Solobooks</h1>
+      <p>Your one-stop solution for freelancer invoicing and accounting</p>
+    </header>
+
+    <div class="hero">
+      <div class="hero-content">
+        <h2>Take Control of Your Finances</h2>
+        <p>
+          Solobooks provides everything you need to manage your invoices,
+          expenses, and VAT declarations in one simple tool.
+        </p>
+        <a href="#" class="cta-button">Get Started Today</a>
+      </div>
+      <img
+        src="https://www.pexels.com/photo/macbook-pro-on-brown-wooden-table-96593/download/"
+        alt="Freelancer working on finances"
+      />
+    </div>
+
+    <section class="features">
+      <h2>Key Features</h2>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>Invoice Management</h3>
+          <p>
+            Create, send, and track invoices with ease, tailored for freelancers
+            in Germany.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Expense Tracking</h3>
+          <p>
+            Record and categorize your business expenses to keep your finances
+            organized.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>VAT Declaration</h3>
+          <p>
+            Easily calculate and submit your VAT returns with direct integration
+            to tax services.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>What Our Users Say</h2>
+      <div class="testimonial">
+        <p>
+          "Solobooks has streamlined my accounting process. I can focus on my
+          work while it takes care of the rest!" - Max, Freelancer
+        </p>
+      </div>
+      <div class="testimonial">
+        <p>
+          "The VAT declaration feature has been a lifesaver. No more tax
+          headaches!" - Lisa, Graphic Designer
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2024 Solobooks | Designed for Freelancers in Germany</p>
+    </footer>
+  </body>
+</html>
