@@ -1,0 +1,109 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Baloo+Paaji+2:wght@400..800&display=swap");
+
+@theme {
+  --color-primary-DEFAULT: #3482f6;
+  --color-primary-50: #afd5fa;
+  --color-primary-100: #dbebfe;
+  --color-primary-200: #bfdcfe;
+  --color-primary-300: #93c7fd;
+  --color-primary-400: #60a8fa;
+  --color-primary-500: #3482f6;
+  --color-primary-600: #2567eb;
+  --color-primary-700: #1d52d8;
+  --color-primary-800: #1e43af;
+  --color-primary-900: #1e3c8a;
+  --color-primary-950: #172654;
+  --color-primary-960: #094989;
+
+  --color-tertiary-DEFAULT: #dcd6f7;
+  --color-tertiary-25: #efeafb;
+  --color-tertiary-50: #dcd6f7;
+  --color-tertiary-100: #c8bff2;
+  --color-tertiary-200: #a090e9;
+  --color-tertiary-300: #7861e0;
+  --color-tertiary-400: #5032d7;
+  --color-tertiary-500: #3c22af;
+  --color-tertiary-600: #2c1980;
+  --color-tertiary-700: #1c1051;
+  --color-tertiary-800: #0b0722;
+  --color-tertiary-900: #000000;
+  --color-tertiary-950: #000000;
+
+  --color-green-50: #f1fcf9;
+  --color-green-100: #cff8eb;
+  --color-green-200: #9ff0d9;
+  --color-green-300: #67e1c3;
+  --color-green-400: #38c9aa;
+  --color-green-500: #20b799;
+  --color-green-600: #168b77;
+  --color-green-700: #166f61;
+  --color-green-800: #16594f;
+  --color-green-900: #174a42;
+  --color-green-950: #072c28;
+
+  --color-grey-DEFAULT: #f1f2f4;
+  --color-grey-100: #e5e7eb;
+  --color-grey-200: #c8ccd5;
+  --color-grey-300: #abb2bf;
+  --color-grey-400: #8f97a8;
+  --color-grey-500: #727d92;
+  --color-grey-600: #5b6476;
+  --color-grey-700: #454c59;
+  --color-grey-800: #2f333c;
+  --color-grey-900: #181b20;
+  --color-grey-950: #0d0f11;
+
+  --color-danger-DEFAULT: #ffebee;
+  --color-danger-50: #ffebee;
+  --color-danger-100: #ffd7dd;
+  --color-danger-200: #ffaeba;
+  --color-danger-300: #ff8597;
+  --color-danger-400: #ff5c75;
+  --color-danger-500: #ff3352;
+  --color-danger-600: #ff0b2f;
+  --color-danger-700: #e10022;
+  --color-danger-800: #b8001c;
+  --color-danger-900: #8f0015;
+  --color-danger-950: #7b0012;
+
+  --font-body: "Baloo 2", serif;
+}
+
+.ff {
+  @apply font-bold text-danger-500;
+}
+
+.cta_button {
+  @apply rounded-md text-sm py-2;
+}
+
+.cta_button--wide {
+  @apply min-w-40;
+}
+
+.cta_button--short {
+  @apply min-w-20;
+}
+
+.cta_button--primary {
+  @apply bg-primary-50 text-primary-960;
+}
+
+.cta_button--secondary {
+  @apply border border-primary-960 bg-transparent text-primary-960;
+}
+
+.cta_button--primary:hover {
+  @apply bg-primary-100 cursor-pointer;
+}
+
+.feature__card {
+  @apply flex-1 border border-grey-DEFAULT bg-white rounded-lg p-4 pt-10 shadow-xs hover:shadow-lg transition-transform transform hover:-translate-y-1;
+}
+
+/*** Footer **/
+
+.footer__body {
+  @apply font-normal text-sm leading-[22px] text-grey-700;
+}

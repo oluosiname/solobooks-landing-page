@@ -1,0 +1,12 @@
+<header class="flex justify-between items-center p-4 bg-white shadow">
+  <h1 class="text-2xl font-bold">Solobooks</h1>
+  <nav>
+      <a href="/en/" class="px-4 {% if page.lang == 'en' %}font-bold{% endif %}">{{ site.data.translations[page.lang].home }}</a>
+      <a href="/{{ page.lang }}/features/" class="px-4">{{ site.data.translations[page.lang].features }}</a>
+      <a href="/{{ page.lang }}/contact/" class="px-4">{{ site.data.translations[page.lang].contact }}</a>
+  </nav>
+  <select onchange="location = this.value;" class="border p-2">
+      <option value="/en/" {% if page.lang == 'en' %}selected{% endif %}>English</option>
+      <option value="/de/" {% if page.lang == 'de' %}selected{% endif %}>Deutsch</option>
+  </select>
+</header>

@@ -1,0 +1,23 @@
+en:
+  home: "Home"
+  features: "Features"
+  contact: "Contact"
+  hero_title: "Unlock Your Reading Journey"
+  hero_subtitle: "Discover, read, and connect with book lovers worldwide."
+  join_now: "Join us now"
+  request_demo: "Request demo"
+  features_section: "Features"
+  about_section: "About Us"
+  testimonials_section: "Hear from our awesome users!"
+
+de:
+  home: "Startseite"
+  features: "Funktionen"
+  contact: "Kontakt"
+  hero_title: "Entdecken Sie Ihre Lese-Reise"
+  hero_subtitle: "Entdecken, lesen und mit Buchliebhabern weltweit verbinden."
+  join_now: "Jetzt beitreten"
+  request_demo: "Demo anfordern"
+  features_section: "Funktionen"
+  about_section: "Über Uns"
+  testimonials_section: "Hören Sie von unseren großartigen Nutzern!"
