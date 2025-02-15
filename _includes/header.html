@@ -1,20 +1,28 @@
 <header class="bg-white shadow-md py-4">
   <div class="container mx-auto flex justify-between items-center px-6">
-    <h1 class="text-2xl font-bold">Solobooks</h1>
+    <h1 class="text-2xl font-bold">
+      {{ site.data.translations[page.lang].site_name }}
+    </h1>
     <nav class="space-x-6">
-      <a href="#" class="text-primary-500 font-medium">Home</a>
-      <a href="#" class="text-gray-600 hover:text-blue-500">Features</a>
-      <a href="#" class="text-gray-600 hover:text-blue-500">Contact</a>
+      <a href="#" class="text-primary-500 font-medium">
+        {{ site.data.translations[page.lang].nav.home }}
+      </a>
+      <a href="#" class="text-gray-600 hover:text-blue-500">
+        {{ site.data.translations[page.lang].nav.features }}
+      </a>
+      <a href="#" class="text-gray-600 hover:text-blue-500">
+        {{ site.data.translations[page.lang].nav.contact }}
+      </a>
     </nav>
     <div>
-      <a href="https://app.solobooks.de/en/register"
-        ><button class="cta_button cta_button--primary cta_button--short">
-          Sign up
+      <a href="{{ site.data.translations[page.lang].links.sign_up }}">
+        <button class="cta_button cta_button--primary cta_button--short">
+          {{ site.data.translations[page.lang].buttons.sign_up }}
         </button>
       </a>
-      <a href="https://app.solobooks.de/login">
+      <a href="{{ site.data.translations[page.lang].links.login }}">
         <button class="cta_button cta_button--secondary cta_button--short">
-          Login
+          {{ site.data.translations[page.lang].buttons.login }}
         </button>
       </a>
     </div>

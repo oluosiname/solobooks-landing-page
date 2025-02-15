@@ -75,15 +75,15 @@
 }
 
 .cta_button {
-  @apply rounded-md text-sm py-2 cursor-pointer;
+  @apply rounded-md text-sm py-2 cursor-pointer px-3;
 }
 
 .cta_button--wide {
-  @apply min-w-40;
+  @apply min-w-40 px-3;
 }
 
 .cta_button--short {
-  @apply min-w-20;
+  @apply min-w-20 px-3;
 }
 
 .cta_button--primary {
@@ -99,7 +99,7 @@
 }
 
 .feature__card {
-  @apply flex-1 border border-grey-DEFAULT bg-white rounded-lg p-4 pt-10 shadow-xs hover:shadow-lg transition-transform transform hover:-translate-y-1;
+  @apply flex-1 border border-grey-DEFAULT bg-white rounded-lg p-4 pt-10 shadow-xs hover:shadow-lg transition-transform transform hover:-translate-y-1 min-h-[20em] text-start;
 }
 
 /*** Footer **/
