@@ -19,18 +19,36 @@
         </a>
       </nav>
 
-      <!-- Desktop CTA Buttons -->
-      <div class="hidden md:flex space-x-4">
-        <a href="{{ site.data.translations[page.lang].links.sign_up }}">
-          <button class="cta_button cta_button--primary cta_button--short">
-            {{ site.data.translations[page.lang].buttons.sign_up }}
-          </button>
-        </a>
-        <a href="{{ site.data.translations[page.lang].links.login }}">
-          <button class="cta_button cta_button--secondary cta_button--short">
-            {{ site.data.translations[page.lang].buttons.login }}
-          </button>
-        </a>
+      <!-- Desktop Right Section -->
+      <div class="hidden md:flex items-center space-x-6">
+        <!-- Language Switcher -->
+        <div class="text-sm text-gray-600">
+          {% if page.lang == 'en' %}
+          <span class="font-medium">EN</span> |
+          <a
+            href="{{ page.url | replace:'/en/', '/' }}"
+            class="hover:text-tertiary-500"
+            >DE</a
+          >
+          {% else %}
+          <a href="/en{{ page.url }}" class="hover:text-tertiary-500">EN</a>
+          | <span class="font-medium">DE</span>
+          {% endif %}
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="flex space-x-4">
+          <a href="{{ site.data.translations[page.lang].links.sign_up }}">
+            <button class="cta_button cta_button--primary cta_button--short">
+              {{ site.data.translations[page.lang].buttons.sign_up }}
+            </button>
+          </a>
+          <a href="{{ site.data.translations[page.lang].links.login }}">
+            <button class="cta_button cta_button--secondary cta_button--short">
+              {{ site.data.translations[page.lang].buttons.login }}
+            </button>
+          </a>
+        </div>
       </div>
 
       <!-- Mobile Hamburger Button -->
@@ -63,6 +81,26 @@
         <a href="#" class="block text-gray-600 hover:text-blue-500 py-2">
           {{ site.data.translations[page.lang].nav.contact }}
         </a>
+
+        <!-- Mobile Language Switcher -->
+        <div class="py-2 text-sm text-gray-600 border-t border-gray-100 mt-2">
+          {% if page.lang == 'en' %}
+          <span class="font-medium">EN</span> |
+          <a
+            href="{{ page.url | replace: 'en', 'de' }}"
+            class="hover:text-blue-500"
+            >DE</a
+          >
+          {% else %}
+          <a
+            href="{{ page.url | replace: 'de', 'en' }}"
+            class="hover:text-blue-500"
+            >EN</a
+          >
+          | <span class="font-medium">DE</span>
+          {% endif %}
+        </div>
+
         <div class="pt-4 space-y-3">
           <a
             href="{{ site.data.translations[page.lang].links.sign_up }}"

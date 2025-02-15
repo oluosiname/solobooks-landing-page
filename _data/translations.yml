@@ -5,7 +5,7 @@ en:
     features: "Features"
     contact: "Contact"
   buttons:
-    sign_up: "Sign up"
+    sign_up: "Sign up For Free"
     login: "Login"
   links:
     sign_up: "https://app.solobooks.de/register"
@@ -13,7 +13,7 @@ en:
   hero:
     heading: "Unlock Your Reading Journey"
     description: "Discover, read, and connect with book lovers worldwide."
-    free_trial: "Free Trial"
+    free_trial: "Get Started for Free"
     request_demo: "Request Demo"
     image_alt: "Hero Image"
   features:
@@ -41,9 +41,21 @@ en:
         icon_color: "text-red-600"
         icon_path_1: "M17 21v-8m-4 8v-8m-4 8v-8M3 3h18M3 7h18"
   testimonials:
-    quote: "Solobooks has transformed the way I read and discover new authors."
-    author: "Emily Sanchez"
-    role: "Book Enthusiast & Blogger"
+    - name: "Peter Michaels"
+      role: "Small Business Owner"
+      quote: "Solobooks has improved our workflow efficiency significantly. I highly recommend it for anyone looking to streamline their financial tracking."
+      image: "/assets/images/testimonials/peter.jpg"
+
+    - name: "Emily Sanchez"
+      role: "Book Enthusiast & Blogger"
+      quote: "Solobooks has transformed the way I read and discover new authors. The selection is vast, and the recommendations are spot-on!"
+      image: "/assets/images/testimonials/emily.jpg"
+
+    - name: "Sarah Welch"
+      role: "Finance Manager"
+      quote: "An essential tool for our daily financial tasks. Solobooks makes managing expenses seamless and efficient."
+      image: "/assets/images/testimonials/sarah.jpg"
+
   footer:
     logo: "Logo"
     subscribe: "Subscribe to our newsletter"
@@ -93,7 +105,7 @@ de:
     features: "Funktionen"
     contact: "Kontakt"
   buttons:
-    sign_up: "Registrieren"
+    sign_up: "Kostenlos anmelden"
     login: "Anmelden"
   links:
     sign_up: "https://app.solobooks.de/register"
@@ -101,7 +113,7 @@ de:
   hero:
     heading: "Entdecken Sie Ihre Lese-Reise"
     description: "Entdecken, lesen und verbinden Sie sich mit Buchliebhabern weltweit."
-    free_trial: "Kostenlose Testversion"
+    free_trial: "Kostenlos starten"
     request_demo: "Demo anfordern"
     image_alt: "Held Bild"
   features:
@@ -129,9 +141,20 @@ de:
         icon_color: "text-red-600"
         icon_path_1: "M17 21v-8m-4 8v-8m-4 8v-8M3 3h18M3 7h18"
   testimonials:
-    quote: "Solobooks hat meine Art zu lesen und neue Autoren zu entdecken, verändert."
-    author: "Emily Sanchez"
-    role: "Buchliebhaber & Blogger"
+    - name: "Sophia Lee"
+      role: "Buchliebhaberin & Bloggerin"
+      quote: "Solobooks hat meine Art zu lesen und neue Autoren zu entdecken verändert. Die Auswahl ist riesig und die Empfehlungen sind perfekt!"
+      image: "/assets/images/testimonials/sophia.jpg"
+
+    - name: "Julian Lehmann"
+      role: "Kleinunternehmerin"
+      quote: "Solobooks hat unsere Arbeitsabläufe erheblich verbessert. Ich empfehle es jedem, der seine Finanzverwaltung optimieren möchte!"
+      image: "/assets/images/testimonials/julian.jpg"
+
+    - name: "Haley Thomsen"
+      role: "Finanzmanager"
+      quote: "Ein unverzichtbares Tool für unsere täglichen Finanzaufgaben. Solobooks macht das Verwalten von Ausgaben nahtlos und effizient."
+      image: "/assets/images/testimonials/haley.jpg"
   footer:
     logo: "Logo"
     subscribe: "Abonnieren Sie unseren Newsletter"

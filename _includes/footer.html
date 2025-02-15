@@ -40,7 +40,9 @@
         </select>
         <script>
           document.getElementById("language-switcher").addEventListener("change", function () {
-            window.location.href = this.value;
+            let newLang = this.value;
+            let currentPath = window.location.pathname.replace(/^\/(en\/)?/, ""); // Remove lang prefix
+            window.location.href = newLang + currentPath;
           });
         </script>
         <span class="footer__body !text-base">© 2025 Solobooks</span>
