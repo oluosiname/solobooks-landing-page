@@ -87,16 +87,12 @@
           {% if page.lang == 'en' %}
           <span class="font-medium">EN</span> |
           <a
-            href="{{ page.url | replace: 'en', 'de' }}"
+            href="{{ page.url | replace:'/en/', '/' }}"
             class="hover:text-blue-500"
             >DE</a
           >
           {% else %}
-          <a
-            href="{{ page.url | replace: 'de', 'en' }}"
-            class="hover:text-blue-500"
-            >EN</a
-          >
+          <a href="/en{{ page.url }}" class="hover:text-blue-500">EN</a>
           | <span class="font-medium">DE</span>
           {% endif %}
         </div>
