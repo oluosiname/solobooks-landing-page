@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'de' }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ site.data.translations[page.lang].title }}</title>
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/style.css' | relative_url }}"
+    />
+
+    <!-- Canonical URL -->
+    {% if page.lang == "en" %}
+    <link rel="canonical" href="https://solobooks.de/en/" />
+    {% else %}
+    <link rel="canonical" href="https://solobooks.de/" />
+    {% endif %}
+
+    <!-- Hreflang for SEO -->
+    <link rel="alternate" hreflang="de" href="https://solobooks.de/" />
+    <link rel="alternate" hreflang="en" href="https://solobooks.de/en/" />
+  </head>
+  <body>
+    {% include header.html %}
+    <!-- Include header partial -->
+
+    <main class="px-4 bg-white">{{ content }}</main>
+
+    {% include footer.html %}
+    <!-- Include footer partial -->
+  </body>
+</html>
