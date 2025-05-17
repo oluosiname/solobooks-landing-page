@@ -97,6 +97,41 @@ en:
         url: "#"
       - text: "Sitemap"
         url: "#"
+  pricing:
+    plans:
+      basic:
+        name: "Starter"
+        description: "Perfect for beginners & solo entrepreneurs"
+        price: "€4.99"
+        period: "/ month"
+        features:
+          - "Create invoices with VAT"
+          - "Customer management"
+          - "Manual income & expense tracking"
+          - "PDF invoice download"
+        cta: "Start Free"
+      standard:
+        name: "Plus"
+        description: "For small teams & growing freelancers"
+        price: "€7.99"
+        period: "/ month"
+        popular_tag: "Popular"
+        features:
+          - "Everything in Starter plan, plus:"
+          - "Automatic bank import & manual sync"
+          - "Upload receipts & assign transactions"
+          - "VAT summary as CSV/Excel for ELSTER"
+        cta: "Subscribe Now"
+      premium:
+        name: "Pro"
+        description: "For businesses with complex needs"
+        price: "€9.99"
+        period: "/ month"
+        features:
+          - "Everything in Plus plan, plus:"
+          - "Priority support"
+          - "For power users and high transaction volumes"
+        cta: "Start Pro"
 
 de:
   site_name: "Solobooks"
@@ -196,3 +231,38 @@ de:
         url: "#"
       - text: "Sitemap"
         url: "#"
+  pricing:
+    plans:
+      basic:
+        name: "Starter"
+        description: "Ideal für Einsteiger & Solo-Selbstständige"
+        price: "€4,99"
+        period: "/ Monat"
+        features:
+          - "Erstelle Rechnungen mit Mehrwertsteuer"
+          - "Kundenverwaltung"
+          - "Einnahmen & Ausgaben manuell erfassen"
+          - "PDF-Rechnungsdownload"
+        cta: "Kostenlos testen"
+      standard:
+        name: "Plus"
+        description: "Für kleine Teams & wachsende Freelancer"
+        price: "€7,99"
+        period: "/ Monat"
+        popular_tag: "Beliebt"
+        features:
+          - "Alles im Starter-Paket, plus:"
+          - "Automatischer Bankimport & manuelle Synchronisierung"
+          - "Belege hochladen & Transaktionen zuordnen"
+          - "VAT-Zusammenfassung als CSV/Excel für ELSTER"
+        cta: "Jetzt abonnieren"
+      premium:
+        name: "Pro"
+        description: "Für Unternehmen mit komplexem Bedarf"
+        price: "€9,99"
+        period: "/ Monat"
+        features:
+          - "Alles im Plus-Paket, plus:"
+          - "Priorisierter Support"
+          - "Für power-user und hohe Buchungsvolumen"
+        cta: "Pro starten"

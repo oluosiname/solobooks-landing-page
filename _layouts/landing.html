@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<div class="text-center py-16 px-2 w-[95%] md:w-[62%] mx-auto">
-  <section class="mb-12 md:mb-8">
+<div class="text-center py-8 px-2 w-[95%] md:w-[62%] mx-auto">
+  <section class="text-center py-8">
     <h2 class="text-4xl font-bold">
       {{ site.data.translations[page.lang].hero.heading }}
     </h2>
@@ -17,12 +17,131 @@ layout: default
         {{ site.data.translations[page.lang].hero.free_trial }}
       </button>
     </div>
-    <div class="mt-8 w-full flex items-center justify-center rounded-full">
-      <img
-        src="{{ '/assets/images/landing/hero.jpeg' | relative_url }}"
-        alt="{{ site.data.translations[page.lang].hero.image_alt }}"
-        class="w-full rounded-lg md:rounded-2xl md:h-[32em] object-cover"
-      />
+
+    <div
+      class="grid grid-cols-1 md:grid-cols-3 md:space-x-4 space-y-8 md:space-y-0 max-w-7xl mx-auto mt-10"
+    >
+      <!-- Basic -->
+      <div
+        class="border border-gray-200 rounded-2xl p-8 shadow hover:shadow-md transition text-left flex flex-col"
+      >
+        <div class="mb-4">
+          <h3 class="text-2xl font-bold">
+            {{ site.data.translations[page.lang].pricing.plans.basic.name }}
+          </h3>
+          <p class="text-sm text-gray-500">
+            {{ site.data.translations[page.lang].pricing.plans.basic.description
+            }}
+          </p>
+          <p class="text-3xl font-extrabold mt-1">
+            {{ site.data.translations[page.lang].pricing.plans.basic.price
+            }}<span class="text-base font-normal text-gray-600"
+              >{{ site.data.translations[page.lang].pricing.plans.basic.period
+              }}</span
+            >
+          </p>
+        </div>
+        <ul class="space-y-3 text-gray-800 flex-grow">
+          {% for feature in
+          site.data.translations[page.lang].pricing.plans.basic.features %}
+          <li class="flex items-start">
+            <span class="text-blue-500 mr-2"
+              >{% if forloop.last %}✘{% else %}✔{% endif %}</span
+            >
+            {{ feature }}
+          </li>
+          {% endfor %}
+        </ul>
+        <button
+          class="mt-6 cta_button cta_button--primary font-semibold py-2 px-4 rounded hover:bg-blue-200 w-full"
+        >
+          {{ site.data.translations[page.lang].pricing.plans.basic.cta }}
+        </button>
+      </div>
+
+      <!-- Standard -->
+      <div
+        class="border-2 border-blue-500 rounded-2xl p-8 shadow-lg bg-blue-50 transition text-left flex flex-col"
+      >
+        <div class="mb-4">
+          <div class="flex items-center">
+            <h3 class="text-2xl font-bold">
+              {{ site.data.translations[page.lang].pricing.plans.standard.name
+              }}
+            </h3>
+            <span
+              class="ml-2 bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded-full"
+              >{{
+              site.data.translations[page.lang].pricing.plans.standard.popular_tag
+              }}</span
+            >
+          </div>
+          <p class="text-sm text-gray-500">
+            {{
+            site.data.translations[page.lang].pricing.plans.standard.description
+            }}
+          </p>
+          <p class="text-3xl font-extrabold mt-1">
+            {{ site.data.translations[page.lang].pricing.plans.standard.price
+            }}<span class="text-base font-normal text-gray-600"
+              >{{
+              site.data.translations[page.lang].pricing.plans.standard.period
+              }}</span
+            >
+          </p>
+        </div>
+        <ul class="space-y-3 text-gray-800 flex-grow">
+          {% for feature in
+          site.data.translations[page.lang].pricing.plans.standard.features %}
+          <li class="flex items-start">
+            <span class="text-blue-600 mr-2">✔</span>
+            {{ feature }}
+          </li>
+          {% endfor %}
+        </ul>
+        <button
+          class="mt-6 cta_button cta_button--primary--dark font-semibold py-2 px-4 rounded hover:bg-blue-700 w-full"
+        >
+          {{ site.data.translations[page.lang].pricing.plans.standard.cta }}
+        </button>
+      </div>
+
+      <!-- Premium -->
+      <div
+        class="border border-gray-200 rounded-2xl p-8 shadow hover:shadow-md transition text-left flex flex-col"
+      >
+        <div class="mb-4">
+          <h3 class="text-2xl font-bold">
+            {{ site.data.translations[page.lang].pricing.plans.premium.name }}
+          </h3>
+          <p class="text-sm text-gray-500">
+            {{
+            site.data.translations[page.lang].pricing.plans.premium.description
+            }}
+          </p>
+          <p class="text-3xl font-extrabold mt-1">
+            {{ site.data.translations[page.lang].pricing.plans.premium.price
+            }}<span class="text-base font-normal text-gray-600"
+              >{{ site.data.translations[page.lang].pricing.plans.premium.period
+              }}</span
+            >
+          </p>
+        </div>
+        <ul class="space-y-3 text-gray-800 flex-grow">
+          {% for feature in
+          site.data.translations[page.lang].pricing.plans.premium.features %}
+          <li class="flex items-start">
+            <span class="text-primary-500 mr-2">✔</span>
+            {{ feature }}
+          </li>
+          {% endfor %}
+        </ul>
+        <button
+          class="mt-6 cta_button cta_button--primary font-semibold py-2 px-4 rounded hover:bg-blue-200 w-full"
+        >
+          {{ site.data.translations[page.lang].pricing.plans.premium.cta }}
+        </button>
+      </div>
     </div>
   </section>
 

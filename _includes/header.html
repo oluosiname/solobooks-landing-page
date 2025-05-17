@@ -2,12 +2,14 @@
   <div class="container mx-auto px-6">
     <div class="flex justify-between items-center">
       <!-- Logo -->
-      <h1 class="text-2xl font-bold">
+      <h1 class="text-2xl font-bold flex-1">
         {{ site.data.translations[page.lang].site_name }}
       </h1>
 
       <!-- Desktop Navigation -->
-      <nav class="hidden md:flex items-center space-x-6">
+      <nav
+        class="hidden md:flex items-center space-x-6 flex-[1.5] justify-center"
+      >
         <a href="#" class="text-primary-500 font-medium">
           {{ site.data.translations[page.lang].nav.home }}
         </a>
@@ -20,7 +22,7 @@
       </nav>
 
       <!-- Desktop Right Section -->
-      <div class="hidden md:flex items-center space-x-6">
+      <div class="hidden md:flex items-center space-x-6 flex-1">
         <!-- Language Switcher -->
         <div class="text-sm text-gray-600">
           {% if page.lang == 'en' %}
