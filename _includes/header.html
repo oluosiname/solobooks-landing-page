@@ -2,9 +2,11 @@
   <div class="container mx-auto px-6">
     <div class="flex justify-between items-center">
       <!-- Logo -->
-      <h1 class="text-2xl font-bold flex-1">
-        {{ site.data.translations[page.lang].site_name }}
-      </h1>
+      <img
+        src="{{ '/assets/images/logo/solobooks-text.svg' | relative_url }}"
+        alt="{{ site.data.translations[page.lang].site_name }}"
+        class="h-6 md:h-10"
+      />
 
       <!-- Desktop Navigation -->
       <nav
