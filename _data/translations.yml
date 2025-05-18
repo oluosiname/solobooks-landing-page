@@ -8,7 +8,10 @@ en:
     sign_up: "Sign up For Free"
     login: "Login"
   links:
-    sign_up: "https://app.solobooks.de/register"
+    sign_up: "https://app.solobooks.de/en/register"
+    sign_up_starter: "https://app.solobooks.de/en/register?plan=starter"
+    sign_up_plus: "https://app.solobooks.de/en/register?plan=plus"
+    sign_up_pro: "https://app.solobooks.de/en/register?plan=pro"
     login: "https://app.solobooks.de/login"
   hero:
     heading: "Unlock Your Reading Journey"
@@ -143,7 +146,10 @@ de:
     sign_up: "Kostenlos anmelden"
     login: "Anmelden"
   links:
-    sign_up: "https://app.solobooks.de/register"
+    sign_up: "https://app.solobooks.de/de/register"
+    sign_up_starter: "https://app.solobooks.de/de/register?plan=starter"
+    sign_up_plus: "https://app.solobooks.de/de/register?plan=plus"
+    sign_up_pro: "https://app.solobooks.de/de/register?plan=pro"
     login: "https://app.solobooks.de/login"
   hero:
     heading: "Entdecken Sie Ihre Lese-Reise"

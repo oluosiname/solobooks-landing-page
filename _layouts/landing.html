@@ -13,9 +13,12 @@ layout: default
     <div
       class="mt-8 flex flex-row md:justify-center items-center justify-center gap-x-4 gap-y-2 flex-wrap"
     >
-      <button class="cta_button cta_button--primary cta_button--large">
+      <a
+        href="{{ site.data.translations[page.lang].links.sign_up }}"
+        class="cta_button cta_button--primary cta_button--large"
+      >
         {{ site.data.translations[page.lang].hero.free_trial }}
-      </button>
+      </a>
     </div>
 
     <div
@@ -52,11 +55,12 @@ layout: default
           </li>
           {% endfor %}
         </ul>
-        <button
-          class="mt-6 cta_button cta_button--primary font-semibold py-2 px-4 rounded hover:bg-blue-200 w-full"
+        <a
+          href="{{ site.data.translations[page.lang].links.sign_up }}"
+          class="text-center mt-6 cta_button cta_button--primary font-semibold py-2 px-4 rounded hover:bg-blue-200 w-full"
         >
           {{ site.data.translations[page.lang].pricing.plans.basic.cta }}
-        </button>
+        </a>
       </div>
 
       <!-- Standard -->
@@ -99,11 +103,12 @@ layout: default
           </li>
           {% endfor %}
         </ul>
-        <button
-          class="mt-6 cta_button cta_button--primary--dark font-semibold py-2 px-4 rounded hover:bg-blue-700 w-full"
+        <a
+          href="{{ site.data.translations[page.lang].links.sign_up_plus }}"
+          class="text-center mt-6 cta_button cta_button--primary--dark font-semibold py-2 px-4 rounded hover:bg-blue-700 w-full"
         >
           {{ site.data.translations[page.lang].pricing.plans.standard.cta }}
-        </button>
+        </a>
       </div>
 
       <!-- Premium -->
@@ -136,11 +141,12 @@ layout: default
           </li>
           {% endfor %}
         </ul>
-        <button
-          class="mt-6 cta_button cta_button--primary font-semibold py-2 px-4 rounded hover:bg-blue-200 w-full"
+        <a
+          href="{{ site.data.translations[page.lang].links.sign_up_pro }}"
+          class="text-center mt-6 cta_button cta_button--primary font-semibold py-2 px-4 rounded hover:bg-blue-200 w-full"
         >
           {{ site.data.translations[page.lang].pricing.plans.premium.cta }}
-        </button>
+        </a>
       </div>
     </div>
   </section>
