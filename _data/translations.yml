@@ -1,9 +1,13 @@
 en:
   site_name: "Solobooks"
+  title: "Solobooks – Accounting for Freelancers in Germany"
+  meta_description: "Solobooks is accounting software for freelancers. Create invoices, track transactions, and export VAT reports easily."
+  meta_keywords: "freelancer accounting Germany, VAT export, invoicing tool, self-employed tax software"
   nav:
     home: "Home"
     features: "Features"
     contact: "Contact"
+    blog: "Blog"
   buttons:
     sign_up: "Sign up For Free"
     login: "Login"
@@ -14,8 +18,8 @@ en:
     sign_up_pro: "https://app.solobooks.de/en/register?plan=pro"
     login: "https://app.solobooks.de/login"
   hero:
-    heading: "Unlock Your Reading Journey"
-    description: "Discover, read, and connect with book lovers worldwide."
+    heading: "Simplify Your Finances as a Freelancer in Germany"
+    description: "Invoicing, transaction tracking, and VAT export – all in one simple tool. Built for freelancers and self-employed professionals."
     free_trial: "Get Started for Free"
     request_demo: "Request Demo"
     image_alt: "Hero Image"
@@ -61,7 +65,7 @@ en:
 
   footer:
     logo: "Logo"
-    subscribe: "Subscribe to our newsletter"
+    subscribe: "Get the latest guides and tips for managing your business finances in Germany"
     input_placeholder: "Input your email"
     subscribe_button: "Subscribe"
     sections:
@@ -74,7 +78,7 @@ en:
       - title: "Resources"
         links:
           - text: "Blog"
-            url: "#"
+            url: "/en/blog"
           - text: "User guides"
             url: "#"
           - text: "Webinars"
@@ -138,10 +142,14 @@ en:
 
 de:
   site_name: "Solobooks"
+  title: "Solobooks – Buchhaltung für Freelancer in Deutschland"
+  meta_description: "Solobooks ist eine Buchhaltungssoftware für Selbstständige. Rechnungen schreiben, Einnahmen & Ausgaben verfolgen und USt-Voranmeldung exportieren."
+  meta_keywords: "Buchhaltung Freelancer Deutschland, Umsatzsteuer Export, Rechnungssoftware, Solobooks, Steuersoftware Selbstständige"
   nav:
     home: "Startseite"
     features: "Funktionen"
     contact: "Kontakt"
+    blog: "Blog"
   buttons:
     sign_up: "Kostenlos anmelden"
     login: "Anmelden"
@@ -152,8 +160,8 @@ de:
     sign_up_pro: "https://app.solobooks.de/de/register?plan=pro"
     login: "https://app.solobooks.de/login"
   hero:
-    heading: "Entdecken Sie Ihre Lese-Reise"
-    description: "Entdecken, lesen und verbinden Sie sich mit Buchliebhabern weltweit."
+    heading: "Vereinfache deine Finanzen als Freelancer in Deutschland"
+    description: "Rechnungen schreiben, Ausgaben verfolgen und USt-Voranmeldung exportieren – alles in einem einfachen Tool für Selbstständige."
     free_trial: "Kostenlos starten"
     request_demo: "Demo anfordern"
     image_alt: "Held Bild"
@@ -198,7 +206,7 @@ de:
       image: "/assets/images/testimonials/haley.jpg"
   footer:
     logo: "Logo"
-    subscribe: "Abonnieren Sie unseren Newsletter"
+    subscribe: "Erhalten Sie die neuesten Leitfäden und Tipps für die Verwaltung Ihrer Geschäftsfinanzen in Deutschland."
     input_placeholder: "Geben Sie Ihre E-Mail ein"
     subscribe_button: "Abonnieren"
     sections:
@@ -211,7 +219,7 @@ de:
       - title: "Ressourcen"
         links:
           - text: "Blog"
-            url: "#"
+            url: "/blog"
           - text: "Benutzerhandbücher"
             url: "#"
           - text: "Webinare"

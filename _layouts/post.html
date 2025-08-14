@@ -1,0 +1,258 @@
+---
+layout: default
+---
+
+<article class="bg-white">
+  <!-- Hero Section -->
+  <div class="w-full bg-grey-DEFAULT">
+    <div class="container mx-auto px-4 py-12 max-w-4xl">
+      <div class="flex flex-col items-center text-center">
+        <!-- Language Switcher -->
+        {% if page.translations %}
+        <div class="self-end mb-4">
+          {% for translation in page.translations %}
+            {% assign lang = translation[0] %}
+            {% assign url = translation[1] %}
+            <a href="{{ url }}" class="text-primary-600 hover:text-primary-700">
+              <span class="sr-only">Switch to {{ lang | upcase }}</span>
+              {% if lang == 'en' %}🇬🇧 EN{% endif %}
+              {% if lang == 'de' %}🇩🇪 DE{% endif %}
+            </a>
+          {% endfor %}
+        </div>
+        {% endif %}
+        
+        <!-- Categories -->
+        <div class="flex gap-2 mb-6">
+          {% for category in page.categories %}
+            <span class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">{{ category }}</span>
+          {% endfor %}
+        </div>
+        
+        <!-- Title -->
+        <h1 class="text-4xl md:text-5xl font-bold text-grey-800 mb-4">{{ page.title }}</h1>
+        
+        <!-- Excerpt -->
+        {% if page.excerpt %}
+        <p class="text-xl text-grey-700 max-w-2xl mb-6">{{ page.excerpt }}</p>
+        {% endif %}
+        
+        <!-- Meta Info -->
+        <div class="flex items-center gap-4 text-grey-600">
+          <time datetime="{{ page.date | date_to_xmlschema }}" class="text-sm">
+            {% if page.lang == 'de' %}
+              {{ page.date | date: '%d.%m.%Y' }}
+            {% else %}
+              {{ page.date | date: '%B %d, %Y' }}
+            {% endif %}
+          </time>
+          <span class="text-grey-400">•</span>
+          <span class="text-sm">{{ content | number_of_words }} {% if page.lang == 'de' %}Wörter{% else %}words{% endif %}</span>
+          {% if page.reading_time %}
+          <span class="text-grey-400">•</span>
+          <span class="text-sm">
+            {% if page.lang == 'de' %}
+              {{ page.reading_time }} Min. Lesezeit
+            {% else %}
+              {{ page.reading_time }} min read
+            {% endif %}
+          </span>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container mx-auto px-4 py-12 max-w-3xl">
+    {% if page.image %}
+    <div class="mb-12 rounded-xl overflow-hidden">
+      <img src="{{ page.image }}" alt="{{ page.title }}" class="w-full h-auto">
+    </div>
+    {% endif %}
+
+    <!-- Table of Contents -->
+    <div class="bg-grey-DEFAULT rounded-lg p-6 mb-12">
+      <h2 class="text-xl font-semibold text-grey-800 mb-4">{% if page.lang == 'de' %}Inhaltsverzeichnis{% else %}Table of Contents{% endif %}</h2>
+      <nav class="prose-toc">
+        {% assign content_array = content | split: '<h2' %}
+        <ul class="space-y-3">
+        {% for item in content_array offset: 1 %}
+          {% assign title = item | split: '</h2>' | first | split: '>' | last %}
+          <li>
+            <a href="#{{ title | slugify }}" class="text-grey-700 hover:text-primary-600 flex items-center group">
+              <span class="w-1.5 h-1.5 bg-primary-200 rounded-full mr-2 group-hover:bg-primary-400 transition-colors"></span>
+              {{ title }}
+            </a>
+          </li>
+        {% endfor %}
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Article Content -->
+    <div class="prose prose-lg max-w-none">
+      <style>
+        .prose h2 {
+          font-size: 1.875rem;
+          margin-top: 3rem;
+          margin-bottom: 1.5rem;
+          font-weight: 700;
+          color: var(--color-grey-800);
+          scroll-margin-top: 100px;
+        }
+        .prose h3 {
+          font-size: 1.5rem;
+          margin-top: 2.5rem;
+          margin-bottom: 1.25rem;
+          font-weight: 600;
+          color: var(--color-grey-800);
+        }
+        .prose p {
+          margin-top: 1.25rem;
+          margin-bottom: 1.25rem;
+          line-height: 1.8;
+          color: var(--color-grey-700);
+        }
+        .prose strong {
+          color: var(--color-grey-900);
+          font-weight: 600;
+        }
+        .prose ul {
+          margin-top: 1.25rem;
+          margin-bottom: 1.25rem;
+          list-style-type: none;
+          padding-left: 1.25rem;
+        }
+        .prose ul li {
+          position: relative;
+          padding-left: 1.75rem;
+          margin-top: 0.5rem;
+          margin-bottom: 0.5rem;
+        }
+        .prose ul li::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0.75rem;
+          height: 0.375rem;
+          width: 0.375rem;
+          background-color: var(--color-primary-400);
+          border-radius: 50%;
+        }
+        .prose a {
+          color: var(--color-primary-600);
+          text-decoration: none;
+          font-weight: 500;
+          transition: color 0.2s;
+        }
+        .prose a:hover {
+          color: var(--color-primary-700);
+        }
+        .prose blockquote {
+          border-left: 4px solid var(--color-primary-100);
+          padding-left: 1.25rem;
+          margin-left: 0;
+          margin-right: 0;
+          font-style: italic;
+          color: var(--color-grey-600);
+          background-color: var(--color-grey-50);
+          padding: 1.25rem;
+          border-radius: 0.5rem;
+        }
+        .prose blockquote p {
+          margin: 0;
+        }
+        .prose img {
+          border-radius: 0.75rem;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .prose table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          font-size: 0.875rem;
+        }
+        .prose table th {
+          background-color: var(--color-grey-50);
+          padding: 0.75rem 1rem;
+          text-align: left;
+          font-weight: 600;
+          color: var(--color-grey-900);
+          border-bottom: 1px solid var(--color-grey-200);
+        }
+        .prose table td {
+          padding: 0.75rem 1rem;
+          border-bottom: 1px solid var(--color-grey-100);
+          color: var(--color-grey-700);
+        }
+        .prose table tr:last-child td {
+          border-bottom: none;
+        }
+        .prose hr {
+          margin-top: 3rem;
+          margin-bottom: 3rem;
+          border: none;
+          height: 1px;
+          background-color: var(--color-grey-100);
+        }
+        .prose-toc ul {
+          list-style: none;
+          padding: 0;
+        }
+        .prose-toc li {
+          margin: 0.5rem 0;
+        }
+      </style>
+      {{ content }}
+    </div>
+
+    <!-- Author Section -->
+    <div class="mt-12 pt-8 border-t border-grey-DEFAULT">
+      <div class="flex items-center gap-4">
+        {% if page.author_image %}
+        <img src="{{ page.author_image }}" alt="{{ page.author }}" class="w-16 h-16 rounded-full">
+        {% endif %}
+        <div>
+          <h3 class="font-semibold text-grey-800">{{ page.author | default: "Solobooks Team" }}</h3>
+          <p class="text-grey-600 text-sm">{{ page.author_bio | default: "The Solobooks team is dedicated to making bookkeeping simple and efficient for freelancers and small businesses in Germany." }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Posts -->
+    {% if site.related_posts.size > 0 %}
+    <div class="mt-12 pt-8 border-t border-grey-DEFAULT">
+      <h2 class="text-2xl font-bold text-grey-800 mb-6">{% if page.lang == 'de' %}Verwandte Artikel{% else %}Related Articles{% endif %}</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {% for post in site.related_posts limit:2 %}
+        <a href="{{ post.url }}" class="group">
+          <div class="bg-white rounded-lg border border-grey-DEFAULT p-6 transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+            {% if post.image %}
+            <div class="aspect-video rounded-lg overflow-hidden mb-4">
+              <img src="{{ post.image }}" alt="{{ post.title }}" class="w-full h-full object-cover">
+            </div>
+            {% endif %}
+            <h3 class="font-semibold text-grey-800 group-hover:text-primary-700 mb-2">{{ post.title }}</h3>
+            <p class="text-sm text-grey-600">{{ post.excerpt | truncate: 120 }}</p>
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</article>
+
+<!-- Back to Blog -->
+<div class="container mx-auto px-4 py-8 max-w-4xl">
+  <a href="/{% if page.lang == 'en' %}en/{% endif %}blog/" class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+    </svg>
+    {% if page.lang == 'de' %}Zurück zum Blog{% else %}Back to Blog{% endif %}
+  </a>
+</div>

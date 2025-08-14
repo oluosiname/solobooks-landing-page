@@ -3,54 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ site.data.translations[page.lang].title }}</title>
+
+    <!-- Basic Meta Tags -->
+    <title>
+      {% if page.title %}{{ page.title }} | {% endif %}{{
+      site.data.translations[page.lang].title }}
+    </title>
+    <meta
+      name="description"
+      content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncate: 160 }}{% else %}{{ site.data.translations[page.lang].meta_description }}{% endif %}"
+    />
+    <meta
+      name="keywords"
+      content="{{ site.data.translations[page.lang].meta_keywords }}{% if page.categories %}, {{ page.categories | join: ', ' }}{% endif %}"
+    />
+
+    <!-- Open Graph / Social Media -->
+    <meta
+      property="og:type"
+      content="{% if page.layout == 'post' %}article{% else %}website{% endif %}"
+    />
+    <meta
+      property="og:title"
+      content="{% if page.title %}{{ page.title }}{% else %}{{ site.data.translations[page.lang].title }}{% endif %}"
+    />
+    <meta
+      property="og:description"
+      content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncate: 160 }}{% else %}{{ site.data.translations[page.lang].meta_description }}{% endif %}"
+    />
+    <meta property="og:url" content="{{ page.url | absolute_url }}" />
+    {% if page.image %}
+    <meta property="og:image" content="{{ page.image | absolute_url }}" />
+    {% endif %}
+    <meta
+      property="og:site_name"
+      content="{{ site.data.translations[page.lang].title }}"
+    />
+    <meta
+      property="og:locale"
+      content="{{ page.lang }}_{{ page.lang | upcase }}"
+    />
+    {% if page.translations %} {% for translation in page.translations %}
+    <meta
+      property="og:locale:alternate"
+      content="{{ translation[0] }}_{{ translation[0] | upcase }}"
+    />
+    {% endfor %} {% endif %}
+
+    <!-- Twitter Card -->
+    <meta
+      name="twitter:card"
+      content="{% if page.image %}summary_large_image{% else %}summary{% endif %}"
+    />
+    <meta
+      name="twitter:title"
+      content="{% if page.title %}{{ page.title }}{% else %}{{ site.data.translations[page.lang].title }}{% endif %}"
+    />
+    <meta
+      name="twitter:description"
+      content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncate: 160 }}{% else %}{{ site.data.translations[page.lang].meta_description }}{% endif %}"
+    />
+    {% if page.image %}
+    <meta name="twitter:image" content="{{ page.image | absolute_url }}" />
+    {% endif %}
+
+    <!-- Language Alternates -->
+    {% assign canonical_url = page.url | absolute_url %}
+    <link rel="canonical" href="{{ canonical_url }}" />
+
+    <!-- Default language alternates -->
+    <link rel="alternate" hreflang="x-default" href="https://solobooks.de/" />
+    <link rel="alternate" hreflang="de" href="https://solobooks.de/" />
+    <link rel="alternate" hreflang="en" href="https://solobooks.de/en/" />
+
+    <!-- Page-specific language alternates -->
+    {% if page.translations %} {% for translation in page.translations %} {%
+    assign lang = translation[0] %} {% assign url = translation[1] %}
+    <link
+      rel="alternate"
+      hreflang="{{ lang }}"
+      href="https://solobooks.de{{ url }}"
+    />
+    {% endfor %} {% endif %}
+
+    <!-- Styles -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
       href="{{ '/assets/css/style.css' | relative_url }}"
     />
+
     <!-- Favicon -->
     <link
       rel="icon"
       type="image/x-icon"
       href="{{ '/assets/images/favicon/favicon.ico' | relative_url }}"
     />
-    <!-- <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="{{ '/assets/images/favicon/favicon-32x32.png' | relative_url }}"
-    /> -->
-    <!-- <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="{{ '/assets/images/favicon/favicon-16x16.png' | relative_url }}"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="{{ '/assets/images/favicon/apple-touch-icon.png' | relative_url }}"
-    /> -->
-
-    <!-- Canonical URL -->
-    {% if page.lang == "en" %}
-    <link rel="canonical" href="https://solobooks.de/en/" />
-    {% else %}
-    <link rel="canonical" href="https://solobooks.de/" />
-    {% endif %}
-
-    <!-- Hreflang for SEO -->
-    <link rel="alternate" hreflang="de" href="https://solobooks.de/" />
-    <link rel="alternate" hreflang="en" href="https://solobooks.de/en/" />
   </head>
   <body>
     {% include header.html %}
-    <!-- Include header partial -->
-
     <main class="px-2 md:px-12 bg-white">{{ content }}</main>
-
     {% include footer.html %}
-    <!-- Include footer partial -->
   </body>
 </html>

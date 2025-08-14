@@ -2,11 +2,14 @@
   <div class="container mx-auto px-6">
     <div class="flex justify-between items-center">
       <!-- Logo -->
-      <img
-        src="{{ '/assets/images/logo/solobooks-text.svg' | relative_url }}"
-        alt="{{ site.data.translations[page.lang].site_name }}"
-        class="h-6 md:h-10"
-      />
+      <div class="flex items-center space-x-4 flex-1">
+        <a href="/{{ page.lang | default: 'de' }}/">
+          <img
+            src="{{ '/assets/images/logo/solobooks-text.svg' | relative_url }}"
+            alt="{{ site.data.translations[page.lang].site_name }}"
+            class="h-6 md:h-10"
+        />
+      </div>
 
       <!-- Desktop Navigation -->
       <nav
@@ -20,6 +23,12 @@
         </a>
         <a href="#" class="text-gray-600 hover:text-blue-500">
           {{ site.data.translations[page.lang].nav.contact }}
+        </a>
+        <a
+          href="{% if page.lang == 'en' %}/en/blog/{% else %}/blog/{% endif %}"
+          class="text-gray-600 hover:text-blue-500"
+        >
+          {{ site.data.translations[page.lang].nav.blog }}
         </a>
       </nav>
 
