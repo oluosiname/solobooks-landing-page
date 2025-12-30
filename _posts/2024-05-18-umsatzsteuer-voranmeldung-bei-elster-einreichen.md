@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Umsatzsteuer-Voranmeldung bei ELSTER einreichen"
-date: 2024-05-18
+date: 2025-05-18
 lang: de
 permalink: /blog/:title/
 categories: [anleitung, steuer]
@@ -110,4 +110,4 @@ Wenn Sie Fragen haben oder Unterstützung benötigen:
 
 ---
 
-_Zuletzt aktualisiert: 18. Mai 2024_
+_Zuletzt aktualisiert: 18. Mai 2025_

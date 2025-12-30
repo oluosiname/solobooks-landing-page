@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Professionelle Rechnungen in Deutschland erstellen: Rechtliche Anforderungen"
-date: 2024-09-05
+date: 2025-09-05
 lang: de
 permalink: /blog/:title/
 categories: [anleitung, unternehmen]
@@ -329,5 +329,5 @@ Wenn Sie Fragen zur Rechnungsstellung haben:
 
 ---
 
-_Zuletzt aktualisiert: 5. September 2024_
+_Zuletzt aktualisiert: 5. September 2025_
 

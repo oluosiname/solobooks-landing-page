@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Small Business Regulation in Germany: Everything You Need to Know"
-date: 2024-10-01
+date: 2025-10-01
 lang: en
 permalink: /en/blog/:title/
 categories: [guide, tax]
@@ -106,4 +106,4 @@ If you have questions about the Kleinunternehmerregelung or need help with accou
 
 ---
 
-_Last updated: October 1, 2024_
+_Last updated: October 1, 2025_

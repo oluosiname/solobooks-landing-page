@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Accounting for Freelancers: The Complete Guide 2025"
-date: 2024-12-01
+date: 2025-12-01
 lang: en
 permalink: /en/blog/:title/
 categories: [guide, accounting]
@@ -122,4 +122,4 @@ If you have questions about accounting or need help setting up your accounting, 
 
 ---
 
-_Last updated: December 1, 2024_
+_Last updated: December 1, 2025_

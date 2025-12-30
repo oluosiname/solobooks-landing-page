@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Register as a Freelancer in Germany: Step-by-Step Guide"
-date: 2024-06-15
+date: 2025-06-15
 lang: en
 permalink: /en/blog/:title/
 categories: [guide, business]
@@ -167,5 +167,5 @@ If you have questions about registration or need assistance:
 
 ---
 
-_Last updated: June 15, 2024_
+_Last updated: June 15, 2025_
 

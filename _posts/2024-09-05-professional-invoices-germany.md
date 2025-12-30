@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Create Professional Invoices in Germany: Legal Requirements"
-date: 2024-09-05
+date: 2025-09-05
 lang: en
 permalink: /en/blog/:title/
 categories: [guide, business]
@@ -329,5 +329,5 @@ If you have questions about invoicing:
 
 ---
 
-_Last updated: September 5, 2024_
+_Last updated: September 5, 2025_
 

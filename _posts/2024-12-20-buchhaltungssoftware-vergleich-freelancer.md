@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Buchhaltungssoftware Vergleich: Die Besten Tools für Freelancer 2025"
-date: 2024-12-20
+date: 2025-12-20
 lang: de
 permalink: /blog/:title/
 categories: [vergleich, buchhaltung]
@@ -96,4 +96,4 @@ Wenn Sie Fragen zur Auswahl der Buchhaltungssoftware haben oder Unterstützung b
 
 ---
 
-_Zuletzt aktualisiert: 20. Dezember 2024_
+_Zuletzt aktualisiert: 20. Dezember 2025_

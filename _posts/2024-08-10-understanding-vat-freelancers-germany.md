@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Understanding VAT for Freelancers in Germany: When Do You Need to Charge It?"
-date: 2024-08-10
+date: 2025-08-10
 lang: en
 permalink: /en/blog/:title/
 categories: [guide, tax]
@@ -292,5 +292,5 @@ If you have questions about VAT:
 
 ---
 
-_Last updated: August 10, 2024_
+_Last updated: August 10, 2025_
 

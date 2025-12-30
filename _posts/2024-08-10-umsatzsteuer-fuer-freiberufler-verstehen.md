@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Umsatzsteuer für Freiberufler verstehen: Wann müssen Sie sie ausweisen?"
-date: 2024-08-10
+date: 2025-08-10
 lang: de
 permalink: /blog/:title/
 categories: [anleitung, steuer]
@@ -292,5 +292,5 @@ Wenn Sie Fragen zur Umsatzsteuer haben:
 
 ---
 
-_Zuletzt aktualisiert: 10. August 2024_
+_Zuletzt aktualisiert: 10. August 2025_
 

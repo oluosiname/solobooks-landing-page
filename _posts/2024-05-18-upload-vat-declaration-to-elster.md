@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Upload Your VAT Report to Elster Using SoloBooks"
-date: 2024-05-18
+date: 2025-05-18
 lang: en
 permalink: /en/blog/:title/
 categories: [guide, tax]

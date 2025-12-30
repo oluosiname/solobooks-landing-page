@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Accounting Software Comparison: Best Tools for Freelancers 2025"
-date: 2024-12-20
+date: 2025-12-20
 lang: en
 permalink: /en/blog/:title/
 categories: [comparison, accounting]
@@ -96,4 +96,4 @@ If you have questions about selecting accounting software or need help setting i
 
 ---
 
-_Last updated: December 20, 2024_
+_Last updated: December 20, 2025_

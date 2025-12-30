@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Kleinunternehmerregelung: Alles was Sie wissen müssen"
-date: 2024-10-01
+date: 2025-10-01
 lang: de
 permalink: /blog/:title/
 categories: [anleitung, steuer]
@@ -106,4 +106,4 @@ Wenn Sie Fragen zur Kleinunternehmerregelung haben oder Unterstützung bei der B
 
 ---
 
-_Zuletzt aktualisiert: 1. Oktober 2024_
+_Zuletzt aktualisiert: 1. Oktober 2025_

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jahresende Steuererklärung für Freiberufler: Was Sie wissen müssen"
-date: 2024-11-15
+date: 2025-11-15
 lang: de
 permalink: /blog/:title/
 categories: [anleitung, steuer]
@@ -352,5 +352,5 @@ Wenn Sie Fragen zur Steuervorbereitung haben:
 
 ---
 
-_Zuletzt aktualisiert: 15. November 2024_
+_Zuletzt aktualisiert: 15. November 2025_
 

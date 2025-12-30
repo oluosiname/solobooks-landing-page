@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Freiberufler in Deutschland anmelden: Schritt-für-Schritt Anleitung"
-date: 2024-06-15
+date: 2025-06-15
 lang: de
 permalink: /blog/:title/
 categories: [anleitung, unternehmen]
@@ -167,5 +167,5 @@ Wenn Sie Fragen zur Anmeldung haben oder Unterstützung benötigen:
 
 ---
 
-_Zuletzt aktualisiert: 15. Juni 2024_
+_Zuletzt aktualisiert: 15. Juni 2025_
 

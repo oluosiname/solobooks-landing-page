@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Steuerliche Abzüge für Freiberufler: Vollständiger Leitfaden"
-date: 2024-07-01
+date: 2025-07-01
 lang: de
 permalink: /blog/:title/
 categories: [anleitung, steuer]
@@ -27,17 +27,20 @@ Betriebsausgaben sind Kosten, die direkt mit Ihrer freiberuflichen Tätigkeit zu
 Wenn Sie von zu Hause arbeiten, können Sie einen Teil Ihrer Miete und Nebenkosten absetzen:
 
 **Option 1: Pauschale Methode**
+
 - 1.250 EUR pro Jahr (1.000 EUR für Miete + 250 EUR für Nebenkosten)
 - Keine Berechnung der genauen Quadratmeterzahl erforderlich
 - Verfügbar, wenn Sie keinen separaten Büroraum woanders haben
 
 **Option 2: Tatsächliche Kostenmethode**
+
 - Berechnen Sie den Prozentsatz Ihres Zuhauses, der für das Geschäft genutzt wird
 - Setzen Sie diesen Prozentsatz von Miete, Nebenkosten, Versicherung und Instandhaltung ab
 - Erfordert detaillierte Dokumentation und Grundriss
 - Vorteilhafter, wenn Ihr Home-Office einen erheblichen Teil Ihres Wohnraums ausmacht
 
 **Anforderungen:**
+
 - Der Raum muss ausschließlich oder hauptsächlich für das Geschäft genutzt werden
 - Es sollte ein separates Zimmer oder klar definierter Arbeitsplatz sein
 - Führen Sie Aufzeichnungen über Quadratmeterzahl und Nutzung
@@ -45,6 +48,7 @@ Wenn Sie von zu Hause arbeiten, können Sie einen Teil Ihrer Miete und Nebenkost
 ### Büromiete
 
 Wenn Sie einen separaten Büroraum mieten:
+
 - Vollständige Miete ist absetzbar
 - Nebenkosten, Versicherung und Instandhaltungskosten
 - Reinigungsdienste
@@ -53,12 +57,14 @@ Wenn Sie einen separaten Büroraum mieten:
 ### Büroausstattung und Möbel
 
 Alle Büroausstattung ist absetzbar:
+
 - Schreibtische, Stühle, Aktenschränke
 - Computer, Monitore, Drucker
 - Software-Lizenzen (einmalig und Abonnements)
 - Büromaterial (Papier, Stifte, etc.)
 
 **Abschreibung:**
+
 - Artikel über 800 EUR: Abschreibung über mehrere Jahre
 - Artikel unter 800 EUR: vollständiger Abzug im Kaufjahr
 - Computer und Software: typischerweise 3-5 Jahre Abschreibung
@@ -66,6 +72,7 @@ Alle Büroausstattung ist absetzbar:
 ## Technologie und Software
 
 ### Hardware
+
 - Computer, Laptops, Tablets
 - Monitore, Tastaturen, Mäuse
 - Drucker, Scanner
@@ -73,6 +80,7 @@ Alle Büroausstattung ist absetzbar:
 - Server und Netzwerkausrüstung
 
 ### Software und Abonnements
+
 - Buchhaltungssoftware (wie Solobooks)
 - Design-Software (Adobe Creative Suite, etc.)
 - Projektmanagement-Tools
@@ -82,6 +90,7 @@ Alle Büroausstattung ist absetzbar:
 - VPN-Dienste für geschäftliche Nutzung
 
 ### Internet und Telefon
+
 - Geschäftsanteil der Internetkosten
 - Geschäftliche Telefonleitung oder Mobilfunkvertrag
 - Wenn Sie privates Telefon/Internet für das Geschäft nutzen, setzen Sie den Geschäftsanteil ab
@@ -89,6 +98,7 @@ Alle Büroausstattung ist absetzbar:
 ## Berufliche Entwicklung und Bildung
 
 ### Schulungen und Kurse
+
 - Berufliche Weiterbildungskurse
 - Online-Kurse in Ihrem Bereich
 - Zertifizierungen und Lizenzen
@@ -96,6 +106,7 @@ Alle Büroausstattung ist absetzbar:
 - Fachbücher und Materialien
 
 ### Berufsmitgliedschaften
+
 - Branchenverbandsgebühren
 - Berufsorganisationen-Mitgliedschaften
 - Fachpublikations-Abonnements
@@ -103,6 +114,7 @@ Alle Büroausstattung ist absetzbar:
 ## Marketing und Werbung
 
 Alle Marketingausgaben sind absetzbar:
+
 - Website-Design und -entwicklung
 - SEO und Online-Werbung
 - Social-Media-Werbung
@@ -114,6 +126,7 @@ Alle Marketingausgaben sind absetzbar:
 ## Reisen und Transport
 
 ### Geschäftsreisen
+
 - Zug-, Flug- und Busfahrkarten für Geschäftsreisen
 - Hotelunterkünfte
 - Mahlzeiten während Geschäftsreisen (80% absetzbar)
@@ -121,6 +134,7 @@ Alle Marketingausgaben sind absetzbar:
 - Parkgebühren
 
 ### Lokaler Transport
+
 - Öffentliche Verkehrsmittel für Geschäftstreffen
 - Autokosten (wenn für das Geschäft genutzt)
   - Option 1: 0,30 EUR pro Kilometer (vereinfacht)
@@ -132,12 +146,14 @@ Alle Marketingausgaben sind absetzbar:
 ## Mahlzeiten und Unterhaltung
 
 ### Geschäftsmahlzeiten
+
 - Mahlzeiten mit Kunden oder Geschäftspartnern
 - Nur 70% der Kosten sind absetzbar
 - Belege aufbewahren und Geschäftszweck notieren
 - Dokumentieren Sie, mit wem Sie sich getroffen haben und warum
 
 ### Kundenunterhaltung
+
 - Ähnliche Regeln gelten
 - Muss direkt geschäftsbezogen sein
 - 70% Abzugsgrenze
@@ -145,6 +161,7 @@ Alle Marketingausgaben sind absetzbar:
 ## Professionelle Dienstleistungen
 
 Sie können Gebühren absetzen für:
+
 - Steuerberater
 - Anwälte (für Geschäftsangelegenheiten)
 - Buchhalter
@@ -155,6 +172,7 @@ Sie können Gebühren absetzen für:
 ## Versicherungen
 
 Geschäftsbezogene Versicherungsprämien:
+
 - Berufshaftpflichtversicherung
 - Geschäftsausrüstungsversicherung
 - Rechtsschutzversicherung (für Geschäftsangelegenheiten)
@@ -171,16 +189,19 @@ Geschäftsbezogene Versicherungsprämien:
 ## Weitere absetzbare Ausgaben
 
 ### Abonnements und Publikationen
+
 - Branchenzeitschriften und -journale
 - Online-Nachrichten-Abonnements (geschäftsbezogen)
 - Forschungsdatenbanken
 
 ### Geschenke und Kundenbeziehungen
+
 - Kleine Geschäftsgeschenke (bis zu 35 EUR pro Person pro Jahr)
 - Kundenwertschätzungsveranstaltungen
 - Weihnachtskarten und Werbeartikel
 
 ### Spenden
+
 - Spenden an anerkannte Wohltätigkeitsorganisationen
 - Muss ordnungsgemäße Belege haben
 - Kann die Einkommensteuer erheblich reduzieren
@@ -198,15 +219,18 @@ Geschäftsbezogene Versicherungsprämien:
 Um Abzüge geltend zu machen, müssen Sie:
 
 1. **Alle Belege aufbewahren**
+
    - Digital oder physisch speichern
    - Nach Kategorie organisieren
    - 10 Jahre aufbewahren (deutsche Anforderung)
 
 2. **Geschäftszweck dokumentieren**
+
    - Notieren Sie, warum jede Ausgabe notwendig war
    - Bei Mahlzeiten: mit wem Sie sich getroffen haben und der Geschäftsgrund
 
 3. **Persönliches und Geschäftliches trennen**
+
    - Nutzen Sie separate Bankkonten
    - Vermischen Sie niemals persönliche und geschäftliche Ausgaben
 
@@ -218,19 +242,23 @@ Um Abzüge geltend zu machen, müssen Sie:
 ## Tipps zur Maximierung von Abzügen
 
 **Von Tag eins an verfolgen**
+
 - Warten Sie nicht bis zur Steuersaison
 - Nutzen Sie Buchhaltungssoftware von Anfang an
 - Machen Sie sofort Fotos von Belegen
 
 **Die Regeln verstehen**
+
 - Einige Ausgaben haben Grenzen (Mahlzeiten bei 70%, Geschenke bei 35 EUR)
 - Wissen Sie, was vollständig vs. teilweise absetzbar ist
 
 **Detaillierte Aufzeichnungen führen**
+
 - Je mehr Dokumentation Sie haben, desto besser
 - Bei einer Prüfung müssen Sie jeden Abzug nachweisen
 
 **Steuerberater konsultieren**
+
 - Besonders im ersten Jahr
 - Sie können Abzüge identifizieren, die Sie möglicherweise verpassen
 - Der Preis ist es wert für Seelenfrieden
@@ -238,18 +266,22 @@ Um Abzüge geltend zu machen, müssen Sie:
 ## Häufige Fehler vermeiden
 
 **Keine Belege aufbewahren**
+
 - Digitale Belege zählen, aber Sie müssen sie vorlegen können
 - Organisieren Sie Belege nach Kategorie und Datum
 
 **Persönliches und Geschäftliches vermischen**
+
 - Nutzen Sie immer separate Konten
 - Wenn Sie etwas für beides nutzen, setzen Sie nur den Geschäftsanteil ab
 
 **Persönliche Ausgaben geltend machen**
+
 - Kleidung, persönliche Mahlzeiten und Unterhaltung sind generell nicht absetzbar
 - Seien Sie ehrlich darüber, was wirklich geschäftsbezogen ist
 
 **Fristen verpassen**
+
 - Organisieren Sie Belege das ganze Jahr über
 - Warten Sie nicht bis zur Steuersaison, um zu organisieren
 
@@ -273,5 +305,4 @@ Wenn Sie Fragen zu steuerlichen Abzügen haben:
 
 ---
 
-_Zuletzt aktualisiert: 1. Juli 2024_
-
+_Zuletzt aktualisiert: 1. Juli 2025_

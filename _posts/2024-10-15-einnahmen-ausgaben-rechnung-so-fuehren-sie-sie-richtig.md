@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Einnahmen-Ausgaben-Rechnung: So führen Sie sie richtig"
-date: 2024-10-15
+date: 2025-10-15
 lang: de
 permalink: /blog/:title/
 categories: [anleitung, buchhaltung]
@@ -108,4 +108,4 @@ Wenn Sie Fragen zur Einnahmen-Überschuss-Rechnung haben oder Unterstützung bei
 
 ---
 
-_Zuletzt aktualisiert: 15. Oktober 2024_
+_Zuletzt aktualisiert: 15. Oktober 2025_

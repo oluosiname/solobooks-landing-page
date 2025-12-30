@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Income-Expense Accounting: How to Do It Right"
-date: 2024-10-15
+date: 2025-10-15
 lang: en
 permalink: /en/blog/:title/
 categories: [guide, accounting]
@@ -108,4 +108,4 @@ If you have questions about income-expense accounting or need help setting up yo
 
 ---
 
-_Last updated: October 15, 2024_
+_Last updated: October 15, 2025_

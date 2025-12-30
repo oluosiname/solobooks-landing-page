@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tax Advisor Costs: What Does a Tax Advisor Cost for Freelancers?"
-date: 2024-12-10
+date: 2025-12-10
 lang: en
 permalink: /en/blog/:title/
 categories: [guide, tax]
@@ -104,4 +104,4 @@ If you have questions about tax advisor costs or need help making a decision, we
 
 ---
 
-_Last updated: December 10, 2024_
+_Last updated: December 10, 2025_

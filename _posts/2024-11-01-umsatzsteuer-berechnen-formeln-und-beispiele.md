@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Umsatzsteuer berechnen: Formeln und Beispiele"
-date: 2024-11-01
+date: 2025-11-01
 lang: de
 permalink: /blog/:title/
 categories: [anleitung, steuer]
@@ -84,4 +84,4 @@ Wenn Sie Fragen zur Umsatzsteuerberechnung haben oder Unterstützung bei der Buc
 
 ---
 
-_Zuletzt aktualisiert: 1. November 2024_
+_Zuletzt aktualisiert: 1. November 2025_

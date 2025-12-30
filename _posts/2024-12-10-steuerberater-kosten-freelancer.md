@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Steuerberater Kosten: Was kostet ein Steuerberater für Freelancer?"
-date: 2024-12-10
+date: 2025-12-10
 lang: de
 permalink: /blog/:title/
 categories: [anleitung, steuer]
@@ -104,4 +104,4 @@ Wenn Sie Fragen zu Steuerberater-Kosten haben oder Unterstützung bei der Entsch
 
 ---
 
-_Zuletzt aktualisiert: 10. Dezember 2024_
+_Zuletzt aktualisiert: 10. Dezember 2025_

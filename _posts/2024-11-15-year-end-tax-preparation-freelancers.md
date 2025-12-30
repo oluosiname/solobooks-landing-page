@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Year-End Tax Preparation for Freelancers: What You Need to Know"
-date: 2024-11-15
+date: 2025-11-15
 lang: en
 permalink: /en/blog/:title/
 categories: [guide, tax]
@@ -352,5 +352,5 @@ If you have questions about tax preparation:
 
 ---
 
-_Last updated: November 15, 2024_
+_Last updated: November 15, 2025_
 

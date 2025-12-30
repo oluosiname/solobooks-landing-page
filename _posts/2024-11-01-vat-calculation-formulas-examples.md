@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "VAT Calculation: Formulas and Examples"
-date: 2024-11-01
+date: 2025-11-01
 lang: en
 permalink: /en/blog/:title/
 categories: [guide, tax]
@@ -84,4 +84,4 @@ If you have questions about VAT calculation or need help with accounting, we're 
 
 ---
 
-_Last updated: November 1, 2024_
+_Last updated: November 1, 2025_

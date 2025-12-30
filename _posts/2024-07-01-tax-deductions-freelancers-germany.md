@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tax Deductions for Freelancers in Germany: Complete Guide"
-date: 2024-07-01
+date: 2025-07-01
 lang: en
 permalink: /en/blog/:title/
 categories: [guide, tax]
@@ -273,5 +273,5 @@ If you have questions about tax deductions:
 
 ---
 
-_Last updated: July 1, 2024_
+_Last updated: July 1, 2025_
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Buchhaltung für Freelancer: Die Komplette Anleitung 2025"
-date: 2024-12-01
+date: 2025-12-01
 lang: de
 permalink: /blog/:title/
 categories: [anleitung, buchhaltung]
@@ -122,4 +122,4 @@ Wenn Sie Fragen zur Buchhaltung haben oder Unterstützung bei der Einrichtung Ih
 
 ---
 
-_Zuletzt aktualisiert: 1. Dezember 2024_
+_Zuletzt aktualisiert: 1. Dezember 2025_
