@@ -105,12 +105,13 @@ en:
       - text: "Sitemap"
         url: "#"
   pricing:
+    trial_note: "14 days free trial of Pro for all new signups"
     plans:
       basic:
         name: "Starter"
         description: "Perfect for beginners & solo entrepreneurs"
-        price: "€4.99"
-        period: "/ month"
+        price: "Free"
+        period: ""
         features:
           - "Create invoices with VAT"
           - "Customer management"
@@ -120,7 +121,7 @@ en:
       standard:
         name: "Plus"
         description: "For small teams & growing freelancers"
-        price: "€7.99"
+        price: "€4.99"
         period: "/ month"
         popular_tag: "Popular"
         features:
@@ -132,7 +133,7 @@ en:
       premium:
         name: "Pro"
         description: "For businesses with complex needs"
-        price: "€9.99"
+        price: "€7.99"
         period: "/ month"
         features:
           - "Everything in Plus plan, plus:"
@@ -246,12 +247,13 @@ de:
       - text: "Sitemap"
         url: "#"
   pricing:
+    trial_note: "14 Tage kostenlose Pro-Testversion für alle neuen Anmeldungen"
     plans:
       basic:
         name: "Starter"
         description: "Ideal für Einsteiger & Solo-Selbstständige"
-        price: "€4,99"
-        period: "/ Monat"
+        price: "Kostenlos"
+        period: ""
         features:
           - "Erstelle Rechnungen mit Mehrwertsteuer"
           - "Kundenverwaltung"
@@ -261,7 +263,7 @@ de:
       standard:
         name: "Plus"
         description: "Für kleine Teams & wachsende Freelancer"
-        price: "€7,99"
+        price: "€4,99"
         period: "/ Monat"
         popular_tag: "Beliebt"
         features:
@@ -273,7 +275,7 @@ de:
       premium:
         name: "Pro"
         description: "Für Unternehmen mit komplexem Bedarf"
-        price: "€9,99"
+        price: "€7,99"
         period: "/ Monat"
         features:
           - "Alles im Plus-Paket, plus:"

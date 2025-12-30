@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Upload Your VAT Declaration to ELSTER"
+title: "How to Upload Your VAT Report to Elster Using SoloBooks"
 date: 2024-05-18
 lang: en
 permalink: /en/blog/:title/
@@ -14,100 +14,232 @@ translations:
   de: /blog/umsatzsteuer-voranmeldung-bei-elster-einreichen/
 ---
 
-If you're a freelancer or self-employed in Germany, you're required to submit a **VAT declaration (Umsatzsteuer-Voranmeldung)** to the German tax office (Finanzamt) — often monthly or quarterly. In this guide, we'll walk you through how to export your VAT data from Solobooks and upload it to **ELSTER**, the official online tax portal.
+# How to Upload Your VAT Report to Elster Using SoloBooks
 
-## What You'll Need
+## Overview
 
-Before you begin, make sure you have:
+SoloBooks can submit your VAT advance returns (Umsatzsteuervoranmeldung) directly to Elster, Germany's tax authority system. This guide covers the process.
 
-- An **ELSTER account** (with login or certificate)
-- Your **VAT summary** (exported from Solobooks)
-- Your tax number (**Steuernummer**)
+## Prerequisites
 
-## Step 1: Export Your VAT Report from Solobooks
+Before submitting:
 
-![Export VAT Report from Solobooks](/assets/images/blog/vat-export-steps.jpg)
+1. **Pro subscription**: Direct submission requires a Pro plan
 
-1. Log in to your Solobooks account
-2. Navigate to **Transactions** → **VAT Export**
-3. Select the desired period (e.g. Q1 2024)
-4. Click **Export as CSV**
-5. A CSV file with all relevant data will be downloaded
+2. **VAT status configured**: Your VAT registration details must be set up in SoloBooks
 
-> 💡 **Pro Tip**: Solobooks automatically formats your data to match ELSTER's requirements, making the process much smoother.
+3. **Tax number**: Your German tax number must be in your profile
 
-## Step 2: Log in to ELSTER
+4. **Report ready**: The report period must have ended (you'll see a "Ready" status)
 
-![ELSTER Login Screen](/assets/images/blog/elster-login.jpg)
+## Step-by-Step Guide
 
-1. Visit [https://www.elster.de](https://www.elster.de)
-2. Click **Login** and use your **ElsterSecure certificate** or **ELSTER login** credentials
-3. Once logged in, select:  
-   ➤ **Formulare** → **Umsatzsteuer-Voranmeldung**
+### Step 1: Navigate to Tax Management
 
-## Step 3: Fill Out the Form Using Your CSV
+1. Go to **Taxes** in the main navigation
 
-![ELSTER Form Fields](/assets/images/blog/elster-form.jpg)
+2. Open the **VAT (Value Added Tax)** section
 
-1. Choose the **reporting period** (e.g. 01.01.2024 – 31.03.2024)
-2. Copy the values from your Solobooks CSV into the corresponding fields:
+3. Use the **Upcoming** tab to see reports ready for submission
 
-   | ELSTER Field | Description           | Where to Find It       |
-   | ------------ | --------------------- | ---------------------- |
-   | **Line 81**  | VAT on sales          | CSV Column "VAT_Sales" |
-   | **Line 66**  | Input tax (Vorsteuer) | CSV Column "Input_Tax" |
+### Step 2: Review Your Report
 
-3. Double-check that all totals match your records
+Before submitting, review the data:
 
-## Step 4: Submit and Download Confirmation
+1. Click **Preview** on the report card
 
-1. After reviewing, click **"Prüfen"** to validate the form
-2. Then click **"Absenden"** to submit
-3. Download the **submission receipt (Übertragungsprotokoll)** for your records
+2. Review:
 
-## Important Tips to Remember
+   - Domestic sales and VAT
 
-### 📋 Documentation
+   - EU B2B transactions
 
-- **Always keep a copy** of your submission and the CSV you uploaded
-- Store your documents in a secure location for at least 10 years
+   - EU expenses
 
-### ⏰ Timing
+   - Non-EU transactions
 
-- Submit your VAT declaration by the **10th of the following month**
-- For quarterly submissions, follow these deadlines:
-  - Q1: April 10
-  - Q2: July 10
-  - Q3: October 10
-  - Q4: January 10
+3. Close the preview when done
 
-### 🔍 Common Mistakes to Avoid
+### Step 3: Test Submission (Recommended)
 
-- Double-check all numbers before submission
-- Ensure your tax number is correct
-- Don't forget to include all relevant transactions
+Test submissions help verify everything works without submitting to Elster:
 
-## Coming Soon in Solobooks
+1. Click **Test** on the report card
 
-![Direct ELSTER Integration](/assets/images/blog/solobooks-elster-integration.jpg)
+2. A modal shows the PDF receipt you would receive
 
-We're excited to announce that we're working on **direct ELSTER integration**. Soon, you'll be able to:
+3. Review the PDF to confirm the data
 
-- Submit your VAT declaration directly from Solobooks
-- Automatically validate your data before submission
-- Get instant confirmation receipts
-- Track all your submissions in one place
+4. If correct, proceed with the real submission
 
-Stay tuned for updates!
+**Note**: Test submissions don't affect your tax records and don't save the PDF to your report.
+
+### Step 4: Submit to Elster
+
+1. Click **Submit** on the report card
+
+2. Confirm when prompted
+
+3. Wait a few seconds while SoloBooks:
+
+   - Generates the XML
+
+   - Submits to Elster
+
+   - Retrieves the confirmation PDF
+
+4. You'll see a success message when complete
+
+### Step 5: Access Your Submitted Files
+
+After submission:
+
+1. Go to the **Submitted** tab
+
+2. Find your report
+
+3. You can download:
+
+   - **XML**: The submitted XML file
+
+   - **View PDF**: The Elster confirmation PDF (only available after submitting through SoloBooks)
+
+## Understanding Report Status
+
+Reports show different statuses:
+
+- **Draft**: Not yet ready (period hasn't ended)
+
+- **Ready**: Period has ended; you can submit
+
+- **Submitted**: Successfully submitted to Elster
+
+- **Error**: Submission failed (check the error message)
+
+## What Happens During Submission
+
+1. **XML generation**: SoloBooks creates the Elster-compliant XML from your data
+
+2. **Submission**: The XML is sent to Elster via the Eric API
+
+3. **Confirmation**: Elster returns a PDF receipt
+
+4. **Storage**: The XML and PDF are saved to your report
+
+## Two Ways to Handle Your VAT Report
+
+### Option 1: Submit Directly Through SoloBooks (Recommended)
+
+- **What it does**: Submits your report to Elster automatically
+
+- **What you get**: 
+
+  - XML file saved to your report
+
+  - PDF confirmation receipt saved to your report
+
+  - Report status updated to "Submitted"
+
+- **Requirements**: Pro subscription
+
+- **Best for**: Most users who want a complete digital record
+
+### Option 2: Download XML and Submit Manually
+
+- **What it does**: Downloads the XML file for you to upload manually through the Elster portal
+
+- **What you get**: 
+
+  - XML file downloaded to your computer
+
+  - **No PDF receipt** (you'll need to get this from Elster's portal)
+
+  - Report status shows "XML Generated" (not "Submitted")
+
+- **Requirements**: None (available to all users)
+
+- **Best for**: Users who prefer manual submission or don't have a Pro subscription
+
+**Important**: If you download the XML and submit manually, you won't get a PDF receipt saved in SoloBooks. You'll need to download the confirmation PDF from Elster's portal separately.
+
+## Troubleshooting
+
+### "Submit" Button Not Visible
+
+- Ensure you have a **Pro subscription**
+
+- The report must show **"Ready"** status (period must have ended)
+
+### Submission Failed
+
+If you see an error:
+
+1. Check the error message
+
+2. Verify your VAT status and tax number are correct
+
+3. Try a test submission first
+
+4. Contact support if issues persist
+
+### Can't See Test Submission PDF
+
+- The PDF may take a moment to load
+
+- Refresh and try again
+
+- If it still fails, contact support
+
+### No PDF After Downloading XML
+
+- **This is expected**: Downloading XML manually does not generate a PDF
+
+- PDF receipts are only available when you submit through SoloBooks
+
+- If you submitted manually, download the PDF from Elster's portal
+
+## Important Notes
+
+- **Test first**: Use test submission to verify data before submitting
+
+- **One-time action**: Submissions cannot be undone
+
+- **Keep records**: Download and save the XML and PDF receipts
+
+- **Deadlines**: Submit by the due date to avoid penalties
+
+- **Pro feature**: Direct submission requires a Pro subscription
+
+- **PDF availability**: PDF receipts are only saved when you submit through SoloBooks, not when downloading XML manually
+
+## After Submission
+
+Once submitted through SoloBooks:
+
+1. The report moves to the **Submitted** tab
+
+2. Status changes to **"Submitted"**
+
+3. Submission date is recorded
+
+4. You can download both the XML and PDF anytime
+
+If you downloaded XML and submitted manually:
+
+1. The report stays in the **Upcoming** tab with status "XML Generated"
+
+2. You'll need to download the PDF from Elster's portal separately
+
+3. Consider updating the report status manually for your records
 
 ## Need Help?
 
-If you have questions or need assistance:
+- **Preview your data** before submitting
 
-- 📧 Email us at support@solobooks.de
-- 💬 Chat with us in the app
-- 📚 Visit our [Help Center](#) for more guides
+- **Use test submission** to verify everything works
+
+- **Check your VAT status** settings if submission fails
+
+- **Contact support** if you encounter errors
 
 ---
-
-_Last updated: May 18, 2024_
