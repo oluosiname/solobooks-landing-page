@@ -15,14 +15,11 @@
       <nav
         class="hidden md:flex items-center space-x-6 flex-[1.5] justify-center"
       >
-        <a href="#" class="text-primary-500 font-medium">
-          {{ site.data.translations[page.lang].nav.home }}
-        </a>
-        <a href="#" class="text-gray-600 hover:text-blue-500">
+        <a href="#features" class="text-gray-600 hover:text-blue-500">
           {{ site.data.translations[page.lang].nav.features }}
         </a>
-        <a href="#" class="text-gray-600 hover:text-blue-500">
-          {{ site.data.translations[page.lang].nav.contact }}
+        <a href="#pricing" class="text-gray-600 hover:text-blue-500">
+          {{ site.data.translations[page.lang].nav.pricing }}
         </a>
         <a
           href="{% if page.lang == 'en' %}/en/blog/{% else %}/blog/{% endif %}"
@@ -30,10 +27,13 @@
         >
           {{ site.data.translations[page.lang].nav.blog }}
         </a>
+        <a href="#faq" class="text-gray-600 hover:text-blue-500">
+          {{ site.data.translations[page.lang].nav.faq }}
+        </a>
       </nav>
 
       <!-- Desktop Right Section -->
-      <div class="hidden md:flex items-center space-x-6 flex-1">
+      <div class="hidden md:flex items-center space-x-6 flex-1 justify-end">
         <!-- Language Switcher -->
         <div class="text-sm text-gray-600">
           {% if page.lang == 'en' %}
@@ -51,14 +51,14 @@
 
         <!-- CTA Buttons -->
         <div class="flex space-x-4">
-          <a href="{{ site.data.translations[page.lang].links.sign_up }}">
-            <button class="cta_button cta_button--primary cta_button--short">
-              {{ site.data.translations[page.lang].buttons.sign_up }}
-            </button>
-          </a>
           <a href="{{ site.data.translations[page.lang].links.login }}">
             <button class="cta_button cta_button--secondary cta_button--short">
               {{ site.data.translations[page.lang].buttons.login }}
+            </button>
+          </a>
+          <a href="{{ site.data.translations[page.lang].links.sign_up }}">
+            <button class="cta_button cta_button--primary--dark cta_button--short">
+              {{ site.data.translations[page.lang].buttons.sign_up }}
             </button>
           </a>
         </div>

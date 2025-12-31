@@ -1,55 +1,95 @@
-<footer class="shadow-[0px_0px_2px_rgba(23,26,31,0.12),0px_0px_1px_rgba(23,26,31,0.07)] bg-grey-DEFAULT pt-12 pb-6 px-6">
-  <div class="max-w-6xl mx-auto">
-    <div class="text-center mb-12">
-      <div class="flex justify-center items-center gap-2 mb-6 text-2xl font-bold">
-        <div class="flex gap-1">
-          <img src="{{ '/assets/images/logo/solobooks-text.svg' | relative_url }}" alt="{{ site.data.translations[page.lang].site_name }}" class="h-6 md:h-10" />
+<footer class="bg-gray-800 text-white py-12 md:py-16">
+  <div class="max-w-7xl mx-auto px-4 md:px-12">
+    <!-- Top Section -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 mb-12">
+      <!-- Company Info -->
+      <div class="md:col-span-1">
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-10 h-10 bg-purple-600 rounded flex items-center justify-center">
+            <span class="text-white font-bold text-xl">S</span>
+          </div>
+          <span class="text-xl font-bold">{{ site.data.translations[page.lang].footer.company_name }}</span>
+        </div>
+        <p class="text-gray-400 text-sm mb-6">
+          {{ site.data.translations[page.lang].footer.description }}
+        </p>
+        <!-- Social Media Icons -->
+        <div class="flex gap-4">
+          <a href="{{ site.data.translations[page.lang].footer.social_links.twitter }}" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-600 transition">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+            </svg>
+          </a>
+          <a href="{{ site.data.translations[page.lang].footer.social_links.linkedin }}" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-600 transition">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a href="{{ site.data.translations[page.lang].footer.social_links.xing }}" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-600 transition">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.875 0H16.75c-.828 0-1.5.672-1.5 1.5v3.375c0 .828.672 1.5 1.5 1.5h4.125c.828 0 1.5-.672 1.5-1.5V1.5c0-.828-.672-1.5-1.5-1.5zM9.75 8.25H5.625c-.828 0-1.5.672-1.5 1.5v3.375c0 .828.672 1.5 1.5 1.5H9.75c.828 0 1.5-.672 1.5-1.5V9.75c0-.828-.672-1.5-1.5-1.5zm11.125 0h-4.125c-.828 0-1.5.672-1.5 1.5v3.375c0 .828.672 1.5 1.5 1.5h4.125c.828 0 1.5-.672 1.5-1.5V9.75c0-.828-.672-1.5-1.5-1.5zM9.75 16.5H5.625c-.828 0-1.5.672-1.5 1.5v3.375c0 .828.672 1.5 1.5 1.5H9.75c.828 0 1.5-.672 1.5-1.5V18c0-.828-.672-1.5-1.5-1.5z"/>
+            </svg>
+          </a>
         </div>
       </div>
-      <div class="max-w-md mx-auto">
-        <h3 class="mb-5 text-gray-800">{{ site.data.translations[page.lang].footer.subscribe }}</h3>
-        <form class="flex bg-gray-200 rounded-lg overflow-hidden">
-          <input type="email" placeholder="{{ site.data.translations[page.lang].footer.input_placeholder }}" class="flex-1 px-4 py-3 bg-transparent outline-none" />
-          <button type="submit" class="px-6 py-3 bg-blue-300 text-gray-800 hover:bg-blue-400">
-            {{ site.data.translations[page.lang].footer.subscribe_button }}
-          </button>
-        </form>
-      </div>
-    </div>
 
-    <div class="flex justify-evenly gap-8 md:mb-12 mb-6 flex-col md:flex-row">
+      <!-- Navigation Links -->
       {% for section in site.data.translations[page.lang].footer.sections %}
       <div>
-        <h4 class="text-gray-800 mb-4 text-lg font-bold">{{ section.title }}</h4>
-        <ul class="space-y-3 footer__body">
+        <h4 class="font-semibold text-white mb-4">{{ section.title }}</h4>
+        <ul class="space-y-3">
           {% for link in section.links %}
-          <li><a href="{{ link.url }}" class="hover:text-gray-800">{{ link.text }}</a></li>
+          <li>
+            <a href="{{ link.url }}" class="text-gray-400 hover:text-white transition text-sm">
+              {{ link.text }}
+            </a>
+          </li>
           {% endfor %}
         </ul>
       </div>
       {% endfor %}
     </div>
 
-    <div class="flex flex-col md:flex-row justify-between items-center pt-6 gap-4">
-      <div class="flex md:flex-row md:justify-between md:items-center items-start flex-col w-full gap-4 md:gap-2">
-        <select id="language-switcher" class="px-4 py-2 bg-gray-200 rounded-lg text-gray-500 cursor-pointer">
-          <option value="/" {% if page.lang == 'de' %}selected{% endif %}>Deutsch</option>
-          <option value="/en/" {% if page.lang == 'en' %}selected{% endif %}>English</option>
-        </select>
-        <script>
-          document.getElementById("language-switcher").addEventListener("change", function () {
-            let newLang = this.value;
-            let currentPath = window.location.pathname.replace(/^\/(en\/)?/, ""); // Remove lang prefix
-            window.location.href = newLang + currentPath;
-          });
-        </script>
-        <span class="footer__body !text-base">© 2025 Solobooks</span>
-      </div>
-      <div class="flex md:flex-row md:justify-between items-start flex-col justify-end w-full gap-4 md:gap-2">
-        <div class="flex flex-col md:flex-row gap-5 text-gray-500 mt-4 md:mt-0">
-          {% for link in site.data.translations[page.lang].footer.policy_links %}
-          <a href="{{ link.url }}" class="footer__body hover:text-black">{{ link.text }}</a>
-          {% endfor %}
+    <!-- Bottom Bar -->
+    <div class="border-t border-gray-700 pt-8">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+        <!-- Copyright and Legal Links -->
+        <div class="flex flex-col md:flex-row items-start md:items-center gap-4">
+          <span class="text-gray-400 text-sm">
+            {{ site.data.translations[page.lang].footer.copyright }}
+          </span>
+          <div class="flex gap-4 text-gray-400 text-sm">
+            {% for link in site.data.translations[page.lang].footer.policy_links %}
+            <a href="{{ link.url }}" class="hover:text-white transition">
+              {{ link.text }}
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+
+        <!-- Trust Badges and Support Email Grouped -->
+        <div class="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6">
+          <!-- Trust Badges -->
+          <div class="flex flex-wrap md:flex-nowrap gap-3 md:gap-4 items-center">
+            {% for badge in site.data.translations[page.lang].footer.trust_badges %}
+            <div class="flex items-center gap-1.5 text-gray-400 text-sm whitespace-nowrap">
+              <svg class="w-4 h-4 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>{{ badge }}</span>
+            </div>
+            {% endfor %}
+          </div>
+
+          <!-- Support Email -->
+          <div class="flex items-center gap-2 text-gray-400 text-sm whitespace-nowrap">
+            <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+            <a href="mailto:{{ site.data.translations[page.lang].footer.support_email }}" class="hover:text-white transition">
+              {{ site.data.translations[page.lang].footer.support_email }}
+            </a>
+          </div>
         </div>
       </div>
     </div>

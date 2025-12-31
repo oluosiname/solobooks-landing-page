@@ -1477,7 +1477,6 @@
     }
   }
 }
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Baloo+Paaji+2:wght@400..800&display=swap");
 .btn {
   align-items: center;
   border-color: #0000;
@@ -1835,3 +1834,39 @@
   syntax: "*";
   inherits: false;
 }
+
+/* FAQ Accordion Styles */
+.faq-item {
+  transition: all 0.3s ease;
+}
+
+.faq-question {
+  cursor: pointer;
+  user-select: none;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.faq-answer:not(.hidden) {
+  max-height: 500px;
+  padding: 1rem 1.5rem;
+}
+
+.faq-icon {
+  transition: transform 0.3s ease;
+}
+
+.faq-icon.rotate-180 {
+  transform: rotate(180deg);
+}
+
+/* Additional utility classes */
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Baloo+Paaji+2:wght@400..800&display=swap");
