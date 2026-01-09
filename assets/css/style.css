@@ -427,7 +427,8 @@
     --color-danger-800: #b8001c;
     --color-danger-900: #8f0015;
     --color-danger-950: #7b0012;
-    --font-body: "Baloo 2", serif;
+    --font-body: "Inter", system-ui, sans-serif;
+    --font-heading: "Space Grotesk", system-ui, sans-serif;
   }
 }
 @layer base {
@@ -446,22 +447,14 @@
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
     tab-size: 4;
-    font-family: var(
-      --default-font-family,
-      ui-sans-serif,
-      system-ui,
-      sans-serif,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      "Noto Color Emoji"
-    );
+    font-family: var(--font-body, "Inter", system-ui, sans-serif);
     font-feature-settings: var(--default-font-feature-settings, normal);
     font-variation-settings: var(--default-font-variation-settings, normal);
     -webkit-tap-highlight-color: transparent;
   }
   body {
     line-height: inherit;
+    font-family: var(--font-body, "Inter", system-ui, sans-serif);
   }
   hr {
     height: 0;
@@ -480,6 +473,7 @@
   h6 {
     font-size: inherit;
     font-weight: inherit;
+    font-family: var(--font-heading, "Space Grotesk", system-ui, sans-serif);
   }
   a {
     color: inherit;
@@ -1868,5 +1862,3 @@
 .rotate-180 {
   transform: rotate(180deg);
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Baloo+Paaji+2:wght@400..800&display=swap");

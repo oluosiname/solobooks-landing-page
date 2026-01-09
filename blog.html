@@ -48,7 +48,7 @@ alternate_url: /en/blog/
   <div id="blog-posts" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
     {% assign de_posts = site.posts | where: "lang", "de" | sort: "date" | reverse %}
     {% for post in de_posts %}
-    <article class="blog-post bg-white rounded-lg overflow-hidden border border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-200" 
+    <article class="blog-post group bg-white rounded-lg overflow-hidden border border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-200 cursor-pointer" 
              data-categories="{{ post.categories | join: ',' | downcase }}">
       <a href="{{ post.url }}" class="block">
         {% if post.image %}
@@ -85,7 +85,7 @@ alternate_url: /en/blog/
           </div>
 
           <!-- Title -->
-          <h2 class="text-xl font-semibold text-gray-900 mb-3 line-clamp-2">
+          <h2 class="text-xl font-medium text-gray-900 group-hover:text-blue-600 mb-3 line-clamp-2 transition-colors duration-200">
             {{ post.title }}
           </h2>
 
@@ -160,13 +160,14 @@ alternate_url: /en/blog/
   </div>
 </div>
 
-<script>
+  <script>
   // Category filtering
   document.addEventListener('DOMContentLoaded', function() {
     const categoryButtons = document.querySelectorAll('.category-btn');
-    const blogPosts = document.querySelectorAll('.blog-post');
-    let visiblePosts = 9; // Initial number of posts to show
+    const blogPosts = Array.from(document.querySelectorAll('.blog-post'));
     const postsPerPage = 9;
+    let currentCategory = 'all';
+    let visibleCount = postsPerPage;
 
     // Category mapping
     const categoryMap = {
@@ -177,42 +178,49 @@ alternate_url: /en/blog/
       'digitalisierung': ['digitalisierung', 'digital']
     };
 
-    function filterPosts(category) {
-      blogPosts.forEach(post => {
+    // Initially hide posts beyond the first batch
+    blogPosts.forEach((post, index) => {
+      if (index >= postsPerPage) {
+        post.style.display = 'none';
+      }
+    });
+
+    function getFilteredPosts(category) {
+      if (category === 'all') {
+        return blogPosts;
+      }
+      const categoryKeywords = categoryMap[category];
+      return blogPosts.filter(post => {
         const postCategories = post.getAttribute('data-categories').split(',');
-        let shouldShow = false;
+        return categoryKeywords.some(keyword => 
+          postCategories.some(pc => pc.includes(keyword))
+        );
+      });
+    }
 
-        if (category === 'all') {
-          shouldShow = true;
-        } else {
-          const categoryKeywords = categoryMap[category];
-          shouldShow = categoryKeywords.some(keyword => 
-            postCategories.some(pc => pc.includes(keyword))
-          );
-        }
-
-        if (shouldShow) {
-          post.style.display = 'block';
-        } else {
-          post.style.display = 'none';
-        }
+    function filterPosts(category) {
+      currentCategory = category;
+      const filteredPosts = getFilteredPosts(category);
+      
+      // Hide all posts first
+      blogPosts.forEach(post => {
+        post.style.display = 'none';
       });
 
-      // Update visible posts count
-      visiblePosts = Array.from(blogPosts).filter(p => p.style.display !== 'none').length;
+      // Show filtered posts up to visibleCount
+      filteredPosts.slice(0, visibleCount).forEach(post => {
+        post.style.display = 'block';
+      });
+
       updateLoadMoreButton();
     }
 
     function updateLoadMoreButton() {
       const loadMoreBtn = document.getElementById('load-more');
-      const visibleCount = Array.from(blogPosts).filter(p => 
-        p.style.display !== 'none' && p.style.display !== ''
-      ).length;
-      const totalCount = Array.from(blogPosts).filter(p => 
-        p.style.display !== 'none' || p.style.display === ''
-      ).length;
-
-      if (visibleCount >= totalCount) {
+      const filteredPosts = getFilteredPosts(currentCategory);
+      const currentlyVisible = filteredPosts.filter(p => p.style.display !== 'none').length;
+      
+      if (currentlyVisible >= filteredPosts.length) {
         loadMoreBtn.style.display = 'none';
       } else {
         loadMoreBtn.style.display = 'block';
@@ -229,7 +237,8 @@ alternate_url: /en/blog/
         this.classList.add('active', 'bg-blue-600', 'text-white');
         this.classList.remove('bg-gray-200', 'text-gray-700');
 
-        // Filter posts
+        // Reset visible count and filter posts
+        visibleCount = postsPerPage;
         const category = this.getAttribute('data-category');
         filterPosts(category);
       });
@@ -237,14 +246,15 @@ alternate_url: /en/blog/
 
     // Load more functionality
     document.getElementById('load-more')?.addEventListener('click', function() {
-      const hiddenPosts = Array.from(blogPosts).filter(p => 
-        p.style.display === 'none'
-      );
+      const filteredPosts = getFilteredPosts(currentCategory);
+      const currentlyVisible = filteredPosts.filter(p => p.style.display !== 'none').length;
+      const nextBatch = filteredPosts.slice(currentlyVisible, currentlyVisible + postsPerPage);
       
-      hiddenPosts.slice(0, postsPerPage).forEach(post => {
+      nextBatch.forEach(post => {
         post.style.display = 'block';
       });
 
+      visibleCount += nextBatch.length;
       updateLoadMoreButton();
     });
 

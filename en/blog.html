@@ -16,26 +16,44 @@ alternate_url: /blog/
         <span class="text-blue-600"> Blog</span>
       </h1>
       <p class="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
-        Expert tips, practical guides, and current information on accounting, taxes, and finances for freelancers
+        Expert tips, practical guides, and current information on accounting,
+        taxes, and finances for freelancers
       </p>
     </div>
 
     <!-- Fixed Category Navigation -->
-    <div class="sticky top-0 z-10 bg-gray-50 py-4 -mx-4 md:-mx-12 px-4 md:px-12 shadow-sm">
+    <div
+      class="sticky top-0 z-10 bg-gray-50 py-4 -mx-4 md:-mx-12 px-4 md:px-12 shadow-sm"
+    >
       <div class="flex flex-wrap justify-center gap-3">
-        <button class="category-btn active px-4 py-2 rounded-full bg-blue-600 text-white text-sm font-medium transition-colors" data-category="all">
+        <button
+          class="category-btn active px-4 py-2 rounded-full bg-blue-600 text-white text-sm font-medium transition-colors"
+          data-category="all"
+        >
           All Categories
         </button>
-        <button class="category-btn px-4 py-2 rounded-full bg-gray-200 text-gray-700 text-sm font-medium hover:bg-gray-300 transition-colors" data-category="taxes-law">
+        <button
+          class="category-btn px-4 py-2 rounded-full bg-gray-200 text-gray-700 text-sm font-medium hover:bg-gray-300 transition-colors"
+          data-category="taxes-law"
+        >
           Taxes & Law
         </button>
-        <button class="category-btn px-4 py-2 rounded-full bg-gray-200 text-gray-700 text-sm font-medium hover:bg-gray-300 transition-colors" data-category="accounting">
+        <button
+          class="category-btn px-4 py-2 rounded-full bg-gray-200 text-gray-700 text-sm font-medium hover:bg-gray-300 transition-colors"
+          data-category="accounting"
+        >
           Accounting
         </button>
-        <button class="category-btn px-4 py-2 rounded-full bg-gray-200 text-gray-700 text-sm font-medium hover:bg-gray-300 transition-colors" data-category="best-practices">
+        <button
+          class="category-btn px-4 py-2 rounded-full bg-gray-200 text-gray-700 text-sm font-medium hover:bg-gray-300 transition-colors"
+          data-category="best-practices"
+        >
           Best Practices
         </button>
-        <button class="category-btn px-4 py-2 rounded-full bg-gray-200 text-gray-700 text-sm font-medium hover:bg-gray-300 transition-colors" data-category="digitalization">
+        <button
+          class="category-btn px-4 py-2 rounded-full bg-gray-200 text-gray-700 text-sm font-medium hover:bg-gray-300 transition-colors"
+          data-category="digitalization"
+        >
           Digitalization
         </button>
       </div>
@@ -45,11 +63,16 @@ alternate_url: /blog/
 
 <!-- Blog Posts Grid -->
 <div class="max-w-7xl mx-auto px-4 md:px-12 py-12">
-  <div id="blog-posts" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-    {% assign en_posts = site.posts | where: "lang", "en" | sort: "date" | reverse %}
-    {% for post in en_posts %}
-    <article class="blog-post bg-white rounded-lg overflow-hidden border border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-200" 
-             data-categories="{{ post.categories | join: ',' | downcase }}">
+  <div
+    id="blog-posts"
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+  >
+    {% assign en_posts = site.posts | where: "lang", "en" | sort: "date" |
+    reverse %} {% for post in en_posts %}
+    <article
+      class="blog-post group bg-white rounded-lg overflow-hidden border border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-200 cursor-pointer"
+      data-categories="{{ post.categories | join: ',' | downcase }}"
+    >
       <a href="{{ post.url }}" class="block">
         {% if post.image %}
         <div class="aspect-video overflow-hidden bg-gray-100">
@@ -62,30 +85,39 @@ alternate_url: /blog/
         {% else %}
         <div class="aspect-video bg-gray-200"></div>
         {% endif %}
-        
+
         <div class="p-6">
           <!-- Category Badge -->
           <div class="flex items-center gap-2 mb-3">
-            <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            <svg
+              class="w-4 h-4 text-blue-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              />
             </svg>
             <span class="text-blue-600 text-sm font-medium">
-              {% if post.categories contains 'tax' or post.categories contains 'law' %}
-                Taxes & Law
-              {% elsif post.categories contains 'accounting' or post.categories contains 'guide' %}
-                Accounting
-              {% elsif post.categories contains 'best-practices' or post.categories contains 'practice' %}
-                Best Practices
-              {% elsif post.categories contains 'digitalization' or post.categories contains 'digital' %}
-                Digitalization
-              {% else %}
-                {{ post.categories | first | capitalize }}
-              {% endif %}
+              {% if post.categories contains 'tax' or post.categories contains
+              'law' %} Taxes & Law {% elsif post.categories contains
+              'accounting' or post.categories contains 'guide' %} Accounting {%
+              elsif post.categories contains 'best-practices' or post.categories
+              contains 'practice' %} Best Practices {% elsif post.categories
+              contains 'digitalization' or post.categories contains 'digital' %}
+              Digitalization {% else %} {{ post.categories | first | capitalize
+              }} {% endif %}
             </span>
           </div>
 
           <!-- Title -->
-          <h2 class="text-xl font-semibold text-gray-900 mb-3 line-clamp-2">
+          <h2
+            class="text-xl font-medium text-gray-900 group-hover:text-blue-600 mb-3 line-clamp-2 transition-colors duration-200"
+          >
             {{ post.title }}
           </h2>
 
@@ -99,15 +131,35 @@ alternate_url: /blog/
           <!-- Meta Info -->
           <div class="flex items-center gap-4 text-sm text-gray-500 mb-4">
             <div class="flex items-center gap-1.5">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
               </svg>
               <span>{{ post.date | date: '%B %d, %Y' }}</span>
             </div>
             {% if post.reading_time %}
             <div class="flex items-center gap-1.5">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
               </svg>
               <span>{{ post.reading_time }} min</span>
             </div>
@@ -115,10 +167,22 @@ alternate_url: /blog/
           </div>
 
           <!-- Read More Link -->
-          <div class="text-blue-600 font-medium text-sm inline-flex items-center gap-1 hover:gap-2 transition-all">
+          <div
+            class="text-blue-600 font-medium text-sm inline-flex items-center gap-1 hover:gap-2 transition-all"
+          >
             Read more
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              />
             </svg>
           </div>
         </div>
@@ -129,7 +193,10 @@ alternate_url: /blog/
 
   <!-- Load More Button -->
   <div class="text-center mt-12">
-    <button id="load-more" class="px-6 py-3 bg-gray-200 text-gray-700 rounded-lg font-medium hover:bg-gray-300 transition-colors">
+    <button
+      id="load-more"
+      class="px-6 py-3 bg-gray-200 text-gray-700 rounded-lg font-medium hover:bg-gray-300 transition-colors"
+    >
       Load more articles
     </button>
   </div>
@@ -142,7 +209,8 @@ alternate_url: /blog/
       Stay up to date
     </h2>
     <p class="text-lg text-gray-700 mb-8">
-      Receive monthly tips on accounting, taxes, and finances directly in your inbox
+      Receive monthly tips on accounting, taxes, and finances directly in your
+      inbox
     </p>
     <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
       <input
@@ -162,91 +230,110 @@ alternate_url: /blog/
 
 <script>
   // Category filtering
-  document.addEventListener('DOMContentLoaded', function() {
-    const categoryButtons = document.querySelectorAll('.category-btn');
-    const blogPosts = document.querySelectorAll('.blog-post');
-    let visiblePosts = 9; // Initial number of posts to show
+  document.addEventListener("DOMContentLoaded", function () {
+    const categoryButtons = document.querySelectorAll(".category-btn");
+    const blogPosts = Array.from(document.querySelectorAll(".blog-post"));
     const postsPerPage = 9;
+    let currentCategory = "all";
+    let visibleCount = postsPerPage;
 
     // Category mapping
     const categoryMap = {
-      'all': 'all',
-      'taxes-law': ['tax', 'law'],
-      'accounting': ['accounting', 'guide'],
-      'best-practices': ['best-practices', 'practice'],
-      'digitalization': ['digitalization', 'digital']
+      all: "all",
+      "taxes-law": ["tax", "law"],
+      accounting: ["accounting", "guide"],
+      "best-practices": ["best-practices", "practice"],
+      digitalization: ["digitalization", "digital"],
     };
 
+    // Initially hide posts beyond the first batch
+    blogPosts.forEach((post, index) => {
+      if (index >= postsPerPage) {
+        post.style.display = "none";
+      }
+    });
+
+    function getFilteredPosts(category) {
+      if (category === "all") {
+        return blogPosts;
+      }
+      const categoryKeywords = categoryMap[category];
+      return blogPosts.filter((post) => {
+        const postCategories = post.getAttribute("data-categories").split(",");
+        return categoryKeywords.some((keyword) =>
+          postCategories.some((pc) => pc.includes(keyword))
+        );
+      });
+    }
+
     function filterPosts(category) {
-      blogPosts.forEach(post => {
-        const postCategories = post.getAttribute('data-categories').split(',');
-        let shouldShow = false;
+      currentCategory = category;
+      const filteredPosts = getFilteredPosts(category);
 
-        if (category === 'all') {
-          shouldShow = true;
-        } else {
-          const categoryKeywords = categoryMap[category];
-          shouldShow = categoryKeywords.some(keyword => 
-            postCategories.some(pc => pc.includes(keyword))
-          );
-        }
-
-        if (shouldShow) {
-          post.style.display = 'block';
-        } else {
-          post.style.display = 'none';
-        }
+      // Hide all posts first
+      blogPosts.forEach((post) => {
+        post.style.display = "none";
       });
 
-      // Update visible posts count
-      visiblePosts = Array.from(blogPosts).filter(p => p.style.display !== 'none').length;
+      // Show filtered posts up to visibleCount
+      filteredPosts.slice(0, visibleCount).forEach((post) => {
+        post.style.display = "block";
+      });
+
       updateLoadMoreButton();
     }
 
     function updateLoadMoreButton() {
-      const loadMoreBtn = document.getElementById('load-more');
-      const visibleCount = Array.from(blogPosts).filter(p => 
-        p.style.display !== 'none' && p.style.display !== ''
-      ).length;
-      const totalCount = Array.from(blogPosts).filter(p => 
-        p.style.display !== 'none' || p.style.display === ''
+      const loadMoreBtn = document.getElementById("load-more");
+      const filteredPosts = getFilteredPosts(currentCategory);
+      const currentlyVisible = filteredPosts.filter(
+        (p) => p.style.display !== "none"
       ).length;
 
-      if (visibleCount >= totalCount) {
-        loadMoreBtn.style.display = 'none';
+      if (currentlyVisible >= filteredPosts.length) {
+        loadMoreBtn.style.display = "none";
       } else {
-        loadMoreBtn.style.display = 'block';
+        loadMoreBtn.style.display = "block";
       }
     }
 
-    categoryButtons.forEach(button => {
-      button.addEventListener('click', function() {
+    categoryButtons.forEach((button) => {
+      button.addEventListener("click", function () {
         // Update active state
-        categoryButtons.forEach(btn => {
-          btn.classList.remove('active', 'bg-blue-600', 'text-white');
-          btn.classList.add('bg-gray-200', 'text-gray-700');
+        categoryButtons.forEach((btn) => {
+          btn.classList.remove("active", "bg-blue-600", "text-white");
+          btn.classList.add("bg-gray-200", "text-gray-700");
         });
-        this.classList.add('active', 'bg-blue-600', 'text-white');
-        this.classList.remove('bg-gray-200', 'text-gray-700');
+        this.classList.add("active", "bg-blue-600", "text-white");
+        this.classList.remove("bg-gray-200", "text-gray-700");
 
-        // Filter posts
-        const category = this.getAttribute('data-category');
+        // Reset visible count and filter posts
+        visibleCount = postsPerPage;
+        const category = this.getAttribute("data-category");
         filterPosts(category);
       });
     });
 
     // Load more functionality
-    document.getElementById('load-more')?.addEventListener('click', function() {
-      const hiddenPosts = Array.from(blogPosts).filter(p => 
-        p.style.display === 'none'
-      );
-      
-      hiddenPosts.slice(0, postsPerPage).forEach(post => {
-        post.style.display = 'block';
-      });
+    document
+      .getElementById("load-more")
+      ?.addEventListener("click", function () {
+        const filteredPosts = getFilteredPosts(currentCategory);
+        const currentlyVisible = filteredPosts.filter(
+          (p) => p.style.display !== "none"
+        ).length;
+        const nextBatch = filteredPosts.slice(
+          currentlyVisible,
+          currentlyVisible + postsPerPage
+        );
 
-      updateLoadMoreButton();
-    });
+        nextBatch.forEach((post) => {
+          post.style.display = "block";
+        });
+
+        visibleCount += nextBatch.length;
+        updateLoadMoreButton();
+      });
 
     // Initial state
     updateLoadMoreButton();
