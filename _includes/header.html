@@ -15,10 +15,10 @@
       <nav
         class="hidden md:flex items-center space-x-6 flex-[1.5] justify-center"
       >
-        <a href="#features" class="text-gray-600 hover:text-blue-500">
+        <a href="{% if page.lang == 'en' %}/en/#features{% else %}/#features{% endif %}" class="text-gray-600 hover:text-blue-500">
           {{ site.data.translations[page.lang].nav.features }}
         </a>
-        <a href="#pricing" class="text-gray-600 hover:text-blue-500">
+        <a href="{% if page.lang == 'en' %}/en/pricing/{% else %}/pricing/{% endif %}" class="text-gray-600 hover:text-blue-500">
           {{ site.data.translations[page.lang].nav.pricing }}
         </a>
         <a
@@ -27,7 +27,7 @@
         >
           {{ site.data.translations[page.lang].nav.blog }}
         </a>
-        <a href="#faq" class="text-gray-600 hover:text-blue-500">
+        <a href="{% if page.lang == 'en' %}/en/#faq{% else %}/#faq{% endif %}" class="text-gray-600 hover:text-blue-500">
           {{ site.data.translations[page.lang].nav.faq }}
         </a>
       </nav>
@@ -85,14 +85,20 @@
     <!-- Mobile Menu -->
     <div id="mobileMenu" class="hidden md:hidden">
       <nav class="pt-4 pb-3 space-y-3">
-        <a href="#" class="block text-primary-500 font-medium py-2">
+        <a href="{% if page.lang == 'en' %}/en/{% else %}/{% endif %}" class="block text-primary-500 font-medium py-2">
           {{ site.data.translations[page.lang].nav.home }}
         </a>
-        <a href="#" class="block text-gray-600 hover:text-blue-500 py-2">
+        <a href="{% if page.lang == 'en' %}/en/#features{% else %}/#features{% endif %}" class="block text-gray-600 hover:text-blue-500 py-2">
           {{ site.data.translations[page.lang].nav.features }}
         </a>
-        <a href="#" class="block text-gray-600 hover:text-blue-500 py-2">
-          {{ site.data.translations[page.lang].nav.contact }}
+        <a href="{% if page.lang == 'en' %}/en/pricing/{% else %}/pricing/{% endif %}" class="block text-gray-600 hover:text-blue-500 py-2">
+          {{ site.data.translations[page.lang].nav.pricing }}
+        </a>
+        <a href="{% if page.lang == 'en' %}/en/#faq{% else %}/#faq{% endif %}" class="block text-gray-600 hover:text-blue-500 py-2">
+          {{ site.data.translations[page.lang].nav.faq }}
+        </a>
+        <a href="{% if page.lang == 'en' %}/en/blog/{% else %}/blog/{% endif %}" class="block text-gray-600 hover:text-blue-500 py-2">
+          {{ site.data.translations[page.lang].nav.blog }}
         </a>
 
         <!-- Mobile Language Switcher -->

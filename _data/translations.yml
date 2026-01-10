@@ -162,7 +162,7 @@ en:
           - text: "Features"
             url: "#"
           - text: "Prices"
-            url: "#"
+            url: "/en/pricing/"
           - text: "Integrations"
             url: "#"
           - text: "Changelog"
@@ -278,6 +278,177 @@ en:
       - "GDPR compliant"
       - "SSL encrypted"
       - "Server in Germany"
+  pricing_page:
+    hero_title: "Simple, transparent prices"
+    hero_subtitle: "No hidden costs. No surprises. Choose the plan that fits your business."
+    hero_cta: "Test all Pro features for free for 14 days"
+    plans:
+      starter:
+        name: "Starter"
+        description: "Perfect for testing and occasional use"
+        price: "Free"
+        icon: "star"
+        included_features:
+          - "5 invoices per month"
+          - "10 transactions per month"
+          - "3 customers"
+          - "Manual income & expenses"
+          - "PDF downloads"
+          - "Basic reporting"
+        excluded_features:
+          - "Bank sync"
+          - "CSV/XLSX import"
+          - "Tax advisor export"
+          - "VAT pre-notification functions"
+        cta: "Test Pro for 14 days"
+        cta_note: "No credit card required"
+      plus:
+        name: "Plus"
+        description: "For established freelancers with regular orders"
+        price: "€4.99"
+        period: "/ month"
+        icon: "lightning"
+        popular: true
+        included_features:
+          - "Unlimited invoices"
+          - "Unlimited transactions"
+          - "Unlimited customers"
+          - "Automatic bank sync"
+          - "CSV/XLSX import"
+          - "Tax advisor export"
+          - "VAT CSV export"
+          - "PDF downloads"
+        excluded_features:
+          - "VAT pre-notification reminders"
+          - "Elster integration"
+        cta: "Test for free for 14 days"
+        cta_note: "Cancel anytime"
+      pro:
+        name: "Pro"
+        description: "For professionals with highest compliance requirements"
+        price: "€7.99"
+        period: "/ month"
+        icon: "shield"
+        included_features:
+          - "All Plus functions"
+          - "Automatic VAT pre-notification reminders"
+          - "Direct Elster submission"
+          - "Advanced reports & analytics"
+          - "Priority support"
+          - "Individual customizations"
+          - "API access (soon)"
+          - "Dedicated account manager"
+        cta: "Test for free for 14 days"
+        cta_note: "Cancel anytime"
+    comparison_title: "Detailed Feature Comparison"
+    comparison_subtitle: "All functions at a glance"
+    comparison_categories:
+      invoices_customers:
+        name: "Invoices & Customers"
+        features:
+          - name: "Invoice creation"
+            starter: "5/month"
+            plus: "Unlimited"
+            pro: "Unlimited"
+          - name: "Customer management"
+            starter: "3 customers"
+            plus: "Unlimited"
+            pro: "Unlimited"
+          - name: "PDF downloads"
+            starter: true
+            plus: true
+            pro: true
+          - name: "Individual invoice numbers"
+            starter: true
+            plus: true
+            pro: true
+          - name: "Multiple currencies"
+            starter: true
+            plus: true
+            pro: true
+      income_expenses:
+        name: "Income & Expenses"
+        features:
+          - name: "Manual transactions"
+            starter: "10/month"
+            plus: "Unlimited"
+            pro: "Unlimited"
+          - name: "Automatic bank sync"
+            starter: false
+            plus: true
+            pro: true
+          - name: "CSV/XLSX import"
+            starter: false
+            plus: true
+            pro: true
+          - name: "Attach receipts"
+            starter: true
+            plus: true
+            pro: true
+          - name: "Categorization"
+            starter: true
+            plus: true
+            pro: true
+      taxes_compliance:
+        name: "Taxes & Compliance"
+        features:
+          - name: "Basic reporting"
+            starter: true
+            plus: true
+            pro: true
+          - name: "Tax advisor export"
+            starter: false
+            plus: true
+            pro: true
+          - name: "VAT CSV export"
+            starter: false
+            plus: true
+            pro: true
+          - name: "VAT pre-notification reminders"
+            starter: false
+            plus: false
+            pro: true
+          - name: "Direct Elster submission"
+            starter: false
+            plus: false
+            pro: true
+          - name: "Advanced reports"
+            starter: false
+            plus: false
+            pro: true
+      support_service:
+        name: "Support & Service"
+        features:
+          - name: "Email support"
+            starter: "Standard"
+            plus: "Standard"
+            pro: "Priority"
+          - name: "Response time"
+            starter: "48h"
+            plus: "24h"
+            pro: "4h"
+          - name: "Dedicated account manager"
+            starter: false
+            plus: false
+            pro: true
+          - name: "API access"
+            starter: false
+            plus: false
+            pro: "Soon"
+    faq_title: "Frequently Asked Questions"
+    faq_items:
+      - question: "How does the 14-day trial work?"
+        answer: "You can test all Pro features for 14 days for free. No credit card required. After the trial, you can choose a plan or continue with the free Starter version."
+      - question: "Can I change my plan at any time?"
+        answer: "Yes, you can upgrade or downgrade at any time. Upgrades are prorated, and downgrades take effect from the next billing period."
+      - question: "What happens if I reach my limit in the Starter plan?"
+        answer: "You will be notified and can upgrade to Plus or Pro for unlimited access."
+      - question: "Are my data safe?"
+        answer: "Yes, your data is encrypted, stored on servers in Germany, GDPR-compliant, and we use Stripe for secure payment processing."
+      - question: "Are there contract terms?"
+        answer: "No, all subscriptions are monthly cancellable with no minimum term or hidden costs."
+      - question: "Can I receive an invoice for my payment?"
+        answer: "Yes, invoices are automatically sent via email after each payment and are also available in your account area."
   final_cta:
     support_title: "Any Questions?"
     support_subtitle: "Our German-speaking support team will be happy to help you"
@@ -457,7 +628,7 @@ de:
           - text: "Funktionen"
             url: "#"
           - text: "Preise"
-            url: "#"
+            url: "/pricing/"
           - text: "Integrationen"
             url: "#"
           - text: "Changelog"
@@ -573,6 +744,177 @@ de:
       - "DSGVO-konform"
       - "SSL-verschlüsselt"
       - "Server in Deutschland"
+  pricing_page:
+    hero_title: "Einfache, transparente Preise"
+    hero_subtitle: "Keine versteckten Kosten. Keine Überraschungen. Wähle den Plan, der zu deinem Business passt."
+    hero_cta: "14 Tage alle Pro-Features kostenlos testen"
+    plans:
+      starter:
+        name: "Starter"
+        description: "Perfekt zum Testen und für gelegentliche Nutzung"
+        price: "Kostenlos"
+        icon: "star"
+        included_features:
+          - "5 Rechnungen pro Monat"
+          - "10 Transaktionen pro Monat"
+          - "3 Kunden"
+          - "Manuelle Einnahmen & Ausgaben"
+          - "PDF-Downloads"
+          - "Basis-Reporting"
+        excluded_features:
+          - "Bank-Sync"
+          - "CSV/XLSX Import"
+          - "Steuerberater-Export"
+          - "USt-VA Funktionen"
+        cta: "14 Tage Pro testen"
+        cta_note: "Keine Kreditkarte erforderlich"
+      plus:
+        name: "Plus"
+        description: "Für etablierte Freelancer mit regelmäßigen Aufträgen"
+        price: "€4,99"
+        period: "/ Monat"
+        icon: "lightning"
+        popular: true
+        included_features:
+          - "Unbegrenzte Rechnungen"
+          - "Unbegrenzte Transaktionen"
+          - "Unbegrenzte Kunden"
+          - "Automatischer Bank-Sync"
+          - "CSV/XLSX Import"
+          - "Steuerberater-Export"
+          - "USt-VA CSV Export"
+          - "PDF-Downloads"
+        excluded_features:
+          - "USt-VA Erinnerungen"
+          - "Elster-Integration"
+        cta: "14 Tage kostenlos testen"
+        cta_note: "Jederzeit kündbar"
+      pro:
+        name: "Pro"
+        description: "Für Profis mit höchsten Compliance-Anforderungen"
+        price: "€7,99"
+        period: "/ Monat"
+        icon: "shield"
+        included_features:
+          - "Alles in Plus"
+          - "Automatische USt-VA Erinnerungen"
+          - "Direkte Elster-Einreichung"
+          - "Erweiterte Reports & Analytics"
+          - "Prioritäts-Support"
+          - "Individuelle Anpassungen"
+          - "API-Zugang (bald)"
+          - "Dedizierter Account Manager"
+        cta: "14 Tage kostenlos testen"
+        cta_note: "Jederzeit kündbar"
+    comparison_title: "Detaillierter Feature-Vergleich"
+    comparison_subtitle: "Alle Funktionen im Überblick"
+    comparison_categories:
+      invoices_customers:
+        name: "Rechnungen & Kunden"
+        features:
+          - name: "Rechnungserstellung"
+            starter: "5/Monat"
+            plus: "Unbegrenzt"
+            pro: "Unbegrenzt"
+          - name: "Kundenverwaltung"
+            starter: "3 Kunden"
+            plus: "Unbegrenzt"
+            pro: "Unbegrenzt"
+          - name: "PDF-Downloads"
+            starter: true
+            plus: true
+            pro: true
+          - name: "Individuelle Rechnungsnummern"
+            starter: true
+            plus: true
+            pro: true
+          - name: "Mehrere Währungen"
+            starter: true
+            plus: true
+            pro: true
+      income_expenses:
+        name: "Einnahmen & Ausgaben"
+        features:
+          - name: "Manuelle Transaktionen"
+            starter: "10/Monat"
+            plus: "Unbegrenzt"
+            pro: "Unbegrenzt"
+          - name: "Automatischer Bank-Sync"
+            starter: false
+            plus: true
+            pro: true
+          - name: "CSV/XLSX Import"
+            starter: false
+            plus: true
+            pro: true
+          - name: "Belege anhängen"
+            starter: true
+            plus: true
+            pro: true
+          - name: "Kategorisierung"
+            starter: true
+            plus: true
+            pro: true
+      taxes_compliance:
+        name: "Steuern & Compliance"
+        features:
+          - name: "Basis-Reporting"
+            starter: true
+            plus: true
+            pro: true
+          - name: "Steuerberater-Export"
+            starter: false
+            plus: true
+            pro: true
+          - name: "USt-VA CSV Export"
+            starter: false
+            plus: true
+            pro: true
+          - name: "USt-VA Erinnerungen"
+            starter: false
+            plus: false
+            pro: true
+          - name: "Direkte Elster-Einreichung"
+            starter: false
+            plus: false
+            pro: true
+          - name: "Erweiterte Reports"
+            starter: false
+            plus: false
+            pro: true
+      support_service:
+        name: "Support & Service"
+        features:
+          - name: "E-Mail Support"
+            starter: "Standard"
+            plus: "Standard"
+            pro: "Priorität"
+          - name: "Antwortzeit"
+            starter: "48h"
+            plus: "24h"
+            pro: "4h"
+          - name: "Dedizierter Account Manager"
+            starter: false
+            plus: false
+            pro: true
+          - name: "API-Zugang"
+            starter: false
+            plus: false
+            pro: "Bald"
+    faq_title: "Häufig gestellte Fragen"
+    faq_items:
+      - question: "Wie funktioniert die 14-tägige Testphase?"
+        answer: "Du kannst alle Pro-Features 14 Tage lang kostenlos testen. Keine Kreditkarte erforderlich. Nach der Testphase kannst du einen Plan wählen oder mit der kostenlosen Starter-Version weitermachen."
+      - question: "Kann ich meinen Plan jederzeit ändern?"
+        answer: "Ja, du kannst jederzeit upgraden oder downgraden. Upgrades werden anteilig berechnet, Downgrades greifen ab dem nächsten Abrechnungszeitraum."
+      - question: "Was passiert, wenn ich mein Limit im Starter-Plan erreiche?"
+        answer: "Du wirst benachrichtigt und kannst auf Plus oder Pro upgraden für unbegrenzten Zugang."
+      - question: "Sind meine Daten sicher?"
+        answer: "Ja, deine Daten sind verschlüsselt, werden auf Servern in Deutschland gespeichert, sind DSGVO-konform, und wir nutzen Stripe für sichere Zahlungsabwicklung."
+      - question: "Gibt es Vertragslaufzeiten?"
+        answer: "Nein, alle Abonnements sind monatlich kündbar ohne Mindestlaufzeit oder versteckte Kosten."
+      - question: "Kann ich eine Rechnung für meine Zahlung erhalten?"
+        answer: "Ja, Rechnungen werden automatisch per E-Mail nach jeder Zahlung versendet und sind auch im Kontobereich verfügbar."
   final_cta:
     support_title: "Noch Fragen?"
     support_subtitle: "Unser deutschsprachiges Support-Team hilft Ihnen gerne weiter"
