@@ -39,12 +39,12 @@
           {% if page.lang == 'en' %}
           <span class="font-medium">EN</span> |
           <a
-            href="{{ page.url | replace:'/en/', '/' }}"
+            href="{% if page.translations.de %}{{ page.translations.de }}{% else %}{{ page.url | replace:'/en/', '/' }}{% endif %}"
             class="hover:text-tertiary-500"
             >DE</a
           >
           {% else %}
-          <a href="/en{{ page.url }}" class="hover:text-tertiary-500">EN</a>
+          <a href="{% if page.translations.en %}{{ page.translations.en }}{% else %}/en{{ page.url }}{% endif %}" class="hover:text-tertiary-500">EN</a>
           | <span class="font-medium">DE</span>
           {% endif %}
         </div>
@@ -106,12 +106,12 @@
           {% if page.lang == 'en' %}
           <span class="font-medium">EN</span> |
           <a
-            href="{{ page.url | replace:'/en/', '/' }}"
+            href="{% if page.translations.de %}{{ page.translations.de }}{% else %}{{ page.url | replace:'/en/', '/' }}{% endif %}"
             class="hover:text-blue-500"
             >DE</a
           >
           {% else %}
-          <a href="/en{{ page.url }}" class="hover:text-blue-500">EN</a>
+          <a href="{% if page.translations.en %}{{ page.translations.en }}{% else %}/en{{ page.url }}{% endif %}" class="hover:text-blue-500">EN</a>
           | <span class="font-medium">DE</span>
           {% endif %}
         </div>
