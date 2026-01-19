@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 36" width="160" height="36">
+  <!-- Book Icon -->
+  <g transform="translate(0, 2)">
+    <!-- Left page -->
+    <path d="M2 5 C2 3, 4 1, 7 1 L14 1 L14 31 L7 31 C4 31, 2 29, 2 27 Z"
+          fill="#ffffff" opacity="0.95"/>
+    <!-- Right page -->
+    <path d="M30 5 C30 3, 28 1, 25 1 L17 1 L17 31 L25 31 C28 31, 30 29, 30 27 Z"
+          fill="#ffffff" opacity="0.8"/>
+    <!-- Spine -->
+    <rect x="13" y="1" width="5" height="30" fill="#ffffff"/>
+    <!-- Page lines left -->
+    <line x1="5" y1="8" x2="11" y2="8" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    <line x1="5" y1="14" x2="11" y2="14" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    <line x1="5" y1="20" x2="10" y2="20" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    <!-- Page lines right -->
+    <line x1="20" y1="8" x2="26" y2="8" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    <line x1="20" y1="14" x2="26" y2="14" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    <line x1="20" y1="20" x2="25" y2="20" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+  </g>
+
+  <!-- Text: Solobooks -->
+  <text x="38" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="600" fill="#ffffff">
+    Solobooks
+  </text>
+</svg>

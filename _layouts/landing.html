@@ -6,11 +6,11 @@ layout: default
 <section class="bg-white py-8 md:py-16">
   <div class="max-w-7xl mx-auto px-4 md:px-12">
     <!-- Promotional Banner -->
-    <div class="mb-8 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-2">
-      <svg class="h-4 w-4 text-blue-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+    <div class="mb-8 inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-4 py-2">
+      <svg class="h-4 w-4 text-indigo-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
       </svg>
-      <span class="text-sm text-blue-900 font-normal">{{ site.data.translations[page.lang].hero.banner_text }}</span>
+      <span class="text-sm text-indigo-900 font-normal">{{ site.data.translations[page.lang].hero.banner_text }}</span>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -18,7 +18,7 @@ layout: default
       <div class="text-left">
         <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
           {{ site.data.translations[page.lang].hero.heading }}
-          <span class="text-blue-600">{{ site.data.translations[page.lang].hero.heading_highlight }}</span>
+          <span class="text-indigo-600">{{ site.data.translations[page.lang].hero.heading_highlight }}</span>
         </h1>
         <p class="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
           {{ site.data.translations[page.lang].hero.description }}
@@ -29,9 +29,9 @@ layout: default
           {% for benefit in site.data.translations[page.lang].hero.benefits %}
           <div class="flex items-center gap-2.5">
             <div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0
-              {% if benefit.icon == 'chart' %}bg-blue-100{% elsif benefit.icon == 'shield' %}bg-green-100{% else %}bg-gray-100{% endif %}">
+              {% if benefit.icon == 'chart' %}bg-indigo-100{% elsif benefit.icon == 'shield' %}bg-green-100{% else %}bg-gray-100{% endif %}">
               {% if benefit.icon == "chart" %}
-              <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
               </svg>
               {% elsif benefit.icon == "shield" %}
@@ -52,8 +52,8 @@ layout: default
         <!-- CTA Buttons -->
         <div class="flex flex-col sm:flex-row gap-4 mb-6">
           <a
-            href="{{ site.data.translations[page.lang].links.sign_up }}"
-            class="inline-flex items-center justify-center bg-blue-600 text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 transition text-lg"
+            href="{{ site.data.translations[page.lang].links.sign_up }}&language={{ page.lang | default: 'de' }}"
+            class="inline-flex items-center justify-center bg-indigo-600 text-white font-semibold px-8 py-4 rounded-lg hover:bg-indigo-700 transition text-lg"
           >
             {{ site.data.translations[page.lang].hero.free_trial }}
           </a>
@@ -88,7 +88,7 @@ layout: default
 </section>
 
 <!-- How It Works Section -->
-<section class="bg-blue-50 py-16 md:py-24">
+<section class="bg-indigo-50 py-16 md:py-24">
   <div class="max-w-7xl mx-auto px-4 md:px-12">
     <div class="text-center mb-12">
       <span class="inline-block bg-green-100 text-green-800 text-sm font-semibold px-4 py-2 rounded-full mb-4">
@@ -104,31 +104,31 @@ layout: default
 
     <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
       <!-- Connecting Line (Desktop Only) -->
-      <div class="hidden md:block absolute top-12 left-0 right-0 h-0.5 bg-blue-200" style="top: 3rem;"></div>
+      <div class="hidden md:block absolute top-12 left-0 right-0 h-0.5 bg-indigo-200" style="top: 3rem;"></div>
 
       {% for step in site.data.translations[page.lang].how_it_works.steps %}
       <div class="relative bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
         <!-- Step Number Badge -->
-        <div class="absolute -top-4 -right-4 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg z-10">
+        <div class="absolute -top-4 -right-4 w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold text-lg z-10">
           {{ step.number }}
         </div>
 
         <!-- Icon -->
-        <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+        <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
           {% if step.icon == "user-plus" %}
-          <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"/>
           </svg>
           {% elsif step.icon == "link" %}
-          <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
           </svg>
           {% elsif step.icon == "lightning" %}
-          <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
           </svg>
           {% else %}
-          <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
           </svg>
           {% endif %}
@@ -146,12 +146,12 @@ layout: default
 <section id="features" class="py-16 md:py-24 bg-white">
   <div class="max-w-7xl mx-auto px-4 md:px-12">
     <div class="text-center mb-12">
-      <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-4 py-2 rounded-full mb-4">
+      <span class="inline-block bg-indigo-100 text-indigo-800 text-sm font-semibold px-4 py-2 rounded-full mb-4">
         {{ site.data.translations[page.lang].features.badge }}
       </span>
       <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
         {{ site.data.translations[page.lang].features.title }}
-        <span class="text-blue-600">{{ site.data.translations[page.lang].features.title_highlight }}</span>
+        <span class="text-indigo-600">{{ site.data.translations[page.lang].features.title_highlight }}</span>
       </h2>
       <p class="text-lg text-gray-600 max-w-2xl mx-auto">
         {{ site.data.translations[page.lang].features.subtitle }}
@@ -185,7 +185,7 @@ layout: default
 <section id="pricing" class="py-16 md:py-24 bg-gray-50">
   <div class="max-w-7xl mx-auto px-4 md:px-12">
     <div class="text-center mb-12">
-      <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-4 py-2 rounded-full mb-4">
+      <span class="inline-block bg-indigo-100 text-indigo-800 text-sm font-semibold px-4 py-2 rounded-full mb-4">
         {{ site.data.translations[page.lang].pricing.badge }}
       </span>
       <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -216,7 +216,7 @@ layout: default
         <ul class="space-y-3 text-gray-700 flex-grow mb-6">
           {% for feature in site.data.translations[page.lang].pricing.plans.basic.features %}
           <li class="flex items-start">
-            <svg class="w-5 h-5 text-blue-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+            <svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
             </svg>
             <span>{{ feature }}</span>
@@ -224,7 +224,7 @@ layout: default
           {% endfor %}
         </ul>
         <a
-          href="{{ site.data.translations[page.lang].links.sign_up_starter }}"
+          href="{{ site.data.translations[page.lang].links.sign_up_starter }}&language={{ page.lang | default: 'de' }}"
           class="text-center cta_button cta_button--secondary w-full"
         >
           {{ site.data.translations[page.lang].pricing.plans.basic.cta }}
@@ -250,7 +250,7 @@ layout: default
         <ul class="space-y-3 text-gray-700 flex-grow mb-6">
           {% for feature in site.data.translations[page.lang].pricing.plans.standard.features %}
           <li class="flex items-start">
-            <svg class="w-5 h-5 text-blue-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+            <svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
             </svg>
             <span>{{ feature }}</span>
@@ -258,7 +258,7 @@ layout: default
           {% endfor %}
         </ul>
         <a
-          href="{{ site.data.translations[page.lang].links.sign_up_plus }}"
+          href="{{ site.data.translations[page.lang].links.sign_up_plus }}&language={{ page.lang | default: 'de' }}"
           class="text-center cta_button cta_button--secondary w-full"
         >
           {{ site.data.translations[page.lang].pricing.plans.standard.cta }}
@@ -266,10 +266,10 @@ layout: default
       </div>
 
       <!-- Pro Plan -->
-      <div class="bg-white border-2 border-blue-500 rounded-2xl p-8 shadow-lg relative text-left flex flex-col">
+      <div class="bg-white border-2 border-indigo-500 rounded-2xl p-8 shadow-lg relative text-left flex flex-col">
         {% if site.data.translations[page.lang].pricing.plans.premium.recommended %}
         <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
-          <span class="bg-blue-600 text-white text-xs font-semibold px-4 py-1 rounded-full">
+          <span class="bg-indigo-600 text-white text-xs font-semibold px-4 py-1 rounded-full">
             Empfohlen
           </span>
         </div>
@@ -291,7 +291,7 @@ layout: default
         <ul class="space-y-3 text-gray-700 flex-grow mb-6">
           {% for feature in site.data.translations[page.lang].pricing.plans.premium.features %}
           <li class="flex items-start">
-            <svg class="w-5 h-5 text-blue-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+            <svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
             </svg>
             <span>{{ feature }}</span>
@@ -299,7 +299,7 @@ layout: default
           {% endfor %}
         </ul>
         <a
-          href="{{ site.data.translations[page.lang].links.sign_up_pro }}"
+          href="{{ site.data.translations[page.lang].links.sign_up_pro }}&language={{ page.lang | default: 'de' }}"
           class="text-center cta_button cta_button--primary--dark w-full"
         >
           {{ site.data.translations[page.lang].pricing.plans.premium.cta }}
@@ -321,7 +321,7 @@ layout: default
       </div>
       <a
         href="{% if page.lang == 'en' %}/en/pricing/{% else %}/pricing/{% endif %}"
-        class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium text-sm"
+        class="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-medium text-sm"
       >
         {% if page.lang == 'en' %}View detailed comparison{% else %}Detaillierten Vergleich ansehen{% endif %}
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -339,12 +339,12 @@ layout: default
 <section id="faq" class="py-16 md:py-24 bg-white">
   <div class="max-w-4xl mx-auto px-4 md:px-12">
     <div class="text-center mb-12">
-      <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-4 py-2 rounded-full mb-4">
+      <span class="inline-block bg-indigo-100 text-indigo-800 text-sm font-semibold px-4 py-2 rounded-full mb-4">
         {{ site.data.translations[page.lang].faq.badge }}
       </span>
       <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
         {{ site.data.translations[page.lang].faq.title }}
-        <span class="text-blue-600">{{ site.data.translations[page.lang].faq.title_highlight }}</span>
+        <span class="text-indigo-600">{{ site.data.translations[page.lang].faq.title_highlight }}</span>
       </h2>
       <p class="text-lg text-gray-600">
         {{ site.data.translations[page.lang].faq.subtitle }}
@@ -410,7 +410,7 @@ layout: default
 </section>
 
 <!-- Main CTA - Full Width -->
-<div class="bg-blue-800 py-20 md:py-32 text-center text-white">
+<div class="bg-indigo-800 py-20 md:py-32 text-center text-white">
     <div class="max-w-4xl mx-auto px-4 md:px-12">
       <h2 class="text-3xl md:text-4xl font-bold mb-4">
         {{ site.data.translations[page.lang].final_cta.cta_title }}
@@ -434,21 +434,21 @@ layout: default
       <!-- CTA Buttons -->
       <div class="flex flex-col sm:flex-row gap-4 justify-center mb-6">
         <a
-          href="{{ site.data.translations[page.lang].links.sign_up }}"
-          class="inline-flex items-center justify-center bg-white text-blue-600 font-semibold px-8 py-4 rounded-lg hover:bg-blue-50 transition"
+          href="{{ site.data.translations[page.lang].links.sign_up }}&language={{ page.lang | default: 'de' }}"
+          class="inline-flex items-center justify-center bg-white text-indigo-600 font-semibold px-8 py-4 rounded-lg hover:bg-indigo-50 transition"
         >
           {{ site.data.translations[page.lang].final_cta.cta_button }}
         </a>
         <a
           href="#pricing"
-          class="inline-flex items-center justify-center bg-blue-600 text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 transition border-2 border-blue-500"
+          class="inline-flex items-center justify-center bg-indigo-600 text-white font-semibold px-8 py-4 rounded-lg hover:bg-indigo-700 transition border-2 border-indigo-500"
         >
           {{ site.data.translations[page.lang].final_cta.cta_button_secondary }}
         </a>
       </div>
 
       <!-- Disclaimer -->
-      <p class="text-sm text-blue-200">
+      <p class="text-sm text-indigo-200">
         {{ site.data.translations[page.lang].final_cta.disclaimer }}
       </p>
     </div>

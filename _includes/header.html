@@ -5,9 +5,9 @@
       <div class="flex items-center space-x-4 flex-1">
         <a href="/{{ page.lang | default: 'de' }}/">
           <img
-            src="{{ '/assets/images/logo/solobooks-text.svg' | relative_url }}"
+            src="{{ '/assets/images/logo/logo.svg' | relative_url }}"
             alt="{{ site.data.translations[page.lang].site_name }}"
-            class="h-6 md:h-10"
+            class="h-8 md:h-10"
         />
       </div>
 
@@ -15,19 +15,19 @@
       <nav
         class="hidden md:flex items-center space-x-6 flex-[1.5] justify-center"
       >
-        <a href="{% if page.lang == 'en' %}/en/#features{% else %}/#features{% endif %}" class="text-gray-600 hover:text-blue-500">
+        <a href="{% if page.lang == 'en' %}/en/#features{% else %}/#features{% endif %}" class="text-gray-600 hover:text-indigo-600">
           {{ site.data.translations[page.lang].nav.features }}
         </a>
-        <a href="{% if page.lang == 'en' %}/en/pricing/{% else %}/pricing/{% endif %}" class="text-gray-600 hover:text-blue-500">
+        <a href="{% if page.lang == 'en' %}/en/pricing/{% else %}/pricing/{% endif %}" class="text-gray-600 hover:text-indigo-600">
           {{ site.data.translations[page.lang].nav.pricing }}
         </a>
         <a
           href="{% if page.lang == 'en' %}/en/blog/{% else %}/blog/{% endif %}"
-          class="text-gray-600 hover:text-blue-500"
+          class="text-gray-600 hover:text-indigo-600"
         >
           {{ site.data.translations[page.lang].nav.blog }}
         </a>
-        <a href="{% if page.lang == 'en' %}/en/#faq{% else %}/#faq{% endif %}" class="text-gray-600 hover:text-blue-500">
+        <a href="{% if page.lang == 'en' %}/en/#faq{% else %}/#faq{% endif %}" class="text-gray-600 hover:text-indigo-600">
           {{ site.data.translations[page.lang].nav.faq }}
         </a>
       </nav>
@@ -51,12 +51,12 @@
 
         <!-- CTA Buttons -->
         <div class="flex space-x-4">
-          <a href="{{ site.data.translations[page.lang].links.login }}">
+          <a href="{{ site.data.translations[page.lang].links.login }}?language={{ page.lang | default: 'de' }}">
             <button class="cta_button cta_button--secondary cta_button--short">
               {{ site.data.translations[page.lang].buttons.login }}
             </button>
           </a>
-          <a href="{{ site.data.translations[page.lang].links.sign_up }}">
+          <a href="{{ site.data.translations[page.lang].links.sign_up }}&language={{ page.lang | default: 'de' }}">
             <button class="cta_button cta_button--primary--dark cta_button--short">
               {{ site.data.translations[page.lang].buttons.sign_up }}
             </button>
@@ -88,16 +88,16 @@
         <a href="{% if page.lang == 'en' %}/en/{% else %}/{% endif %}" class="block text-primary-500 font-medium py-2">
           {{ site.data.translations[page.lang].nav.home }}
         </a>
-        <a href="{% if page.lang == 'en' %}/en/#features{% else %}/#features{% endif %}" class="block text-gray-600 hover:text-blue-500 py-2">
+        <a href="{% if page.lang == 'en' %}/en/#features{% else %}/#features{% endif %}" class="block text-gray-600 hover:text-indigo-600 py-2">
           {{ site.data.translations[page.lang].nav.features }}
         </a>
-        <a href="{% if page.lang == 'en' %}/en/pricing/{% else %}/pricing/{% endif %}" class="block text-gray-600 hover:text-blue-500 py-2">
+        <a href="{% if page.lang == 'en' %}/en/pricing/{% else %}/pricing/{% endif %}" class="block text-gray-600 hover:text-indigo-600 py-2">
           {{ site.data.translations[page.lang].nav.pricing }}
         </a>
-        <a href="{% if page.lang == 'en' %}/en/#faq{% else %}/#faq{% endif %}" class="block text-gray-600 hover:text-blue-500 py-2">
+        <a href="{% if page.lang == 'en' %}/en/#faq{% else %}/#faq{% endif %}" class="block text-gray-600 hover:text-indigo-600 py-2">
           {{ site.data.translations[page.lang].nav.faq }}
         </a>
-        <a href="{% if page.lang == 'en' %}/en/blog/{% else %}/blog/{% endif %}" class="block text-gray-600 hover:text-blue-500 py-2">
+        <a href="{% if page.lang == 'en' %}/en/blog/{% else %}/blog/{% endif %}" class="block text-gray-600 hover:text-indigo-600 py-2">
           {{ site.data.translations[page.lang].nav.blog }}
         </a>
 
@@ -107,18 +107,18 @@
           <span class="font-medium">EN</span> |
           <a
             href="{% if page.translations.de %}{{ page.translations.de }}{% else %}{{ page.url | replace:'/en/', '/' }}{% endif %}"
-            class="hover:text-blue-500"
+            class="hover:text-indigo-600"
             >DE</a
           >
           {% else %}
-          <a href="{% if page.translations.en %}{{ page.translations.en }}{% else %}/en{{ page.url }}{% endif %}" class="hover:text-blue-500">EN</a>
+          <a href="{% if page.translations.en %}{{ page.translations.en }}{% else %}/en{{ page.url }}{% endif %}" class="hover:text-indigo-600">EN</a>
           | <span class="font-medium">DE</span>
           {% endif %}
         </div>
 
         <div class="pt-4 space-y-3">
           <a
-            href="{{ site.data.translations[page.lang].links.sign_up }}"
+            href="{{ site.data.translations[page.lang].links.sign_up }}&language={{ page.lang | default: 'de' }}"
             class="block"
           >
             <button
@@ -128,7 +128,7 @@
             </button>
           </a>
           <a
-            href="{{ site.data.translations[page.lang].links.login }}"
+            href="{{ site.data.translations[page.lang].links.login }}?language={{ page.lang | default: 'de' }}"
             class="block"
           >
             <button

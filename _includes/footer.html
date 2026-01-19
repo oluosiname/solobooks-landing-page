@@ -5,9 +5,11 @@
       <!-- Company Info -->
       <div class="md:col-span-1">
         <div class="flex items-center gap-2 mb-4">
-          <div class="w-10 h-10 bg-purple-600 rounded flex items-center justify-center">
-            <span class="text-white font-bold text-xl">S</span>
-          </div>
+          <img
+            src="{{ '/assets/images/logo/logo-icon-white.svg' | relative_url }}"
+            alt="{{ site.data.translations[page.lang].footer.company_name }}"
+            class="w-10 h-10"
+          />
           <span class="text-xl font-bold">{{ site.data.translations[page.lang].footer.company_name }}</span>
         </div>
         <p class="text-gray-400 text-sm mb-6">

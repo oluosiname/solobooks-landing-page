@@ -13,7 +13,7 @@ alternate_url: /blog/
     <div class="text-center mb-12">
       <h1 class="text-4xl md:text-5xl font-bold mb-4">
         <span class="text-gray-900">Solobooks</span>
-        <span class="text-blue-600"> Blog</span>
+        <span class="text-indigo-600"> Blog</span>
       </h1>
       <p class="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
         Expert tips, practical guides, and current information on accounting,
@@ -27,7 +27,7 @@ alternate_url: /blog/
     >
       <div class="flex flex-wrap justify-center gap-3">
         <button
-          class="category-btn active px-4 py-2 rounded-full bg-blue-600 text-white text-sm font-medium transition-colors"
+          class="category-btn active px-4 py-2 rounded-full bg-indigo-600 text-white text-sm font-medium transition-colors"
           data-category="all"
         >
           All Categories
@@ -70,7 +70,7 @@ alternate_url: /blog/
     {% assign en_posts = site.posts | where: "lang", "en" | sort: "date" |
     reverse %} {% for post in en_posts %}
     <article
-      class="blog-post group bg-white rounded-lg overflow-hidden border border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-200 cursor-pointer"
+      class="blog-post group bg-white rounded-lg overflow-hidden border border-gray-200 hover:border-indigo-300 hover:shadow-lg transition-all duration-200 cursor-pointer"
       data-categories="{{ post.categories | join: ',' | downcase }}"
     >
       <a href="{{ post.url }}" class="block">
@@ -90,7 +90,7 @@ alternate_url: /blog/
           <!-- Category Badge -->
           <div class="flex items-center gap-2 mb-3">
             <svg
-              class="w-4 h-4 text-blue-600"
+              class="w-4 h-4 text-indigo-600"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -102,7 +102,7 @@ alternate_url: /blog/
                 d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
               />
             </svg>
-            <span class="text-blue-600 text-sm font-medium">
+            <span class="text-indigo-600 text-sm font-medium">
               {% if post.categories contains 'tax' or post.categories contains
               'law' %} Taxes & Law {% elsif post.categories contains
               'accounting' or post.categories contains 'guide' %} Accounting {%
@@ -116,7 +116,7 @@ alternate_url: /blog/
 
           <!-- Title -->
           <h2
-            class="text-xl font-medium text-gray-900 group-hover:text-blue-600 mb-3 line-clamp-2 transition-colors duration-200"
+            class="text-xl font-medium text-gray-900 group-hover:text-indigo-600 mb-3 line-clamp-2 transition-colors duration-200"
           >
             {{ post.title }}
           </h2>
@@ -168,7 +168,7 @@ alternate_url: /blog/
 
           <!-- Read More Link -->
           <div
-            class="text-blue-600 font-medium text-sm inline-flex items-center gap-1 hover:gap-2 transition-all"
+            class="text-indigo-600 font-medium text-sm inline-flex items-center gap-1 hover:gap-2 transition-all"
           >
             Read more
             <svg
@@ -216,11 +216,11 @@ alternate_url: /blog/
       <input
         type="email"
         placeholder="your@email.com"
-        class="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+        class="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent"
       />
       <button
         type="submit"
-        class="px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
+        class="px-6 py-3 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 transition-colors"
       >
         Subscribe
       </button>
@@ -301,10 +301,10 @@ alternate_url: /blog/
       button.addEventListener("click", function () {
         // Update active state
         categoryButtons.forEach((btn) => {
-          btn.classList.remove("active", "bg-blue-600", "text-white");
+          btn.classList.remove("active", "bg-indigo-600", "text-white");
           btn.classList.add("bg-gray-200", "text-gray-700");
         });
-        this.classList.add("active", "bg-blue-600", "text-white");
+        this.classList.add("active", "bg-indigo-600", "text-white");
         this.classList.remove("bg-gray-200", "text-gray-700");
 
         // Reset visible count and filter posts

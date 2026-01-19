@@ -17,7 +17,7 @@ title: "Pricing - Solobooks"
       </p>
       <a
         href="{{ site.data.translations[page.lang].links.sign_up }}"
-        class="inline-flex items-center justify-center bg-blue-600 text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 transition text-lg"
+        class="inline-flex items-center justify-center bg-indigo-600 text-white font-semibold px-8 py-4 rounded-lg hover:bg-indigo-700 transition text-lg"
       >
         {{ site.data.translations[page.lang].pricing_page.hero_cta }}
       </a>
@@ -206,7 +206,7 @@ title: "Pricing - Solobooks"
           </thead>
           <tbody>
             {% for category in site.data.translations[page.lang].pricing_page.comparison_categories %}
-            <tr class="bg-blue-50">
+            <tr class="bg-indigo-50">
               <td colspan="4" class="py-3 px-6 font-bold text-gray-900">{{ category[1].name }}</td>
             </tr>
             {% for feature in category[1].features %}
@@ -300,31 +300,31 @@ title: "Pricing - Solobooks"
 </section>
 
 <!-- Final CTA Section -->
-<section class="bg-gradient-to-r from-blue-800 to-purple-800 py-20 md:py-32 text-center text-white">
+<section class="bg-gradient-to-r from-indigo-600 to-indigo-800 py-20 md:py-32 text-center text-white">
   <div class="max-w-4xl mx-auto px-4 md:px-12">
     <h2 class="text-3xl md:text-4xl font-bold mb-4">
       {{ site.data.translations[page.lang].final_cta.cta_title }}
     </h2>
-    <p class="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
+    <p class="text-lg text-indigo-100 mb-8 max-w-2xl mx-auto">
       {{ site.data.translations[page.lang].final_cta.cta_description }}
     </p>
     
     <div class="flex flex-col sm:flex-row gap-4 justify-center mb-6">
       <a
         href="{{ site.data.translations[page.lang].links.sign_up }}"
-        class="inline-flex items-center justify-center bg-white text-blue-600 font-semibold px-8 py-4 rounded-lg hover:bg-blue-50 transition"
+        class="inline-flex items-center justify-center bg-white text-indigo-600 font-semibold px-8 py-4 rounded-lg hover:bg-indigo-50 transition"
       >
         {{ site.data.translations[page.lang].final_cta.cta_button }}
       </a>
       <a
         href="#"
-        class="inline-flex items-center justify-center bg-blue-600 text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 transition border-2 border-blue-500"
+        class="inline-flex items-center justify-center bg-indigo-600 text-white font-semibold px-8 py-4 rounded-lg hover:bg-indigo-700 transition border-2 border-indigo-500"
       >
         View Demo
       </a>
     </div>
 
-    <p class="text-sm text-blue-200">
+    <p class="text-sm text-indigo-200">
       More than 5,000 German freelancers already trust Solobooks
     </p>
   </div>
