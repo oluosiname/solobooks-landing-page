@@ -1,0 +1,8 @@
+{
+  "buildCommand": "bundle exec jekyll build && npx @tailwindcss/cli -i ./src/input.css -o ./_site/assets/css/style.css",
+  "outputDirectory": "_site",
+  "installCommand": "bundle install && npm install",
+  "framework": null,
+  "cleanUrls": true,
+  "trailingSlash": false
+}
