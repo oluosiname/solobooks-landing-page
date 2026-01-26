@@ -14,10 +14,10 @@ en:
     sign_up: "Sign up For Free"
     login: "Login"
   links:
-    sign_up: "https://app.solobooks.de/en/register"
-    sign_up_starter: "https://app.solobooks.de/en/register?plan=starter"
-    sign_up_plus: "https://app.solobooks.de/en/register?plan=plus"
-    sign_up_pro: "https://app.solobooks.de/en/register?plan=pro"
+    sign_up: "https://app.solobooks.de/register?lang=en"
+    sign_up_starter: "https://app.solobooks.de/register?plan=starter&lang=en"
+    sign_up_plus: "https://app.solobooks.de/register?plan=plus&lang=en"
+    sign_up_pro: "https://app.solobooks.de/register?plan=pro&lang=en"
     login: "https://app.solobooks.de/login"
   hero:
     heading: "Accounting for"
@@ -35,7 +35,7 @@ en:
         icon: "chart"
       - text: "GDPR Compliant"
         icon: "shield"
-      - text: "Users 5,000+"
+      - text: "Users 2,000+"
         icon: "check"
     image_alt: "Hero Image"
   how_it_works:
@@ -146,7 +146,7 @@ en:
         quote: "The dashboard gives me a perfect overview of my finances. The reports are detailed and easy to understand."
         initials: "DH"
     stats:
-      - value: "5,000+"
+      - value: "2,000+"
         label: "Active Users"
       - value: "50k+"
         label: "Invoices created"
@@ -226,7 +226,7 @@ en:
       - question: "What happens after the 14-day trial phase?"
         answer: "After your 14-day free trial, you can choose to continue with one of our paid plans (Starter, Plus, or Pro) or cancel without any charges. No automatic billing during the trial period."
       - question: "Is my data secure and GDPR compliant?"
-        answer: "Yes, Solobooks is fully GDPR compliant. All data is encrypted, stored on servers in Germany, and we follow strict data protection regulations. We are ISO 27001 certified."
+        answer: "Yes, Solobooks is fully GDPR compliant. All data is encrypted, stored on servers in Germany, and we follow strict data protection regulations."
   pricing:
     badge: "Prices"
     title: "Simple, transparent prices"
@@ -480,10 +480,10 @@ de:
     sign_up: "Kostenlos anmelden"
     login: "Anmelden"
   links:
-    sign_up: "https://app.solobooks.de/de/register"
-    sign_up_starter: "https://app.solobooks.de/de/register?plan=starter"
-    sign_up_plus: "https://app.solobooks.de/de/register?plan=plus"
-    sign_up_pro: "https://app.solobooks.de/de/register?plan=pro"
+    sign_up: "https://app.solobooks.de/register?lang=de"
+    sign_up_starter: "https://app.solobooks.de/register?plan=starter&lang=de"
+    sign_up_plus: "https://app.solobooks.de/register?plan=plus&lang=de"
+    sign_up_pro: "https://app.solobooks.de/register?plan=pro&lang=de"
     login: "https://app.solobooks.de/login"
   hero:
     heading: "Buchhaltung für"
@@ -502,7 +502,7 @@ de:
         icon: "chart"
       - text: "DSGVO Konform"
         icon: "shield"
-      - text: "Nutzer 5.000+"
+      - text: "Nutzer 2.000+"
         icon: "check"
     image_alt: "Held Bild"
   how_it_works:
@@ -613,7 +613,7 @@ de:
         quote: "Das Dashboard gibt mir einen perfekten Überblick über meine Finanzen. Die Reports sind detailliert und leicht zu verstehen."
         initials: "DH"
     stats:
-      - value: "5.000+"
+      - value: "2.000+"
         label: "Aktive Nutzer"
       - value: "50k+"
         label: "Rechnungen erstellt"
@@ -692,7 +692,7 @@ de:
       - question: "Was passiert nach der 14-tägigen Testphase?"
         answer: "Nach Ihrer 14-tägigen kostenlosen Testphase können Sie sich für einen unserer kostenpflichtigen Pläne (Starter, Plus oder Pro) entscheiden oder ohne Gebühren kündigen. Keine automatische Abrechnung während der Testphase."
       - question: "Sind meine Daten sicher und DSGVO-konform?"
-        answer: "Ja, Solobooks ist vollständig DSGVO-konform. Alle Daten werden verschlüsselt, auf Servern in Deutschland gespeichert und wir befolgen strenge Datenschutzbestimmungen. Wir sind ISO 27001 zertifiziert."
+        answer: "Ja, Solobooks ist vollständig DSGVO-konform. Alle Daten werden verschlüsselt, auf Servern in Deutschland gespeichert und wir befolgen strenge Datenschutzbestimmungen."
   pricing:
     badge: "Preise"
     title: "Einfache, transparente Preise"

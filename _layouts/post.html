@@ -286,7 +286,7 @@ layout: default
         {% endif %}
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="{% if page.lang == 'de' %}{{ site.data.translations.de.links.sign_up }}&language=de{% else %}{{ site.data.translations.en.links.sign_up }}&language=en{% endif %}" 
+        <a href="{% if page.lang == 'de' %}{{ site.data.translations.de.links.sign_up }}{% else %}{{ site.data.translations.en.links.sign_up }}{% endif %}" 
            class="px-6 py-3 bg-white text-indigo-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
           {% if page.lang == 'de' %}14 Tage kostenlos testen{% else %}Test for 14 days free{% endif %}
         </a>
