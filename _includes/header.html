@@ -3,7 +3,7 @@
     <div class="flex justify-between items-center">
       <!-- Logo -->
       <div class="flex items-center space-x-4 flex-1">
-        <a href="/{{ page.lang | default: 'de' }}/">
+        <a href="{% if page.lang == 'en' %}/en/{% else %}/{% endif %}">
           <img
             src="{{ '/assets/images/logo/logo.svg' | relative_url }}"
             alt="{{ site.data.translations[page.lang].site_name }}"
