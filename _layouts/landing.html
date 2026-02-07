@@ -400,7 +400,7 @@ layout: default
         </a>
         <a
           href="#"
-          onclick="if(window.$crisp){window.$crisp.push(['do', 'chat:open']);} return false;"
+          onclick="return window.openCrispChat ? window.openCrispChat() : false;"
           class="cta_button cta_button--secondary"
         >
           {{ site.data.translations[page.lang].final_cta.live_chat }}

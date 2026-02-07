@@ -1,0 +1,115 @@
+<!-- Cookie Consent Banner -->
+<div id="cookie-consent-banner"
+     class="fixed bottom-0 left-0 right-0 z-50 bg-gray-900 text-white p-4 md:p-6 shadow-lg transform translate-y-full transition-transform duration-300"
+     role="dialog"
+     aria-label="{{ site.data.translations[page.lang].consent.aria_label }}"
+     aria-describedby="consent-description">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center gap-4">
+    <div class="flex-1">
+      <p class="text-sm md:text-base font-semibold mb-1">
+        {{ site.data.translations[page.lang].consent.title }}
+      </p>
+      <p id="consent-description" class="text-sm text-gray-300">
+        {{ site.data.translations[page.lang].consent.description }}
+        <a href="{% if page.lang == 'en' %}/en/privacy-policy/{% else %}/datenschutz/{% endif %}"
+           class="underline hover:text-white">
+          {{ site.data.translations[page.lang].consent.privacy_link }}
+        </a>
+      </p>
+    </div>
+    <div class="flex gap-3 flex-shrink-0">
+      <button id="consent-reject"
+              class="px-4 py-2 text-sm font-medium bg-gray-700 hover:bg-gray-600 rounded-lg transition cursor-pointer">
+        {{ site.data.translations[page.lang].consent.reject }}
+      </button>
+      <button id="consent-accept"
+              class="px-4 py-2 text-sm font-medium bg-indigo-600 hover:bg-indigo-700 rounded-lg transition cursor-pointer">
+        {{ site.data.translations[page.lang].consent.accept }}
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  var CONSENT_KEY = 'solobooks_cookie_consent';
+  var CRISP_WEBSITE_ID = 'b82b3c28-5787-49f5-8ca0-55956ddc936d';
+  var pageLang = '{{ page.lang | default: "de" }}';
+
+  function getConsent() {
+    try { return localStorage.getItem(CONSENT_KEY); } catch(e) { return null; }
+  }
+
+  function setConsent(value) {
+    try { localStorage.setItem(CONSENT_KEY, value); } catch(e) {}
+  }
+
+  function loadCrisp() {
+    if (window.CRISP_WEBSITE_ID) return;
+    window.$crisp = [];
+    window.CRISP_WEBSITE_ID = CRISP_WEBSITE_ID;
+    var s = document.createElement('script');
+    s.src = 'https://beta.client.crisp.chat/l.js';
+    s.async = 1;
+    document.getElementsByTagName('head')[0].appendChild(s);
+    window.$crisp.push(['set', 'user:locale', pageLang]);
+  }
+
+  function showBanner() {
+    var banner = document.getElementById('cookie-consent-banner');
+    if (!banner) return;
+    requestAnimationFrame(function() {
+      banner.classList.remove('translate-y-full');
+      banner.classList.add('translate-y-0');
+    });
+  }
+
+  function hideBanner() {
+    var banner = document.getElementById('cookie-consent-banner');
+    if (!banner) return;
+    banner.classList.remove('translate-y-0');
+    banner.classList.add('translate-y-full');
+  }
+
+  function handleAccept() {
+    setConsent('accepted');
+    hideBanner();
+    loadCrisp();
+  }
+
+  function handleReject() {
+    setConsent('rejected');
+    hideBanner();
+  }
+
+  function bindButtons() {
+    var acceptBtn = document.getElementById('consent-accept');
+    var rejectBtn = document.getElementById('consent-reject');
+    if (acceptBtn) acceptBtn.onclick = handleAccept;
+    if (rejectBtn) rejectBtn.onclick = handleReject;
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var consent = getConsent();
+    if (consent === 'accepted') { loadCrisp(); return; }
+    if (consent === 'rejected') return;
+    showBanner();
+    bindButtons();
+  });
+
+  window.openConsentBanner = function() {
+    try { localStorage.removeItem(CONSENT_KEY); } catch(e) {}
+    showBanner();
+    bindButtons();
+  };
+
+  window.openCrispChat = function() {
+    if (getConsent() === 'accepted' && window.$crisp) {
+      window.$crisp.push(['do', 'chat:open']);
+    } else {
+      window.openConsentBanner();
+    }
+    return false;
+  };
+})();
+</script>

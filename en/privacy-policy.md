@@ -164,22 +164,44 @@ translations:
         Art. 6(1)(f) GDPR (legitimate interest in technical stability)
       </p>
 
-      <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">10. Cookies</h2>
+      <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">10. Cookies and Consent</h2>
       <p>
-        We only use technically necessary cookies that are required for the operation of the website and the application (e.g., session cookies).
+        We use technically necessary cookies that are required for the operation of the website and the application (e.g., session cookies). These are set without consent.
       </p>
       <p>
-        No analytics or marketing cookies are used.
+        Additionally, we use the live chat service Crisp (Crisp IM SAS, France), which may set additional cookies and transfer data to external servers. Crisp is only loaded after your explicit consent.
+      </p>
+      <p>
+        When visiting our website, a cookie banner is displayed through which you can accept or decline the use of non-essential services. Your consent is stored in your browser (localStorage) and can be revoked at any time via the "Cookie Settings" link in the footer.
       </p>
       <p>
         <strong>Legal basis:</strong><br>
-        Art. 6(1)(f) GDPR
-      </p>
-      <p>
-        A cookie consent banner is therefore currently not required.
+        Technically necessary cookies: Art. 6(1)(f) GDPR<br>
+        Crisp Live Chat: Art. 6(1)(a) GDPR (consent)
       </p>
 
-      <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">11. Data Sharing</h2>
+      <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">11. Live Chat (Crisp)</h2>
+      <p>
+        For providing live chat support, we use the service Crisp (Crisp IM SAS, 2 Boulevard de Launay, 44100 Nantes, France).
+      </p>
+      <p>
+        When the live chat is activated (after consent), the following data may be processed:
+      </p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>IP address</li>
+        <li>Browser and device information</li>
+        <li>Chat messages and content</li>
+        <li>Session management cookies</li>
+      </ul>
+      <p>
+        The service is only loaded after your explicit consent via our cookie banner.
+      </p>
+      <p>
+        <strong>Legal basis:</strong><br>
+        Art. 6(1)(a) GDPR (consent)
+      </p>
+
+      <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">12. Data Sharing</h2>
       <p>
         Personal data is only shared:
       </p>
@@ -191,12 +213,12 @@ translations:
         Data is not shared for advertising purposes.
       </p>
 
-      <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">12. Data Retention</h2>
+      <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">13. Data Retention</h2>
       <p>
         Personal data is only stored for as long as necessary for the respective purposes or as required by statutory retention obligations.
       </p>
 
-      <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">13. Rights of Data Subjects</h2>
+      <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">14. Rights of Data Subjects</h2>
       <p>
         You have the right to:
       </p>
@@ -212,12 +234,12 @@ translations:
         Please direct requests to: <a href="mailto:contact@solobooks.de" class="text-indigo-600 hover:text-indigo-800">contact@solobooks.de</a>
       </p>
 
-      <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">14. Right to Lodge a Complaint</h2>
+      <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">15. Right to Lodge a Complaint</h2>
       <p>
         You have the right to lodge a complaint with a data protection supervisory authority.
       </p>
 
-      <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">15. Currency</h2>
+      <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">16. Currency</h2>
       <p>
         This privacy policy is currently valid as of February 2026.
       </p>

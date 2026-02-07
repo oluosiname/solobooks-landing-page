@@ -62,9 +62,15 @@
           </span>
           <div class="flex gap-4 text-gray-400 text-sm">
             {% for link in site.data.translations[page.lang].footer.policy_links %}
+            {% if link.url == "#cookie-settings" %}
+            <a href="#" onclick="if(window.openConsentBanner){window.openConsentBanner();} return false;" class="hover:text-white transition">
+              {{ link.text }}
+            </a>
+            {% else %}
             <a href="{{ link.url }}" class="hover:text-white transition">
               {{ link.text }}
             </a>
+            {% endif %}
             {% endfor %}
           </div>
         </div>
