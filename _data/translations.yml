@@ -199,7 +199,7 @@ en:
       - text: "Terms and Conditions"
         url: "/en/terms/"
       - text: "Cookie Settings"
-        url: "#"
+        url: "#cookie-settings"
     copyright: "© 2024 Solobooks. All rights reserved."
     trust_badges:
       - "GDPR-compliant"
@@ -209,6 +209,13 @@ en:
       twitter: "#"
       linkedin: "#"
       xing: "#"
+  consent:
+    aria_label: "Cookie consent"
+    title: "We value your privacy"
+    description: "We use third-party services like live chat to improve your experience. These may set cookies and transfer data to external servers."
+    privacy_link: "Learn more"
+    accept: "Accept all"
+    reject: "Only necessary"
   faq:
     badge: "Frequently Asked Questions"
     title: "Questions?"
@@ -665,7 +672,7 @@ de:
       - text: "AGB"
         url: "/agb/"
       - text: "Cookie-Einstellungen"
-        url: "#"
+        url: "#cookie-settings"
     copyright: "© 2024 Solobooks. Alle Rechte vorbehalten."
     trust_badges:
       - "DSGVO-konform"
@@ -675,6 +682,13 @@ de:
       twitter: "#"
       linkedin: "#"
       xing: "#"
+  consent:
+    aria_label: "Cookie-Einwilligung"
+    title: "Wir respektieren Ihre Privatsphäre"
+    description: "Wir verwenden Drittanbieterdienste wie Live-Chat, um Ihr Erlebnis zu verbessern. Diese können Cookies setzen und Daten an externe Server übertragen."
+    privacy_link: "Mehr erfahren"
+    accept: "Alle akzeptieren"
+    reject: "Nur notwendige"
   faq:
     badge: "Häufig gestellte Fragen"
     title: "Fragen?"

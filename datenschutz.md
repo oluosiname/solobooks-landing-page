@@ -164,22 +164,44 @@ translations:
         Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der technischen Stabilität)
       </p>
 
-      <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">10. Cookies</h2>
+      <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">10. Cookies und Einwilligung</h2>
       <p>
-        Wir verwenden ausschließlich technisch notwendige Cookies, die für den Betrieb der Website und der Anwendung erforderlich sind (z. B. Session-Cookies).
+        Wir verwenden technisch notwendige Cookies, die für den Betrieb der Website und der Anwendung erforderlich sind (z. B. Session-Cookies). Diese werden ohne Einwilligung gesetzt.
       </p>
       <p>
-        Es werden keine Analyse- oder Marketing-Cookies eingesetzt.
+        Darüber hinaus nutzen wir den Live-Chat-Dienst Crisp (Crisp IM SAS, Frankreich), der zusätzliche Cookies setzen und Daten an externe Server übertragen kann. Crisp wird erst nach Ihrer ausdrücklichen Einwilligung geladen.
+      </p>
+      <p>
+        Beim Besuch unserer Website wird Ihnen ein Cookie-Banner angezeigt, über das Sie der Nutzung nicht-essenzieller Dienste zustimmen oder diese ablehnen können. Ihre Einwilligung wird in Ihrem Browser (localStorage) gespeichert und kann jederzeit über den Link „Cookie-Einstellungen" im Footer widerrufen werden.
       </p>
       <p>
         <strong>Rechtsgrundlage:</strong><br>
-        Art. 6 Abs. 1 lit. f DSGVO
-      </p>
-      <p>
-        Ein Cookie-Consent-Banner ist daher derzeit nicht erforderlich.
+        Technisch notwendige Cookies: Art. 6 Abs. 1 lit. f DSGVO<br>
+        Crisp Live-Chat: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)
       </p>
 
-      <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">11. Weitergabe von Daten</h2>
+      <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">11. Live-Chat (Crisp)</h2>
+      <p>
+        Für die Bereitstellung eines Live-Chat-Supports nutzen wir den Dienst Crisp (Crisp IM SAS, 2 Boulevard de Launay, 44100 Nantes, Frankreich).
+      </p>
+      <p>
+        Bei Aktivierung des Live-Chats (nach Einwilligung) können folgende Daten verarbeitet werden:
+      </p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>IP-Adresse</li>
+        <li>Browser- und Geräteinformationen</li>
+        <li>Chat-Nachrichten und -Inhalte</li>
+        <li>Cookies zur Sitzungsverwaltung</li>
+      </ul>
+      <p>
+        Der Dienst wird erst nach Ihrer ausdrücklichen Einwilligung über unser Cookie-Banner geladen.
+      </p>
+      <p>
+        <strong>Rechtsgrundlage:</strong><br>
+        Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)
+      </p>
+
+      <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">12. Weitergabe von Daten</h2>
       <p>
         Eine Weitergabe personenbezogener Daten erfolgt nur:
       </p>
@@ -191,12 +213,12 @@ translations:
         Eine Weitergabe zu Werbezwecken erfolgt nicht.
       </p>
 
-      <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">12. Speicherdauer</h2>
+      <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">13. Speicherdauer</h2>
       <p>
         Personenbezogene Daten werden nur so lange gespeichert, wie dies für die jeweiligen Zwecke erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen.
       </p>
 
-      <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">13. Rechte der betroffenen Personen</h2>
+      <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">14. Rechte der betroffenen Personen</h2>
       <p>
         Sie haben das Recht auf:
       </p>
@@ -212,12 +234,12 @@ translations:
         Anfragen richten Sie bitte an: <a href="mailto:contact@solobooks.de" class="text-indigo-600 hover:text-indigo-800">contact@solobooks.de</a>
       </p>
 
-      <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">14. Beschwerderecht</h2>
+      <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">15. Beschwerderecht</h2>
       <p>
         Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren.
       </p>
 
-      <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">15. Aktualität</h2>
+      <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">16. Aktualität</h2>
       <p>
         Diese Datenschutzerklärung ist aktuell gültig und hat den Stand Februar 2026.
       </p>

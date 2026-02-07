@@ -90,14 +90,6 @@
     />
     {% endfor %} {% endif %}
 
-    <!-- Google Fonts - Inter & Space Grotesk -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
     <!-- Styles -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -109,26 +101,11 @@
     <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/logo/favicon.svg' | relative_url }}" />
     <link rel="apple-touch-icon" href="{{ '/assets/images/logo/apple-touch-icon.svg' | relative_url }}" />
 
-    <!-- Crisp Chat -->
-    <script type="text/javascript">
-      window.$crisp=[];
-      window.CRISP_WEBSITE_ID="b82b3c28-5787-49f5-8ca0-55956ddc936d";
-      (function(){
-        d=document;
-        s=d.createElement("script");
-        s.src="https://beta.client.crisp.chat/l.js";
-        s.async=1;
-        d.getElementsByTagName("head")[0].appendChild(s);
-        
-        // Set language based on page language
-        var pageLang = "{{ page.lang | default: 'de' }}";
-        window.$crisp.push(['set', 'user:locale', pageLang]);
-      })();
-    </script>
   </head>
   <body>
     {% include header.html %}
     <main class="bg-white">{{ content }}</main>
     {% include footer.html %}
+    {% include cookie-consent.html %}
   </body>
 </html>
