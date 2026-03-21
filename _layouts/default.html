@@ -11,7 +11,7 @@
     </title>
     <meta
       name="description"
-      content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncate: 160 }}{% else %}{{ site.data.translations[page.lang].meta_description }}{% endif %}"
+      content="{% if page.meta_description %}{{ page.meta_description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | truncate: 160 }}{% else %}{{ site.data.translations[page.lang].meta_description }}{% endif %}"
     />
     <meta
       name="keywords"
@@ -29,7 +29,7 @@
     />
     <meta
       property="og:description"
-      content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncate: 160 }}{% else %}{{ site.data.translations[page.lang].meta_description }}{% endif %}"
+      content="{% if page.meta_description %}{{ page.meta_description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | truncate: 160 }}{% else %}{{ site.data.translations[page.lang].meta_description }}{% endif %}"
     />
     <meta property="og:url" content="{{ page.url | absolute_url }}" />
     {% if page.image %}
@@ -63,7 +63,7 @@
     />
     <meta
       name="twitter:description"
-      content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncate: 160 }}{% else %}{{ site.data.translations[page.lang].meta_description }}{% endif %}"
+      content="{% if page.meta_description %}{{ page.meta_description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | truncate: 160 }}{% else %}{{ site.data.translations[page.lang].meta_description }}{% endif %}"
     />
     {% if page.image %}
     <meta name="twitter:image" content="{{ page.image | absolute_url }}" />

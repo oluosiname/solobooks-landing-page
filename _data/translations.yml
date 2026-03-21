@@ -638,6 +638,124 @@ en:
     cta_button: "Start for free now →"
     cta_button_url: "https://app.solobooks.de/register?utm_source=google&utm_medium=organic&utm_campaign=vs-sevdesk&lang=en"
 
+  vs_lexoffice:
+    meta_title: "Affordable Lexoffice Alternative | Solobooks – 3x Cheaper"
+    meta_description: "Looking for a cheaper Lexoffice alternative? Solobooks offers invoicing, DATEV export & VAT compliance from €4.99/month. Try free for 14 days."
+    hero:
+      badge: "Lexoffice Alternative"
+      title: "The Affordable Alternative"
+      title_highlight: "to Lexoffice"
+      subtitle: "Same DATEV export, same VAT compliance – from €4.99 instead of €13.90 per month. Built for solo freelancers in Germany."
+      cta_button: "Try Solobooks free →"
+      cta_link: "https://app.solobooks.de/register?plan=pro&lang=en&utm_source=google&utm_medium=organic&utm_campaign=vs-lexoffice"
+      secondary_cta: "Compare features"
+      trust_note: "14 days free trial · No credit card required · Cancel anytime"
+    comparison_table:
+      title: "Solobooks vs Lexoffice"
+      subtitle: "Feature-by-feature comparison for German freelancers"
+      solobooks_label: "Solobooks"
+      lexoffice_label: "Lexoffice"
+      categories:
+        core:
+          name: "Core Features"
+          features:
+            - name: "Create Invoices"
+              solobooks: true
+              lexoffice: true
+            - name: "Income-Expense Accounting (EÜR)"
+              solobooks: true
+              lexoffice: true
+            - name: "VAT Pre-Registration (USt-VA)"
+              solobooks: true
+              lexoffice: true
+            - name: "Bank Connection"
+              solobooks: true
+              lexoffice: true
+            - name: "Receipt Capture"
+              solobooks: true
+              lexoffice: true
+            - name: "DATEV Export"
+              solobooks: true
+              lexoffice: true
+            - name: "ELSTER Integration"
+              solobooks: true
+              lexoffice: true
+        pricing:
+          name: "Pricing & Plans"
+          features:
+            - name: "Most Popular Plan"
+              solobooks: "€7.99/month"
+              lexoffice: "€13.90/month"
+            - name: "Entry-Level Paid Plan"
+              solobooks: "€4.99/month"
+              lexoffice: "€7.90/month"
+            - name: "Free Plan Available"
+              solobooks: true
+              lexoffice: false
+        focus:
+          name: "Target Audience"
+          features:
+            - name: "Built for Solo Freelancers"
+              solobooks: true
+              lexoffice: false
+            - name: "Payroll Management"
+              solobooks: false
+              lexoffice: true
+            - name: "Employee Management"
+              solobooks: false
+              lexoffice: true
+    pricing_comparison:
+      title: "Save Over €70 Per Year"
+      subtitle: "Same essential features for freelancers – at a fraction of the cost"
+      solobooks_name: "Solobooks Pro"
+      solobooks_price: "€7.99"
+      solobooks_period: "/month"
+      solobooks_annual: "€95.88/year"
+      lexoffice_name: "Lexoffice M"
+      lexoffice_price: "€13.90"
+      lexoffice_period: "/month"
+      lexoffice_annual: "€166.80/year"
+      savings_text: "You save"
+      savings_amount: "€70.92/year"
+      cta_button: "Start saving now →"
+      cta_link: "https://app.solobooks.de/register?plan=pro&lang=en&utm_source=google&utm_medium=organic&utm_campaign=vs-lexoffice"
+    benefits:
+      title: "Why Freelancers Switch to Solobooks"
+      subtitle: "Purpose-built for solo self-employed professionals in Germany"
+      items:
+        - title: "3x More Affordable"
+          description: "Get all essential freelancer accounting features from just €4.99/month – no hidden costs, no feature paywalls."
+          icon: "currency"
+        - title: "Same DATEV Export"
+          description: "Export your accounting data in DATEV format for your tax advisor – just like Lexoffice, fully compatible."
+          icon: "export"
+        - title: "Simpler Interface"
+          description: "No bloated menus or enterprise features you'll never use. Solobooks is designed exclusively for solo freelancers."
+          icon: "simple"
+        - title: "Made for Germany"
+          description: "EÜR, USt-VA, ELSTER – all German tax compliance built-in. GDPR compliant with servers in Germany."
+          icon: "germany"
+    faq_title: "Frequently Asked Questions"
+    faq_items:
+      - question: "Can I migrate my data from Lexoffice to Solobooks?"
+        answer: "You can export your data from Lexoffice and start fresh with Solobooks. Our support team is happy to help you with the transition process and ensure nothing gets lost."
+      - question: "Does Solobooks have the same DATEV export as Lexoffice?"
+        answer: "Yes! Solobooks offers full DATEV export functionality, just like Lexoffice. Your tax advisor can import your data seamlessly – no changes to their workflow required."
+      - question: "Why is Solobooks so much cheaper than Lexoffice?"
+        answer: "Solobooks is built exclusively for solo freelancers, so we don't need to develop and maintain features like payroll, employee management, or multi-user access. This focused approach lets us offer the same core accounting features at a fraction of the price."
+      - question: "Is Solobooks right for me if I'm not a solo freelancer?"
+        answer: "Solobooks is specifically designed for solo self-employed professionals and freelancers in Germany. If you have employees or need payroll features, Lexoffice may be a better fit. For everything else, Solobooks has you covered."
+      - question: "Is there a free trial?"
+        answer: "Yes! You can try Solobooks free for 14 days with full access to all features. No credit card required. We also offer a permanent free Starter plan with basic features."
+      - question: "How does switching from Lexoffice to Solobooks work?"
+        answer: "Switching is simple: sign up for a free Solobooks account, connect your bank account, and start tracking your income and expenses. You can run both tools in parallel during your transition period to ensure everything works perfectly."
+    final_cta:
+      title: "Ready to save with Solobooks?"
+      subtitle: "Join thousands of German freelancers who chose the smarter, more affordable accounting solution."
+      cta_button: "Start your free trial →"
+      cta_link: "https://app.solobooks.de/register?plan=pro&lang=en&utm_source=google&utm_medium=organic&utm_campaign=vs-lexoffice"
+      trust_note: "14 days free · No credit card · Cancel anytime"
+
 de:
   site_name: "Solobooks"
   title: "Solobooks – Buchhaltung für Freelancer in Deutschland"
@@ -1277,3 +1395,121 @@ de:
     cta_description: "Schließe dich Tausenden deutschen Freelancern an, die sich für einfachere, günstigere Buchhaltung entschieden haben. Starte jetzt deine kostenlose 14-Tage-Testphase."
     cta_button: "Jetzt kostenlos starten →"
     cta_button_url: "https://app.solobooks.de/register?utm_source=google&utm_medium=organic&utm_campaign=vs-sevdesk&lang=de"
+
+  vs_lexoffice:
+    meta_title: "Günstige Lexoffice Alternative | Solobooks – 3x günstiger"
+    meta_description: "Suchen Sie eine günstige Lexoffice Alternative? Solobooks bietet Rechnungen, DATEV-Export & USt-VA ab €4,99/Monat. Jetzt kostenlos testen."
+    hero:
+      badge: "Lexoffice Alternative"
+      title: "Die günstige Alternative"
+      title_highlight: "zu Lexoffice"
+      subtitle: "Gleicher DATEV-Export, gleiche USt-VA Compliance – ab €4,99 statt €13,90 im Monat. Entwickelt für Solo-Selbstständige in Deutschland."
+      cta_button: "Solobooks kostenlos testen →"
+      cta_link: "https://app.solobooks.de/register?plan=pro&lang=de&utm_source=google&utm_medium=organic&utm_campaign=vs-lexoffice"
+      secondary_cta: "Funktionen vergleichen"
+      trust_note: "14 Tage kostenlos · Keine Kreditkarte · Jederzeit kündbar"
+    comparison_table:
+      title: "Solobooks vs Lexoffice"
+      subtitle: "Funktionsvergleich für Freelancer in Deutschland"
+      solobooks_label: "Solobooks"
+      lexoffice_label: "Lexoffice"
+      categories:
+        core:
+          name: "Kernfunktionen"
+          features:
+            - name: "Rechnungen erstellen"
+              solobooks: true
+              lexoffice: true
+            - name: "Einnahmen-Überschuss-Rechnung (EÜR)"
+              solobooks: true
+              lexoffice: true
+            - name: "Umsatzsteuer-Voranmeldung (USt-VA)"
+              solobooks: true
+              lexoffice: true
+            - name: "Bankanbindung"
+              solobooks: true
+              lexoffice: true
+            - name: "Belegerfassung"
+              solobooks: true
+              lexoffice: true
+            - name: "DATEV-Export"
+              solobooks: true
+              lexoffice: true
+            - name: "ELSTER-Integration"
+              solobooks: true
+              lexoffice: true
+        pricing:
+          name: "Preise & Tarife"
+          features:
+            - name: "Beliebtester Tarif"
+              solobooks: "€7,99/Monat"
+              lexoffice: "€13,90/Monat"
+            - name: "Günstigster Bezahltarif"
+              solobooks: "€4,99/Monat"
+              lexoffice: "€7,90/Monat"
+            - name: "Kostenloser Tarif verfügbar"
+              solobooks: true
+              lexoffice: false
+        focus:
+          name: "Zielgruppe"
+          features:
+            - name: "Entwickelt für Solo-Freelancer"
+              solobooks: true
+              lexoffice: false
+            - name: "Lohnabrechnung"
+              solobooks: false
+              lexoffice: true
+            - name: "Mitarbeiterverwaltung"
+              solobooks: false
+              lexoffice: true
+    pricing_comparison:
+      title: "Spare über €70 pro Jahr"
+      subtitle: "Gleiche Kernfunktionen für Freelancer – zum Bruchteil der Kosten"
+      solobooks_name: "Solobooks Pro"
+      solobooks_price: "€7,99"
+      solobooks_period: "/Monat"
+      solobooks_annual: "€95,88/Jahr"
+      lexoffice_name: "Lexoffice M"
+      lexoffice_price: "€13,90"
+      lexoffice_period: "/Monat"
+      lexoffice_annual: "€166,80/Jahr"
+      savings_text: "Du sparst"
+      savings_amount: "€70,92/Jahr"
+      cta_button: "Jetzt sparen →"
+      cta_link: "https://app.solobooks.de/register?plan=pro&lang=de&utm_source=google&utm_medium=organic&utm_campaign=vs-lexoffice"
+    benefits:
+      title: "Warum Freelancer zu Solobooks wechseln"
+      subtitle: "Speziell entwickelt für Solo-Selbstständige in Deutschland"
+      items:
+        - title: "3x günstiger"
+          description: "Alle wichtigen Buchhaltungsfunktionen ab nur €4,99/Monat – keine versteckten Kosten, keine Feature-Paywalls."
+          icon: "currency"
+        - title: "Gleicher DATEV-Export"
+          description: "Exportiere deine Buchhaltungsdaten im DATEV-Format für deinen Steuerberater – genau wie bei Lexoffice, voll kompatibel."
+          icon: "export"
+        - title: "Einfachere Oberfläche"
+          description: "Keine überladenen Menüs oder Enterprise-Funktionen, die du nie brauchst. Solobooks ist exklusiv für Solo-Freelancer gemacht."
+          icon: "simple"
+        - title: "Made in Germany"
+          description: "EÜR, USt-VA, ELSTER – alle deutschen Steuer-Compliance-Anforderungen integriert. DSGVO-konform mit Servern in Deutschland."
+          icon: "germany"
+    faq_title: "Häufig gestellte Fragen"
+    faq_items:
+      - question: "Kann ich meine Daten von Lexoffice zu Solobooks migrieren?"
+        answer: "Du kannst deine Daten aus Lexoffice exportieren und bei Solobooks neu starten. Unser Support-Team hilft dir gerne beim Umzug und stellt sicher, dass nichts verloren geht."
+      - question: "Hat Solobooks den gleichen DATEV-Export wie Lexoffice?"
+        answer: "Ja! Solobooks bietet die volle DATEV-Export-Funktionalität, genau wie Lexoffice. Dein Steuerberater kann deine Daten nahtlos importieren – ohne Änderungen an seinem Workflow."
+      - question: "Warum ist Solobooks so viel günstiger als Lexoffice?"
+        answer: "Solobooks ist ausschließlich für Solo-Freelancer gebaut. Wir müssen keine Funktionen wie Lohnabrechnung, Mitarbeiterverwaltung oder Multi-User-Zugang entwickeln und warten. Dieser fokussierte Ansatz ermöglicht es uns, die gleichen Kern-Buchhaltungsfunktionen zum Bruchteil des Preises anzubieten."
+      - question: "Ist Solobooks das Richtige für mich, wenn ich kein Solo-Freelancer bin?"
+        answer: "Solobooks ist speziell für Solo-Selbstständige und Freelancer in Deutschland konzipiert. Wenn du Mitarbeiter hast oder Lohnabrechnungs-Funktionen benötigst, ist Lexoffice möglicherweise besser geeignet. Für alles andere bietet Solobooks alles, was du brauchst."
+      - question: "Gibt es eine kostenlose Testphase?"
+        answer: "Ja! Du kannst Solobooks 14 Tage lang kostenlos mit vollem Zugang zu allen Funktionen testen. Keine Kreditkarte erforderlich. Wir bieten auch einen dauerhaft kostenlosen Starter-Tarif mit Basisfunktionen an."
+      - question: "Wie funktioniert der Wechsel von Lexoffice zu Solobooks?"
+        answer: "Der Wechsel ist einfach: Erstelle ein kostenloses Solobooks-Konto, verbinde dein Bankkonto und beginne, deine Einnahmen und Ausgaben zu tracken. Du kannst beide Tools während der Übergangszeit parallel nutzen, um sicherzustellen, dass alles perfekt funktioniert."
+    final_cta:
+      title: "Bereit, mit Solobooks zu sparen?"
+      subtitle: "Schließe dich Tausenden deutschen Freelancern an, die sich für die smartere und günstigere Buchhaltungslösung entschieden haben."
+      cta_button: "Kostenlos testen →"
+      cta_link: "https://app.solobooks.de/register?plan=pro&lang=de&utm_source=google&utm_medium=organic&utm_campaign=vs-lexoffice"
+      trust_note: "14 Tage kostenlos · Keine Kreditkarte · Jederzeit kündbar"
