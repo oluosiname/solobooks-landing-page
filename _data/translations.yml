@@ -470,6 +470,110 @@ en:
       - "No credit card needed"
       - "Cancel anytime"
     disclaimer: "By registering, you agree to our terms of use and privacy policy"
+  compare_debitoor:
+    meta_title: "Solobooks vs Debitoor – The Better Alternative for German Freelancers"
+    meta_description: "Compare Solobooks and Debitoor side by side. Discover why German freelancers choose Solobooks for native EÜR, DATEV export, and full German tax compliance."
+    hero_title: "Solobooks vs Debitoor"
+    hero_subtitle: "Looking for a Debitoor alternative built specifically for German freelancers? Solobooks offers native German tax compliance, EÜR support, and seamless Steuerberater collaboration — out of the box."
+    hero_cta: "Try Solobooks free for 14 days →"
+    advantages_title: "Why freelancers choose Solobooks"
+    advantages:
+      - title: "German Tax Compliance Built-In"
+        description: "USt-VA pre-registration, ELSTER integration, and Kleinunternehmerregelung support — all natively built for the German tax system."
+        icon: "shield"
+      - title: "EÜR Native, Not an Afterthought"
+        description: "Solobooks was designed from the ground up for Einnahmenüberschussrechnung. No workarounds, no manual adjustments needed."
+        icon: "document"
+      - title: "DATEV Export for Your Steuerberater"
+        description: "One-click DATEV export makes handoff to your tax advisor effortless. No more manual data entry or CSV juggling."
+        icon: "export"
+    table_title: "Feature Comparison"
+    table_subtitle: "See how Solobooks stacks up against Debitoor"
+    col_solobooks: "Solobooks"
+    col_debitoor: "Debitoor"
+    categories:
+      invoicing:
+        name: "Invoicing & Documents"
+        features:
+          - name: "Invoice creation"
+            solobooks: true
+            debitoor: true
+          - name: "Recurring invoices"
+            solobooks: true
+            debitoor: true
+          - name: "Quote & offer creation"
+            solobooks: true
+            debitoor: true
+          - name: "Credit notes"
+            solobooks: true
+            debitoor: true
+          - name: "Multi-currency support"
+            solobooks: true
+            debitoor: "Limited"
+      german_tax:
+        name: "German Tax Compliance"
+        features:
+          - name: "EÜR (Einnahmenüberschussrechnung)"
+            solobooks: "Native"
+            debitoor: "Limited"
+          - name: "USt-VA pre-registration"
+            solobooks: true
+            debitoor: false
+          - name: "ELSTER integration"
+            solobooks: true
+            debitoor: false
+          - name: "Kleinunternehmerregelung (§19)"
+            solobooks: true
+            debitoor: "Partial"
+          - name: "Reverse charge handling"
+            solobooks: true
+            debitoor: true
+      bank_automation:
+        name: "Bank & Automation"
+        features:
+          - name: "Bank connection (FinTS/PSD2)"
+            solobooks: true
+            debitoor: true
+          - name: "Automatic transaction matching"
+            solobooks: true
+            debitoor: "Limited"
+          - name: "Smart categorization"
+            solobooks: true
+            debitoor: false
+          - name: "Receipt scanning (OCR)"
+            solobooks: true
+            debitoor: true
+      tax_advisor:
+        name: "Tax Advisor Collaboration"
+        features:
+          - name: "DATEV export"
+            solobooks: true
+            debitoor: false
+          - name: "Steuerberater access"
+            solobooks: true
+            debitoor: false
+          - name: "Export in standard formats"
+            solobooks: true
+            debitoor: "CSV only"
+      data_privacy:
+        name: "Data & Privacy"
+        features:
+          - name: "Servers in Germany"
+            solobooks: true
+            debitoor: false
+          - name: "GDPR compliant"
+            solobooks: true
+            debitoor: true
+          - name: "German-speaking support"
+            solobooks: true
+            debitoor: "Limited"
+    switch_title: "Why Freelancers Switch to Solobooks"
+    switch_reasons:
+      - "Purpose-built for the German tax system — no workarounds needed"
+      - "One-click DATEV export saves hours of manual data transfer"
+      - "Native EÜR means your bookkeeping is always audit-ready"
+      - "German servers and full GDPR compliance for peace of mind"
+      - "Dedicated German-speaking support team that understands your needs"
 
   vs_sevdesk:
     hero_title: "The Better SevDesk Alternative"
@@ -1006,6 +1110,110 @@ de:
       - "Keine Kreditkarte nötig"
       - "Jederzeit kündbar"
     disclaimer: "Mit der Registrierung stimmen Sie unseren Nutzungsbedingungen und Datenschutzrichtlinien zu"
+  compare_debitoor:
+    meta_title: "Solobooks vs Debitoor – Die bessere Alternative für Freelancer in Deutschland"
+    meta_description: "Vergleiche Solobooks und Debitoor im Detail. Entdecke warum deutsche Freelancer Solobooks wählen: native EÜR, DATEV-Export und volle deutsche Steuer-Compliance."
+    hero_title: "Solobooks vs Debitoor"
+    hero_subtitle: "Du suchst eine Debitoor-Alternative, die speziell für deutsche Freelancer entwickelt wurde? Solobooks bietet native deutsche Steuer-Compliance, EÜR-Unterstützung und nahtlose Steuerberater-Zusammenarbeit — direkt ab Start."
+    hero_cta: "Solobooks 14 Tage kostenlos testen →"
+    advantages_title: "Warum Freelancer Solobooks wählen"
+    advantages:
+      - title: "Deutsche Steuer-Compliance eingebaut"
+        description: "USt-VA Voranmeldung, ELSTER-Integration und Kleinunternehmerregelung — alles nativ für das deutsche Steuersystem gebaut."
+        icon: "shield"
+      - title: "EÜR nativ, kein Nachgedanke"
+        description: "Solobooks wurde von Grund auf für die Einnahmenüberschussrechnung entwickelt. Keine Workarounds, keine manuellen Anpassungen nötig."
+        icon: "document"
+      - title: "DATEV-Export für deinen Steuerberater"
+        description: "Ein-Klick DATEV-Export macht die Übergabe an deinen Steuerberater mühelos. Kein manuelles Abtippen oder CSV-Jonglieren mehr."
+        icon: "export"
+    table_title: "Funktionsvergleich"
+    table_subtitle: "So schneidet Solobooks im Vergleich zu Debitoor ab"
+    col_solobooks: "Solobooks"
+    col_debitoor: "Debitoor"
+    categories:
+      invoicing:
+        name: "Rechnungen & Dokumente"
+        features:
+          - name: "Rechnungserstellung"
+            solobooks: true
+            debitoor: true
+          - name: "Wiederkehrende Rechnungen"
+            solobooks: true
+            debitoor: true
+          - name: "Angebotserstellung"
+            solobooks: true
+            debitoor: true
+          - name: "Gutschriften"
+            solobooks: true
+            debitoor: true
+          - name: "Mehrwährungsunterstützung"
+            solobooks: true
+            debitoor: "Eingeschränkt"
+      german_tax:
+        name: "Deutsche Steuer-Compliance"
+        features:
+          - name: "EÜR (Einnahmenüberschussrechnung)"
+            solobooks: "Nativ"
+            debitoor: "Eingeschränkt"
+          - name: "USt-VA Voranmeldung"
+            solobooks: true
+            debitoor: false
+          - name: "ELSTER-Integration"
+            solobooks: true
+            debitoor: false
+          - name: "Kleinunternehmerregelung (§19)"
+            solobooks: true
+            debitoor: "Teilweise"
+          - name: "Reverse-Charge-Verfahren"
+            solobooks: true
+            debitoor: true
+      bank_automation:
+        name: "Bank & Automatisierung"
+        features:
+          - name: "Bankanbindung (FinTS/PSD2)"
+            solobooks: true
+            debitoor: true
+          - name: "Automatischer Transaktionsabgleich"
+            solobooks: true
+            debitoor: "Eingeschränkt"
+          - name: "Intelligente Kategorisierung"
+            solobooks: true
+            debitoor: false
+          - name: "Belegerfassung (OCR)"
+            solobooks: true
+            debitoor: true
+      tax_advisor:
+        name: "Steuerberater-Zusammenarbeit"
+        features:
+          - name: "DATEV-Export"
+            solobooks: true
+            debitoor: false
+          - name: "Steuerberater-Zugang"
+            solobooks: true
+            debitoor: false
+          - name: "Export in Standardformaten"
+            solobooks: true
+            debitoor: "Nur CSV"
+      data_privacy:
+        name: "Daten & Datenschutz"
+        features:
+          - name: "Server in Deutschland"
+            solobooks: true
+            debitoor: false
+          - name: "DSGVO-konform"
+            solobooks: true
+            debitoor: true
+          - name: "Deutschsprachiger Support"
+            solobooks: true
+            debitoor: "Eingeschränkt"
+    switch_title: "Warum Freelancer zu Solobooks wechseln"
+    switch_reasons:
+      - "Speziell für das deutsche Steuersystem gebaut — keine Workarounds nötig"
+      - "Ein-Klick DATEV-Export spart Stunden manueller Datenübertragung"
+      - "Native EÜR bedeutet: Deine Buchhaltung ist immer prüfungssicher"
+      - "Deutsche Server und volle DSGVO-Konformität für deine Sicherheit"
+      - "Deutschsprachiges Support-Team, das deine Bedürfnisse versteht"
 
   vs_sevdesk:
     hero_title: "Die bessere SevDesk Alternative"
